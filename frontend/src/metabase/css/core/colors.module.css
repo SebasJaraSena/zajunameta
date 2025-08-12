@@ -115,6 +115,9 @@
     * @see https://www.figma.com/design/YxiDXi1DzmXJCTMCuqXaaY/Applying-the-updated-colors?node-id=4001-16486&node-type=FRAME&t=Iwv4nAfH8QF1J5QG-0
   */
 
+  /* zajuna */
+  --mb-base-color-blue-zajuna:#04324d;
+  --mb-base-color-gray-zajuna:#e6e6e6;
   --mb-base-color-white: #fff;
 
   /* Brand */

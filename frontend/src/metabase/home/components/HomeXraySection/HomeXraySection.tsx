@@ -74,7 +74,7 @@ const HomeXrayView = ({ database, candidates = [] }: HomeXrayViewProps) => {
 
   return (
     <div>
-      {isSample ? (
+      {/* {isSample ? (
         <HomeCaption primary>
           {t`Try out these sample x-rays to see what ${applicationName} can do.`}
         </HomeCaption>
@@ -94,8 +94,8 @@ const HomeXrayView = ({ database, candidates = [] }: HomeXrayViewProps) => {
           {t`Here are some explorations of`}
           <DatabaseInfo database={database} />
         </HomeCaption>
-      )}
-      <SectionBody>
+      )} */}
+      {/* <SectionBody>
         {candidate?.tables.map((table, index) => (
           <HomeXrayCard
             key={table.url}
@@ -105,7 +105,7 @@ const HomeXrayView = ({ database, candidates = [] }: HomeXrayViewProps) => {
           />
         ))}
         <HomeHelpCard />
-      </SectionBody>
+      </SectionBody> */}
     </div>
   );
 };

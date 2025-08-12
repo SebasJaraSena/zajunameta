@@ -32,14 +32,22 @@ export const HomeGreeting = (): JSX.Element => {
   );
 };
 
+// const getMessage = (name: string | null | undefined): string => {
+//   const namePart = name ? `, ${name}` : "";
+//   const options = [
+//     t`Hey there${namePart}`,
+//     t`How's it going${namePart}?`,
+//     t`Howdy${namePart}`,
+//     t`Greetings${namePart}`,
+//     t`Good to see you${namePart}`,
+//   ];
+
+//   return _.sample(options) ?? "";
+// };
 const getMessage = (name: string | null | undefined): string => {
   const namePart = name ? `, ${name}` : "";
   const options = [
-    t`Hey there${namePart}`,
-    t`How's it going${namePart}?`,
-    t`Howdy${namePart}`,
-    t`Greetings${namePart}`,
-    t`Good to see you${namePart}`,
+    t`¡Hola${namePart}!`,
   ];
 
   return _.sample(options) ?? "";
@@ -85,11 +93,6 @@ const MetabotGreeting = () => {
       position="bottom"
     >
       <GreetingLogoContainer>
-        <GreetingLogo
-          isCool={isCool}
-          className={`${styles.SpinOut} ${isCooling ? styles.SpinOutActive : ""}`}
-          variant="cool"
-        />
         <GreetingLogo
           isCool={!isCool}
           className={`${styles.SpinOut} ${isCooling ? styles.SpinOutActive : ""}`}

@@ -5,7 +5,8 @@
 // frontend/src/metabase/styled-components/containers/GlobalStyles/GlobalStyles.tsx
 // frontend/src/metabase/styled-components/theme/css-variables.ts
 export const colors = {
-  brand: "#509EE3",
+  //brand: "#509EE3",
+  brand: "#04324d",//color iconos,
   summarize: "#88BF4D",
   filter: "#7172AD",
   accent0: "#509EE3",

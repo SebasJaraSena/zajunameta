@@ -4,12 +4,10 @@ import { t } from "ttag";
 
 import { LogoRoot } from "./MetabotLogo.styled";
 
-export type MetabotVariant = "happy" | "sad" | "cool";
+type MetabotVariant = keyof typeof urlByVariant;
 
 const urlByVariant = {
-  happy: "app/assets/img/metabot-happy.svg",
-  sad: "app/assets/img/metabot-sad.svg",
-  cool: "app/assets/img/metabot-shades.svg",
+  happy: "app/assets/img/zajuna-happy.svg"
 };
 
 export interface MetabotLogoProps {
@@ -25,7 +23,7 @@ const MetabotLogo = forwardRef(function MetabotLogo(
     <LogoRoot
       {...rest}
       ref={ref}
-      alt={t`Metabot`}
+      alt={t`Zajuna`}
       src={urlByVariant[variant]}
     />
   );

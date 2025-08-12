@@ -23,7 +23,7 @@ export const Sidebar = styled.aside<{
   position: relative;
   flex-shrink: 0;
   align-items: center;
-  background-color: var(--mb-color-bg-white);
+  background-color: var(--mb-base-color-gray-zajuna);
   z-index: 4;
   width: ${(props) => props.width ?? NAV_SIDEBAR_WIDTH};
   ${(props) =>
