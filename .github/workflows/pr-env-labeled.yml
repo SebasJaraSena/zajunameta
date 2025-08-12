@@ -1,0 +1,21 @@
+name: PR-Env labeled
+
+on:
+  pull_request:
+    types: [ labeled ]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  uberjar:
+    if: ${{ github.event.label.name == 'PR-Env' }}
+    uses: ./.github/workflows/uberjar.yml
+    secrets: inherit
+
+  pr-env:
+    needs: [uberjar]
+    if: ${{ github.event.label.name == 'PR-Env' }}
+    uses: ./.github/workflows/pr-env.yml
+    secrets: inherit
