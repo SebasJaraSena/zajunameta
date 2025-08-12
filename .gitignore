@@ -154,3 +154,8 @@ CLAUDE.local.md
 
 /logs
 /.clojure-mcp
+
+# secretos
+.env
+*.env
+*token*
