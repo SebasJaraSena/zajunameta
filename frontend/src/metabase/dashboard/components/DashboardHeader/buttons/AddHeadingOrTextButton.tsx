@@ -36,7 +36,7 @@ export const AddHeadingOrTextButton = () => {
       action: onAddHeading,
     },
     {
-      title: t`Text`,
+      title: t`Texto`,
       action: onAddMarkdownBox,
     },
   ];

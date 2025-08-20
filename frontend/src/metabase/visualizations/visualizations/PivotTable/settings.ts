@@ -320,7 +320,7 @@ export const _columnSettings = {
   },
   column_title: {
     get title() {
-      return t`Column title`;
+      return t`Título columna`;
     },
     widget: "input",
     getDefault: displayNameForColumn,

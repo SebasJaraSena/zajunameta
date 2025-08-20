@@ -8,7 +8,7 @@ import {
 import { Text } from "./Text";
 
 const TextWrapper = Object.assign(Text, {
-  getUiName: () => t`Text`,
+  getUiName: () => t`Texto`,
   identifier: "text",
   iconName: "text",
   canSavePng: false,
@@ -65,11 +65,11 @@ const TextWrapper = Object.assign(Text, {
       props: {
         options: [
           // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-          { name: t`Left`, value: "left" },
+          { name: t`Izquierda`, value: "left" },
           // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-          { name: t`Center`, value: "center" },
+          { name: t`Centro`, value: "center" },
           // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-          { name: t`Right`, value: "right" },
+          { name: t`Derecha`, value: "right" },
         ],
       },
       default: "left",

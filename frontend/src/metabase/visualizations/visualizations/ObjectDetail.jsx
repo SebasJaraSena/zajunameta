@@ -32,7 +32,7 @@ const ObjectDetailProperties = {
   columnSettings: (column) => {
     const settings = {
       column_title: {
-        title: t`Column title`,
+        title: t`Título columna`,
         widget: "input",
         getDefault: (column) => displayNameForColumn(column),
       },

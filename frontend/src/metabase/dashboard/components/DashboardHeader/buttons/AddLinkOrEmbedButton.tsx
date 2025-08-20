@@ -53,7 +53,7 @@ export const AddLinkOrEmbedButton = () => {
       </Menu.Target>
       <Menu.Dropdown miw="auto">
         <Menu.Item pr="xl" fw="bold" onClick={onAddLinkCard}>
-          {t`Link`}
+          {t`Enlace`}
         </Menu.Item>
         <Menu.Item pr="xl" fw="bold" onClick={onAddIFrameCard}>
           {t`Iframe`}

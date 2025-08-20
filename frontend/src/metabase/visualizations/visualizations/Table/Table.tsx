@@ -244,13 +244,13 @@ class Table extends Component<TableProps, TableState> {
       ColumnSettingDefinition<unknown, unknown>
     > = {
       column_title: {
-        title: t`Column title`,
+        title: t`Título columna`,
         widget: "input",
         getDefault: (column) => displayNameForColumn(column),
       },
       click_behavior: {},
       text_align: {
-        title: t`Align`,
+        title: t`Alinear`,
         widget: "select",
         getDefault: (column) => {
           const baseColumn = column?.remapped_to_column ?? column;
@@ -260,9 +260,9 @@ class Table extends Component<TableProps, TableState> {
         },
         props: {
           options: [
-            { name: t`Left`, value: "left" },
-            { name: t`Right`, value: "right" },
-            { name: t`Middle`, value: "middle" },
+            { name: t`Izquierda`, value: "left" },
+            { name: t`Derecha`, value: "right" },
+            { name: t`Medio`, value: "middle" },
           ],
         },
       },
@@ -281,7 +281,7 @@ class Table extends Component<TableProps, TableState> {
         columnSettings["view_as"] !== "image";
 
       settings["text_wrapping"] = {
-        title: t`Wrap text`,
+        title: t`Ajustar texto`,
         default: false,
         widget: "toggle",
         inline: true,
@@ -297,8 +297,8 @@ class Table extends Component<TableProps, TableState> {
     let defaultValue = !column.semantic_type || isURL(column) ? "link" : null;
 
     const options = [
-      { name: t`Text`, value: null },
-      { name: t`Link`, value: "link" },
+      { name: t`Texto`, value: null },
+      { name: t`Enlace`, value: "link" },
     ];
 
     if (!column.semantic_type || isEmail(column)) {
@@ -316,7 +316,7 @@ class Table extends Component<TableProps, TableState> {
 
     if (options.length > 1) {
       settings["view_as"] = {
-        title: t`Display as`,
+        title: t`Mostrar como`,
         widget: options.length === 2 ? "radio" : "select",
         default: defaultValue,
         props: {

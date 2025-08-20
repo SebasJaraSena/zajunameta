@@ -117,7 +117,7 @@ export const ChartSettingOrderedSimple = ({
           getId={getId}
         />
       ) : (
-        <ChartSettingMessage>{t`Nothing to order`}</ChartSettingMessage>
+        <ChartSettingMessage>{t`Nada que ordenar`}</ChartSettingMessage>
       )}
     </Box>
   );

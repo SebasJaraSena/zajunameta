@@ -17,26 +17,26 @@ type InputOptionsMap = Record<FieldType, InputOptionType[]>;
 export const getFieldTypes = (): FieldOptionType[] => [
   {
     value: "string",
-    name: t`Text`,
+    name: t`Texto`,
   },
   {
     value: "number",
-    name: t`Number`,
+    name: t`Número`,
   },
   {
     value: "date",
-    name: t`Date`,
+    name: t`Fecha`,
   },
 ];
 
 const getTextInputs = (): InputOptionType[] => [
   {
     value: "string",
-    name: t`Text`,
+    name: t`Texto`,
   },
   {
     value: "text",
-    name: t`Long text`,
+    name: t`Texto largo`,
   },
 ];
 

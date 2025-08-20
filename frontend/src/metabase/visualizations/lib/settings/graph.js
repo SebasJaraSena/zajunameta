@@ -728,7 +728,7 @@ export const GRAPH_AXIS_SETTINGS = {
         },
         {
           get name() {
-            return t` 45°`;
+            return t`Rotar 45°`;
           },
           value: "rotate-45",
         },

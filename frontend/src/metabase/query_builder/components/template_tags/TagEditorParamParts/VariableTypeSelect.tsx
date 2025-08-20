@@ -9,19 +9,19 @@ const OPTIONS: Array<{ value: TemplateTagType; label: string }> = [
   {
     value: "text",
     get label() {
-      return t`Text`;
+      return t`Texto`;
     },
   },
   {
     value: "number",
     get label() {
-      return t`Number`;
+      return t`Número`;
     },
   },
   {
     value: "date",
     get label() {
-      return t`Date`;
+      return t`Fecha`;
     },
   },
   {

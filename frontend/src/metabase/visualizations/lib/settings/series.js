@@ -176,8 +176,8 @@ export function seriesSetting({ readDependencies = [], def } = {}) {
       props: {
         options: [
           { name: t`Auto`, value: null },
-          { name: t`Left`, value: "left" },
-          { name: t`Right`, value: "right" },
+          { name: t`Izquierda`, value: "left" },
+          { name: t`Derecha`, value: "right" },
         ],
       },
       readDependencies: ["display"],

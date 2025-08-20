@@ -45,7 +45,7 @@ export function getDashboardParameterSections(): ParameterSection[] {
       id: "string",
       name: t`Text or Category`,
       description: t`Contains, is, starts with…`,
-      options: buildTypedOperatorOptions("string", "string", t`Text`),
+      options: buildTypedOperatorOptions("string", "string", t`Texto`),
     },
     {
       id: "number",
