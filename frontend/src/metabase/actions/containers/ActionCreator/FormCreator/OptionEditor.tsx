@@ -123,7 +123,7 @@ export const OptionPopover = ({
             onClick={() => handleSave(closePopover)}
             small
           >
-            {t`Save`}
+            {t`Guardar`}
           </Button>
         </OptionEditorContainer>
       )}

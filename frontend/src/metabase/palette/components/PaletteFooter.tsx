@@ -14,7 +14,7 @@ export const PaletteFooter = () => {
     >
       <Flex gap=".33rem" c={color("text-medium")} lh="1rem">
         <Icon name="sort" />
-        <Text size="12px">{t`Select`}</Text>
+        <Text size="12px">{t`Selecciona`}</Text>
       </Flex>
     </Flex>
   );

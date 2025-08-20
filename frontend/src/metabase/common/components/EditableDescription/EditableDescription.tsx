@@ -27,7 +27,7 @@ export const EditableDescription = ({
       onChange={onChange}
       initialValue={description}
       placeholder={
-        !description && !canWrite ? t`No description` : t`Add description`
+        !description && !canWrite ? t`Sin descripción` : t`Añadir descripción`
       }
       isDisabled={!canWrite}
       isOptional

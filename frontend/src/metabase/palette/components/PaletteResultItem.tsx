@@ -124,7 +124,7 @@ export const PaletteResultItem = ({ item, active }: PaletteResultItemProps) => {
       {/** Active container */}
       {active && (
         <Flex aria-hidden gap="0.5rem" fw={400}>
-          {t`Open`} <Icon name="enter_or_return" />
+          {t`Abrir`} <Icon name="enter_or_return" />
         </Flex>
       )}
     </Flex>

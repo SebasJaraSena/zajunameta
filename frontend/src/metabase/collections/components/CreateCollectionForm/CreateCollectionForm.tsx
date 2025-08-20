@@ -115,29 +115,29 @@ function CreateCollectionForm({
         <Form>
           <FormInput
             name="name"
-            title={t`Name`}
-            placeholder={t`My new fantastic collection`}
+            title={t`Nombre`}
+            placeholder={t`Nombre de la nueva colección`}
             data-autofocus
           />
           <FormTextArea
             name="description"
-            title={t`Description`}
-            placeholder={t`It's optional but oh, so helpful`}
+            title={t`Descripción`}
+            placeholder={t`Descripción...`}
             nullable
             optional
           />
           <FormCollectionPicker
             name="parent_id"
-            title={t`Collection it's saved in`}
+            title={t`Colección: se guarda en`}
             filterPersonalCollections={filterPersonalCollections}
           />
           <FormAuthorityLevelField />
           <FormFooter>
             <FormErrorMessage inline />
             {!!onCancel && (
-              <Button type="button" onClick={onCancel}>{t`Cancel`}</Button>
+              <Button type="button" onClick={onCancel}>{t`Cancelar`}</Button>
             )}
-            <FormSubmitButton title={t`Create`} disabled={!dirty} primary />
+            <FormSubmitButton title={t`Crear`} disabled={!dirty} primary />
           </FormFooter>
         </Form>
       )}

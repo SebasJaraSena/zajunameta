@@ -74,7 +74,7 @@ export const settings = {
   },
   [COLUMN_SPLIT_SETTING]: {
     get section() {
-      return t`Columns`;
+      return t`Columnas`;
     },
     widget: "fieldsPartition",
     persistDefault: true,
@@ -145,7 +145,7 @@ export const settings = {
   },
   "pivot.show_row_totals": {
     get section() {
-      return t`Columns`;
+      return t`Columnas`;
     },
     get title() {
       return t`Show row totals`;
@@ -156,7 +156,7 @@ export const settings = {
   },
   "pivot.show_column_totals": {
     get section() {
-      return t`Columns`;
+      return t`Columnas`;
     },
     get title() {
       return t`Show column totals`;
@@ -167,7 +167,7 @@ export const settings = {
   },
   "pivot.condense_duplicate_totals": {
     get section() {
-      return t`Columns`;
+      return t`Columnas`;
     },
     get title() {
       return t`Condense duplicate totals`;

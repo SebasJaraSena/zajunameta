@@ -200,7 +200,7 @@ export function SelectEmbedTypePane({
           style={{ display: "flex", alignItems: "center", gap: 4 }}
           href={embeddingUrl}
         >
-          {t`Compare options`} <Icon name="share" aria-hidden />
+          {t`Comparar opciones`} <Icon name="share" aria-hidden />
         </ExternalLink>
       </Group>
     </Stack>

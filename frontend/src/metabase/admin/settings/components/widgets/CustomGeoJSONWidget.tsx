@@ -376,7 +376,7 @@ const EditMap = ({
               })}
               onClick={onLoadGeoJson}
             >
-              {geoJson ? t`Refresh` : t`Load`}
+              {geoJson ? t`Actualizar` : t`Load`}
             </button>
           </div>
         </SettingContainer>

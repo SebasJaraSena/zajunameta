@@ -157,7 +157,7 @@ function EntityItemMenu({
 
     if (onPin) {
       result.push({
-        title: isPinned ? t`Unpin` : t`Pin this`,
+        title: isPinned ? t`Desanclar` : t`Fijar esto`,
         icon: isPinned ? "unpin" : "pin",
         action: onPin,
       });
@@ -165,7 +165,7 @@ function EntityItemMenu({
 
     if (onToggleBookmark) {
       result.push({
-        title: isBookmarked ? t`Remove from bookmarks` : c("Verb").t`Bookmark`,
+        title: isBookmarked ? t`Remove from bookmarks` : c("Verb").t`Favorito`,
         icon: "bookmark",
         action: onToggleBookmark,
       });
@@ -203,7 +203,7 @@ function EntityItemMenu({
 
     if (onMove) {
       result.push({
-        title: t`Move`,
+        title: t`Mover`,
         icon: "move",
         action: onMove,
       });
@@ -211,7 +211,7 @@ function EntityItemMenu({
 
     if (onArchive) {
       result.push({
-        title: t`Move to trash`,
+        title: t`Mover a papelera`,
         icon: "trash",
         action: () =>
           archiveAndTrack({

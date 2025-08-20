@@ -13,17 +13,17 @@ import type { AdminPath, AdminPathKey } from "metabase-types/store";
 export const getAdminPaths: () => AdminPath[] = () => {
   const items: AdminPath[] = [
     {
-      name: t`Settings`,
+      name: t`Configuración`,
       path: "/admin/settings",
       key: "settings",
     },
     {
-      name: t`Databases`,
+      name: t`Bases de datos`,
       path: "/admin/databases",
       key: "databases",
     },
     {
-      name: t`Table Metadata`,
+      name: t`Metadatos de tablas`,
       path: "/admin/datamodel",
       key: "data-model",
     },

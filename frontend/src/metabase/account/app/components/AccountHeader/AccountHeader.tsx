@@ -33,12 +33,12 @@ export const AccountHeader = ({
 
   const tabs = useMemo(
     () => [
-      { name: t`Profile`, value: "/account/profile" },
+      { name: t`Perfil`, value: "/account/profile" },
       ...(hasPasswordChange
-        ? [{ name: t`Password`, value: "/account/password" }]
+        ? [{ name: t`Contraseña`, value: "/account/password" }]
         : []),
-      { name: t`Login History`, value: "/account/login-history" },
-      { name: t`Notifications`, value: "/account/notifications" },
+      { name: t`Historial de inicio de sesión`, value: "/account/login-history" },
+      { name: t`Notificaciones`, value: "/account/notifications" },
     ],
     [hasPasswordChange],
   );

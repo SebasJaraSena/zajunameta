@@ -70,7 +70,7 @@ export const NotebookStepPreview = ({ step, onClose }) => {
             CS.p4,
           )}
         >
-          <Button onClick={refresh}>{t`Refresh`}</Button>
+          <Button onClick={refresh}>{t`Actualizar`}</Button>
         </Flex>
       ) : (
         <QuestionResultLoader question={activeQuestion}>

@@ -89,7 +89,7 @@ export const LogLevelsForm = ({ presets }: Props) => {
             type="reset"
           >{t`Reset to defaults`}</Button>
 
-          <FormSubmitButton label={t`Save`} variant="filled" />
+          <FormSubmitButton label={t`Guardar`} variant="filled" />
         </Flex>
       </Flex>
     </Form>

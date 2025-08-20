@@ -20,7 +20,7 @@ export const UploadTooltip = ({
         <Text
           size="sm"
           c="var(--mb-color-text-white)"
-        >{t`Upload data to ${collection.name}`}</Text>
+        >{t`Subir datos a ${collection.name}`}</Text>
         <Text
           size="sm"
           c="var(--mb-color-text-tertiary)"

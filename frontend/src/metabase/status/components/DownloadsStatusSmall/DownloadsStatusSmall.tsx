@@ -45,10 +45,10 @@ const getStatus = (downloads: Download[]): LongTaskStatus => {
 const getStatusLabel = (status: LongTaskStatus): string => {
   switch (status) {
     case "incomplete":
-      return t`Downloading…`;
+      return t`Descargando...`;
     case "complete":
-      return t`Done!`;
+      return t`Terminado!`;
     case "aborted":
-      return t`Download error`;
+      return t`Error de descarga`;
   }
 };

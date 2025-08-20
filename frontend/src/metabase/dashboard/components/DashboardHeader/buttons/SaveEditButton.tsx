@@ -57,10 +57,10 @@ export const SaveEditButton = () => {
             ButtonsS.ButtonPrimary,
             ButtonsS.ButtonSmall,
           )}
-          normalText={t`Save`}
-          activeText={t`Saving…`}
-          failedText={t`Save failed`}
-          successText={t`Saved`}
+          normalText={t`Guardar`}
+          activeText={t`Guardando…`}
+          failedText={t`Guardar fallido`}
+          successText={t`Guardado`}
           disabled={isSaveDisabled}
         />
       </span>

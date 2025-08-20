@@ -1776,7 +1776,7 @@ msgstr "Tablas cargadas"
 #: enterprise/frontend/src/embedding-sdk/components/public/MetabotQuestion/MetabotChatEmbedding.tsx:95
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/lib/loading-message.ts:6
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/lib/loading-message.ts:8
-#: frontend/src/metabase/plugins/index.ts:230
+#: frontend/src/metabase/plugins/index.ts:244
 msgid "Doing science..."
 msgstr "Haciendo ciencia..."
 
@@ -1985,7 +1985,7 @@ msgstr "Algo ha ido mal"
 #: frontend/src/metabase/public/components/EmbedModal/SelectEmbedTypePane/SelectEmbedTypePane.tsx:203
 #: frontend/src/metabase/query_builder/components/DatasetEditor/DatasetFieldMetadataSidebar/DatasetFieldMetadataSidebar.jsx:80
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorSidebar.tsx:86
-#: frontend/src/metabase/visualizer/components/Footer/Footer.tsx:52
+#: frontend/src/metabase/visualizer/components/Footer/Footer.tsx:54
 msgid "Settings"
 msgstr "Configuración"
 
@@ -2828,7 +2828,7 @@ msgstr "Incluir información de diagnóstico"
 #: frontend/src/metabase/query_builder/components/MoveQuestionModal/MoveQuestionModal.tsx:194
 #: frontend/src/metabase/query_builder/components/SidebarContent/SidebarContent.tsx:66
 #: frontend/src/metabase/query_builder/components/expressions/CombineColumns/CombineColumns.tsx:229
-#: frontend/src/metabase/query_builder/components/expressions/ExpressionWidget.tsx:232
+#: frontend/src/metabase/query_builder/components/expressions/ExpressionWidget.tsx:231
 #: frontend/src/metabase/setup/components/EmbeddingSetup/steps/embeddingSetupSteps.ts:72
 #: frontend/src/metabase/visualizations/components/ChartSettings/ChartSettingsFooter/ChartSettingsFooter.tsx:27
 #: frontend/src/metabase/visualizations/visualizations/IFrameViz/IFrameViz.tsx:101
@@ -5016,6 +5016,7 @@ msgstr "Obtener Respuesta"
 #: frontend/src/metabase/admin/tools/components/ModelCacheRefreshJobs/ModelCacheRefreshJobs.tsx:93
 #: frontend/src/metabase/query_builder/components/RunButton.tsx:69
 #: frontend/src/metabase/querying/notebook/components/NotebookStep/NotebookStepPreview/NotebookStepPreview.jsx:73
+frontend/src/metabase/query_builder/components/view/ViewHeader/components/ViewTitleHeaderRightSide/ViewTitleHeaderRightSide.tsx:133
 msgid "Refresh"
 msgstr "Actualizar"
 
@@ -5625,6 +5626,7 @@ msgstr "Rehacer"
 #: frontend/src/metabase/visualizer/components/Header/Header.tsx:128
 msgid "Add to dashboard"
 msgstr "Añadir a Cuadro de Mando"
+
 
 #: frontend/src/metabase/metadata/pages/DataModel/components/FieldSection/FieldSection.tsx:122
 #: frontend/src/metabase/public/components/EmbedModal/StaticEmbedSetupPane/PreviewModeSelector.tsx:28
@@ -19210,6 +19212,7 @@ msgid "Showing first {0} rows"
 msgstr "Mostrando primeras {0} filas"
 
 #: frontend/src/metabase/query_builder/components/view/QuestionRowCount/QuestionRowCount.tsx:198
+#: frontend/src/metabase/query_builder/components/view/QuestionRowCount/QuestionRowCount.tsx:168
 msgid "Showing first {0}"
 msgstr "Mostrando los primeros {0}"
 

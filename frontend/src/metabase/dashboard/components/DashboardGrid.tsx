@@ -559,7 +559,7 @@ class DashboardGridInner extends Component<
         onSave={this.onVisualizerModalSave}
         onClose={this.onVisualizerModalClose}
         initialState={{ state: visualizerModalStatus.state }}
-        saveLabel={t`Save`}
+        saveLabel={t`Guardar`}
         allowSaveWhenPristine={allowSaveWhenPristine}
       />
     );

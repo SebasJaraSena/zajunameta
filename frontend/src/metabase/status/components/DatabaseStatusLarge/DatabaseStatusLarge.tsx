@@ -45,7 +45,7 @@ const getTitle = (databases: Database[]): string => {
   if (isError) {
     return t`Error syncing`;
   } else if (isDone) {
-    return t`Done!`;
+    return t`Terminado!`;
   } else {
     return t`Syncing…`;
   }

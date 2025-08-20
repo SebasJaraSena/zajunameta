@@ -24,7 +24,7 @@ export const GettingStartedSection = ({
 
   return (
     <div aria-selected={opened} role="tab">
-      <Group
+      {/* <Group
         align="center"
         gap="sm"
         onClick={toggle}
@@ -35,7 +35,7 @@ export const GettingStartedSection = ({
       >
         <SidebarHeading>{t`Getting Started`}</SidebarHeading>
         <Icon name={opened ? "chevrondown" : "chevronright"} size={8} />
-      </Group>
+      </Group> */}
 
       <Collapse
         in={opened}
@@ -43,21 +43,16 @@ export const GettingStartedSection = ({
         role="tabpanel"
         aria-expanded={opened}
       >
-        <PaddedSidebarLink icon="add_data" onClick={onAddDataModalOpen}>
+        {/* <PaddedSidebarLink icon="add_data" onClick={onAddDataModalOpen}>
           {t`Add data`}
-        </PaddedSidebarLink>
-
-        <PaddedSidebarLink
-          icon="learn"
-          url={ONBOARDING_URL}
-          isSelected={isOnboardingPageSelected}
-          onClick={() => trackOnboardingChecklistOpened()}
-        >
+        </PaddedSidebarLink> */}
           {/* eslint-disable-next-line no-literal-metabase-strings -- We only show this to non-whitelabelled instances */}
-          {t`How to use Metabase`}
-        </PaddedSidebarLink>
+        {/* <PaddedSidebarLink icon="learn"url={ONBOARDING_URL}isSelected={isOnboardingPageSelected} onClick={() => trackOnboardingChecklistOpened()}>
 
-        {children}
+          {t`How to use Metabase`}
+        </PaddedSidebarLink> */}
+
+        {/* {children} */}
       </Collapse>
     </div>
   );

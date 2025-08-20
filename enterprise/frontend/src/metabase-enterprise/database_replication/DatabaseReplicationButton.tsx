@@ -43,7 +43,7 @@ export function DatabaseReplicationButton({
         normalText={t`Stop replicating to Data Warehouse`}
         activeText={t`Stopping…`}
         failedText={t`Failed to stop replication`}
-        successText={t`Done!`}
+        successText={t`Terminado!`}
       />
     );
   }
@@ -54,7 +54,7 @@ export function DatabaseReplicationButton({
       normalText={t`Replicate to Data Warehouse`}
       activeText={t`Starting…`}
       failedText={t`Failed to replicate`}
-      successText={t`Done!`}
+      successText={t`Terminado!`}
     />
   );
 }

@@ -14,7 +14,7 @@ const propTypes = {
 };
 
 // AuditTable but with a default search parameter that gets appended to `args`
-const AuditTableWithSearch = ({ placeholder = t`Search`, table, ...props }) => (
+const AuditTableWithSearch = ({ placeholder = t`Buscar`, table, ...props }) => (
   <AuditParameters
     parameters={[
       { key: "search", placeholder, icon: <Icon name="search" size={16} /> },

@@ -40,7 +40,7 @@ const BookmarkToggle = forwardRef(function BookmarkToggle(
   }, []);
 
   const iconName = isBookmarked ? "bookmark_filled" : "bookmark";
-  const label = isBookmarked ? t`Remove from bookmarks` : t`Bookmark`;
+  const label = isBookmarked ? t`Eliminar desde favoritos` : t`Favorito`;
 
   return (
     <Tooltip label={label} position={tooltipPlacement}>

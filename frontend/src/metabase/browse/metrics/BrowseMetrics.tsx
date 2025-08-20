@@ -87,9 +87,9 @@ export function BrowseMetrics() {
             </Title>
             <Group gap="xs">
               {canCreateMetric && (
-                <Tooltip label={t`Create a new metric`} position="bottom">
+                <Tooltip label={t`Crear una nueva métrica`} position="bottom">
                   <ActionIcon
-                    aria-label={t`Create a new metric`}
+                    aria-label={t`Crear una nueva métrica`}
                     size={32}
                     variant="viewHeader"
                     component={ForwardRefLink}

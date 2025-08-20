@@ -52,7 +52,7 @@ export const UserProvisioningFirstEnabledModal = ({
 
         <Flex justify="end">
           <Button variant="filled" onClick={onClose}>
-            {t`Done`}
+            {t`Hecho`}
           </Button>
         </Flex>
       </Stack>
@@ -125,7 +125,7 @@ export const UserProvisioningRegenerateTokenModal = ({
         <Flex justify="end">
           {!regenerateTokenReq.error ? (
             <Button variant="filled" onClick={onClose}>
-              {t`Done`}
+              {t`Hecho`}
             </Button>
           ) : (
             <Button onClick={onClose}>{t`Cancel`}</Button>

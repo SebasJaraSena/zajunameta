@@ -74,7 +74,7 @@ export const TaskModal = ({ params }: Props) => {
           leftSection={<Icon name="download" />}
           variant="filled"
           onClick={handleDownload}
-        >{t`Download`}</Button>
+        >{t`Descargar`}</Button>
       </Flex>
     </ModalContent>
   );

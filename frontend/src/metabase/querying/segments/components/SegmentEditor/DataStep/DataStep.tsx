@@ -58,7 +58,7 @@ export function DataStep({
   };
 
   return (
-    <ClauseStep label={t`Data`}>
+    <ClauseStep label={t`Datos`}>
       <Box>
         {tableId && (
           <Flex maw={300} wrap="nowrap">

@@ -149,7 +149,7 @@ export function MainNavbarView({
               onClick={handleHomeClick}
               url="/"
             >
-              {t`Home`}
+              {t`Inicio`}
             </PaddedSidebarLink>
           </SidebarSection>
 
@@ -259,8 +259,8 @@ function CollectionSectionHeading({
 }: CollectionSectionHeadingProps) {
   return (
     <Flex align="center" justify="space-between">
-      <SidebarHeading>{t`Collections`}</SidebarHeading>
-      <Tooltip label={t`Create a new collection`}>
+      <SidebarHeading>{t`Colecciones`}</SidebarHeading>
+      <Tooltip label={t`Crear una nueva colección`}>
         <ActionIcon
           aria-label={t`Create a new collection`}
           color="var(--mb-color-text-medium)"

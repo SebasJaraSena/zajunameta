@@ -330,7 +330,8 @@ const RowChartVisualization = ({
   );
 };
 
-RowChartVisualization.getUiName = () => t`Row`;
+// RowChartVisualization.getUiName = () => t`Row`;
+
 RowChartVisualization.identifier = "row";
 RowChartVisualization.iconName = "horizontal_bar";
 // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
@@ -424,7 +425,7 @@ RowChartVisualization.checkRenderable = (
 
 RowChartVisualization.hasEmptyState = true;
 
-RowChartVisualization.getUiName = () => t`Row`;
+RowChartVisualization.getUiName = () => t`Fila`;
 
 // eslint-disable-next-line import/no-default-export -- deprecated usage
 export default RowChartVisualization;

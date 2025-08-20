@@ -47,7 +47,7 @@ export const SecretKeyModal = ({
         >{t`Please copy this key and save it somewhere safe. For security reasons, we can't show it to you again.`}</Text>
       </Flex>
       <Group justify="flex-end">
-        <Button onClick={onClose} variant="filled">{t`Done`}</Button>
+        <Button onClick={onClose} variant="filled">{t`Hecho`}</Button>
       </Group>
     </Stack>
   </Modal>

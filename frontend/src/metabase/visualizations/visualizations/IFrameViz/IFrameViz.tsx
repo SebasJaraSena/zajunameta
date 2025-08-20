@@ -98,7 +98,7 @@ export function IFrameViz({
                 style={{ pointerEvents: "all" }}
                 onClick={onTogglePreviewing}
                 onMouseDown={(e) => e.stopPropagation()}
-              >{t`Done`}</Button>
+              >{t`Hecho`}</Button>
             </Box>
           </Group>
           <Box h="100%">

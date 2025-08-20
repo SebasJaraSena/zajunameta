@@ -140,14 +140,14 @@ export const CustomMappingModal = ({
               py="lg"
               pos="sticky"
             >
-              <Button onClick={handleClose}>{t`Cancel`}</Button>
+              <Button onClick={handleClose}>{t`Cancelar`}</Button>
 
               <Button
                 disabled={hasEmptyValues}
                 miw={128}
                 type="submit"
                 variant="primary"
-              >{t`Save`}</Button>
+              >{t`Guardar`}</Button>
             </Group>
           </form>
         </Modal.Body>

@@ -90,13 +90,13 @@ export const EmptyVizState = ({
             <Text>
               {c(
                 "{0} refers to the 'Summarize'. {1} refers to the follow up instructions.",
-              ).jt`Click on ${
+              ).jt`Haga clic en ${
                 isSummarizeSidebarOpen ? (
                   <strong key="summarize">{t`Summarize`}</strong>
                 ) : (
                   <SummarizeCTA onClick={onEditSummary} key="summarize-cta" />
                 )
-              } at the top right corner. ${primaryText}`}
+              } en la esquina superior derecha. ${primaryText}`}
             </Text>
             <Text c="text-light">{secondaryText}</Text>
           </>
@@ -125,6 +125,6 @@ const SummarizeCTA = ({ onClick }: { onClick: () => void }) => (
     onClick={onClick}
     role="button"
   >
-    {t`Summarize`}
+    {t`Resumir`}
   </strong>
 );

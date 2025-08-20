@@ -212,7 +212,7 @@ const TableSectionBase = ({ params, table, onSyncOptionsClick }: Props) => {
                 showIconWithLabel={false}
                 onClick={() => setIsSorting(false)}
                 onRequestWidth={setDoneButtonWidth}
-              >{t`Done`}</ResponsiveButton>
+              >{t`Hecho`}</ResponsiveButton>
             )}
           </Group>
         </Group>

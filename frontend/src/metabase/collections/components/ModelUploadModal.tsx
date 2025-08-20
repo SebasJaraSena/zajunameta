@@ -114,7 +114,7 @@ export function ModelUploadModal({
           onChange={(val) => setUploadMode(val as UploadMode)}
           pl="1px"
         >
-          <Radio label={t`Create a new model`} value={UploadMode.create} />
+          <Radio label={t`Creando un nuevo modelo`} value={UploadMode.create} />
           <Radio
             mt="md"
             label={t`Append to a model`}

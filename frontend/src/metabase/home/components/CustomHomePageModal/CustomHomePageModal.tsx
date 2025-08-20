@@ -89,11 +89,11 @@ export const CustomHomePageModal = ({
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <ModalContent
-        title={t`Customize Homepage`}
+        title={t`Personalizar la página de inicio`}
         onClose={handleClose}
         footer={[
           <Button onClick={handleClose} key="custom-homepage-modal-cancel">
-            {t`Cancel`}
+            {t`Cancelar`}
           </Button>,
           <Button
             primary
@@ -101,11 +101,11 @@ export const CustomHomePageModal = ({
             key="custom-homepage-modal-save"
             disabled={!dashboardId}
           >
-            {t`Save`}
+            {t`Guardar`}
           </Button>,
         ]}
       >
-        <p>{t`Pick a dashboard to serve as the homepage. If people lack permissions to view the selected dashboard, ${applicationName} will redirect them to the default homepage. You can update or reset the homepage at any time in Admin Settings > Settings > General.`}</p>
+        <p>{t`Elige un panel que sirva como página de inicio. Si las personas no tienen permiso para ver el panel seleccionado, Zajuna las redirigirá a la página de inicio predeterminada. Puedes actualizar o restablecer la página de inicio en cualquier momento en Configuración de administrador > Configuración > General.`}</p>
         <DashboardSelector value={dashboardId} onChange={handleChange} />
       </ModalContent>
     </Modal>

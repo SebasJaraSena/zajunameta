@@ -43,7 +43,7 @@ export const Login = ({ params, location }: LoginProps): JSX.Element => {
         lh="1.5rem"
         ta="center"
       >
-        {t`Sign in to ${applicationName}`}
+        {t`Iniciar sesión en ${applicationName}`}
       </Box>
       {selection && selection.Panel && (
         <Box mt="2.5rem">

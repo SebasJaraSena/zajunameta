@@ -17,7 +17,7 @@ export const ExecutionTime = ({ time }: Props) => {
   if (time == null) {
     return null;
   }
-  const label = t`How long this query took`;
+  const label = t`Cuánto duró esta consulta`;
   return (
     <Tooltip label={label}>
       <Flex

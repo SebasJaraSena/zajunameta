@@ -125,7 +125,7 @@ export function Header({
         disabled={!saveButtonEnabled}
         onClick={handleSave}
       >
-        {saveLabel ?? t`Add to dashboard`}
+        {saveLabel ?? t`Añadir a Cuadro de Mando`}
       </Button>
       <ActionIcon
         data-testid="visualizer-close-button"

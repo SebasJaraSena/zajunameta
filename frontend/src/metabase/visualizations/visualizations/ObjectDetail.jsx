@@ -13,7 +13,7 @@ import {
 
 const ObjectDetailProperties = {
   getUiName() {
-    return t`Detail`;
+    return t`Detalles`;
   },
   identifier: "object",
   iconName: "document",

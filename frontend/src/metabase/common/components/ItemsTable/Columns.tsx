@@ -113,7 +113,7 @@ export const Columns = {
     Header: ({
       sortingOptions,
       onSortingOptionsChange,
-      title = t`Type`,
+      title = t`Tipo`,
     }: HeaderProps) => (
       <SortableColumnHeader
         name="model"
@@ -148,7 +148,7 @@ export const Columns = {
         sortingOptions={sortingOptions}
         onSortingOptionsChange={onSortingOptionsChange}
       >
-        {t`Name`}
+        {t`Nombre`}
       </SortableColumnHeader>
     ),
     Cell: ({
@@ -210,7 +210,7 @@ export const Columns = {
       >
         {isTrashed
           ? c("Precedes the name of a user").t`Deleted by`
-          : t`Last edited by`}
+          : t`Última edición por`}
       </SortableColumnHeader>
     ),
     Cell: ({
@@ -258,7 +258,7 @@ export const Columns = {
       >
         {isTrashed
           ? c("Time which the item was deleted").t`Deleted at`
-          : t`Last edited at`}
+          : t`Última edición a las`}
       </SortableColumnHeader>
     ),
     Cell: ({

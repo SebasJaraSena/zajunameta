@@ -39,7 +39,7 @@ import { CustomMapFooter } from "./CustomMapFooter";
 const PIN_MAP_TYPES = new Set(["pin", "heat", "grid"]);
 
 export class Map extends Component {
-  static getUiName = () => t`Map`;
+  static getUiName = () => t`Mapa`;
   static identifier = "map";
   static iconName = "pinmap";
 
@@ -286,20 +286,20 @@ export class Map extends Component {
         !settings["map.latitude_column"]
       ) {
         throw new ChartSettingsError(
-          t`Please select longitude and latitude columns in the chart settings.`,
-          { section: t`Data` },
+          t`Selecciona las columnas de longitud y latitud en la configuración del gráfico.`,
+          { section: t`Datos` },
         );
       }
     } else if (settings["map.type"] === "region") {
       if (!settings["map.region"]) {
-        throw new ChartSettingsError(t`Please select a region map.`, {
-          section: t`Data`,
+        throw new ChartSettingsError(t`Por favor, selecciona un mapa de la región.`, {
+          section: t`Datos`,
         });
       }
       if (!settings["map.dimension"] || !settings["map.metric"]) {
         throw new ChartSettingsError(
-          t`Please select region and metric columns in the chart settings.`,
-          { section: t`Data` },
+          t`Selecciona las columnas de región y métricas en la configuración del gráfico.`,
+          { section: t`Datos` },
         );
       }
     }

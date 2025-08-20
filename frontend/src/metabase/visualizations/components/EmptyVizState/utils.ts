@@ -34,7 +34,7 @@ const emptyVizConfig: Record<SupportedDisplayType, EmptyVizConfig> = {
       return t`Then pick a metric and multiple columns to group by.`;
     },
     get secondaryText() {
-      return t`E.g., Count of orders grouped by Year and Product category`;
+      return t`Por ejemplo, recuento de pedidos agrupados por año y categoría de producto`;
     },
   },
   bar: {
@@ -44,10 +44,10 @@ const emptyVizConfig: Record<SupportedDisplayType, EmptyVizConfig> = {
       );
     },
     get primaryText() {
-      return t`Then pick a metric and a column to group by.`;
+      return t`Luego, seleccione una métrica y una columna para agrupar.`;
     },
     get secondaryText() {
-      return t`E.g., Count of users grouped by Country`;
+      return t`Por ejemplo, recuento de usuarios agrupados por país`;
     },
   },
   combo: {
@@ -97,10 +97,10 @@ const emptyVizConfig: Record<SupportedDisplayType, EmptyVizConfig> = {
       );
     },
     get primaryText() {
-      return t`Then pick one or more metrics and a time column to group by.`;
+      return t`Luego, seleccione una o más métricas y una columna de tiempo para agrupar.`;
     },
     get secondaryText() {
-      return t`E.g., Count of orders grouped by Year`;
+      return t`Por ejemplo, recuento de pedidos agrupados por año`;
     },
   },
   map: {
@@ -124,7 +124,7 @@ const emptyVizConfig: Record<SupportedDisplayType, EmptyVizConfig> = {
       );
     },
     get primaryText() {
-      return t`Then pick a metric and a column to group by.`;
+      return t`Luego, seleccione una métrica y una columna para agrupar.`;
     },
     get secondaryText() {
       return t`E.g., Count of users grouped by Subscription plan`;
@@ -163,7 +163,7 @@ const emptyVizConfig: Record<SupportedDisplayType, EmptyVizConfig> = {
       );
     },
     get primaryText() {
-      return t`Then pick a metric and a column to group by.`;
+      return t`Luego, seleccione una métrica y una columna para agrupar.`;
     },
     get secondaryText() {
       return t`E.g., Count of customers grouped by State`;
@@ -214,7 +214,7 @@ const emptyVizConfig: Record<SupportedDisplayType, EmptyVizConfig> = {
       );
     },
     get primaryText() {
-      return t`Then pick an aggregate metric (such as the Average or Sum) and a time column to group by.`;
+      return t`Luego, seleccione una métrica agregada (como el promedio o la suma) y una columna de tiempo para agrupar.`;
     },
     get secondaryText() {
       return t`E.g. Count of orders grouped by Month`;

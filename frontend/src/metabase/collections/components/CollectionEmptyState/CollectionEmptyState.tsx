@@ -70,7 +70,7 @@ const DefaultCollectionEmptyState = ({
               leftSection={<Icon name="add" />}
               w="12.5rem"
               onClick={() => trackCollectionNewButtonClicked()}
-            >{t`New`}</Button>
+            >{t`Nuevo`}</Button>
           }
           collectionId={collection?.id}
         />

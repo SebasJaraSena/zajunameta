@@ -60,7 +60,7 @@ export const combineColumnsDrill: Drill<Lib.CombineColumnsDrillThruInfo> = ({
   return [
     {
       name: "combine",
-      title: t`Combine columns`,
+      title: t`Combinar columnas`,
       section: "combine",
       icon: "combine",
       buttonType: "horizontal",

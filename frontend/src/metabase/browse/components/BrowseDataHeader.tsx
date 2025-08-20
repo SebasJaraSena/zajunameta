@@ -42,7 +42,7 @@ const LearnAboutDataLink = () => (
       <BrowseHeaderIconContainer>
         <LearnAboutDataIcon size={14} name="reference" />
         <Text size="md" lh="1" fw="bold" ml=".5rem" c="inherit">
-          {t`Learn about our data`}
+          {t`Aprende cosas de nuestros datos`}
         </Text>
       </BrowseHeaderIconContainer>
     </Link>

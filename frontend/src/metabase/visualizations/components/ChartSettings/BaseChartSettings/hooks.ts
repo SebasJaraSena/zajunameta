@@ -8,7 +8,7 @@ import type { BaseChartSettingsProps } from "./types";
 
 // section names are localized
 // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-const DEFAULT_TAB_PRIORITY = [t`Data`];
+const DEFAULT_TAB_PRIORITY = [t`Datos`];
 
 export const useChartSettingsSections = ({
   initial,

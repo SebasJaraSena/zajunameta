@@ -134,8 +134,8 @@ export const ImpersonationModalView = ({
 
               <FormFooter hasTopBorder>
                 <FormErrorMessage inline />
-                <Button type="button" onClick={onCancel}>{t`Cancel`}</Button>
-                <FormSubmitButton title={t`Save`} disabled={!isValid} primary />
+                <Button type="button" onClick={onCancel}>{t`Cancelar`}</Button>
+                <FormSubmitButton title={t`Guardar`} disabled={!isValid} primary />
               </FormFooter>
             </Form>
           )}

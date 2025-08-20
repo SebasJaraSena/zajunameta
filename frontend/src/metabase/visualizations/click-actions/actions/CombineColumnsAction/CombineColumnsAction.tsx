@@ -63,8 +63,8 @@ export const CombineColumnsAction: LegacyDrill = ({ question, clicked }) => {
   return [
     {
       name: "column-combine",
-      title: t`Combine columns`,
-      tooltip: t`Combine columns`,
+      title: t`Combinar columnas`,
+      tooltip: t`Combinar columnas`,
       buttonType: "horizontal",
       icon: "combine",
       default: true,

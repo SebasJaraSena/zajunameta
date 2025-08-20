@@ -165,7 +165,7 @@ function RowCountLabel({
 
 const formatRowCount = (count: number, formatNumber: NumberFormatter) => {
   const countString = formatNumber(count);
-  return ngettext(msgid`${countString} row`, `${countString} rows`, count);
+  return ngettext(msgid`${countString} fila`, `${countString} filas`, count);
 };
 
 function getLimitMessage(
@@ -187,20 +187,20 @@ function getLimitMessage(
   if (hasValidRowCount) {
     // The query has been altered but we might still have the old result set,
     // so show that instead of a generic HARD_ROW_LIMIT
-    return t`Showing ${formatRowCount(result.row_count, formatNumber)}`;
+    return t`Mostrando ${formatRowCount(result.row_count, formatNumber)}`;
   }
 
-  return t`Showing first ${formatRowCount(HARD_ROW_LIMIT, formatNumber)} rows`;
+  return t`Mostrando primeras ${formatRowCount(HARD_ROW_LIMIT, formatNumber)} filas`;
 }
 
 function getRowCountMessage(result: Dataset, formatNumber: NumberFormatter) {
   if (result.data.rows_truncated > 0) {
-    return t`Showing first ${formatRowCount(result.row_count, formatNumber)}`;
+    return t`Mostrando los primeros ${formatRowCount(result.row_count, formatNumber)}`;
   }
   if (result.row_count === HARD_ROW_LIMIT) {
-    return t`Showing first ${formatRowCount(HARD_ROW_LIMIT, formatNumber)} rows`;
+    return t`Showing first ${formatRowCount(HARD_ROW_LIMIT, formatNumber)} filas`;
   }
-  return t`Showing ${formatRowCount(result.row_count, formatNumber)}`;
+  return t`Mostrando ${formatRowCount(result.row_count, formatNumber)}`;
 }
 
 function getDatabaseId(_state: State, { question }: OwnProps & StateProps) {

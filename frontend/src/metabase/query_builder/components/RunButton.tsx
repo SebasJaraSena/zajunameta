@@ -66,7 +66,7 @@ const getButtonLabel = (isRunning: boolean, isDirty: boolean) => {
     return t`Get Answer`;
   }
 
-  return t`Refresh`;
+  return t`Actualizar`;
 };
 
 const getButtonIcon = (isRunning: boolean, isDirty: boolean) => {

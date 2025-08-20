@@ -96,7 +96,7 @@ export const DashCardMenuItems = ({
       items.push({
         key: "MB_DOWNLOAD_RESULTS",
         iconName: "download",
-        label: isDownloadingData ? t`Downloading…` : t`Download results`,
+        label: isDownloadingData ? t`Descargando…` : t`Descarga los resultados`,
         onClick: onDownload,
         disabled: isDownloadingData,
         closeMenuOnClick: false,

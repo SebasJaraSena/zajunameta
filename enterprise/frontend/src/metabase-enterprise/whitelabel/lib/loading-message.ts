@@ -3,19 +3,19 @@ import { t } from "ttag";
 export const LOADING_MESSAGE_BY_SETTING = {
   "doing-science": {
     // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-    name: t`Doing science...`,
+    name: t`Haciendo ciencia...`,
     value: (isSlow?: boolean) =>
-      isSlow ? t`Waiting for results...` : t`Doing science...`,
+      isSlow ? t`Esperando los resultados...` : t`Haciendo ciencia...`,
   },
   "running-query": {
     // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-    name: t`Running query...`,
-    value: (_isSlow?: boolean) => t`Running query...`,
+    name: t`Ejecutando consulta...`,
+    value: (_isSlow?: boolean) => t`Ejecutando consulta...`,
   },
   "loading-results": {
     // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-    name: t`Loading results...`,
-    value: (_isSlow?: boolean) => t`Loading results...`,
+    name: t`Cargando resultados...`,
+    value: (_isSlow?: boolean) => t`Cargando resultados...`,
   },
 };
 

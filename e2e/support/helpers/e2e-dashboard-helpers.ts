@@ -357,7 +357,7 @@ export const closeDashboardSettingsSidebar = () => {
 };
 
 export function openDashboardMenu(option?: string) {
-  dashboardHeader().findByLabelText("Move, trash, and more…").click();
+  dashboardHeader().findByLabelText("Mover, papelera y más…").click();
 
   if (option) {
     popover().findByText(option).click();

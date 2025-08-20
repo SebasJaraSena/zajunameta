@@ -102,7 +102,7 @@ const ValuesSourceTypeModal = ({
           primary
           disabled={!isValidSourceConfig(sourceType, sourceConfig)}
           onClick={onSubmit}
-        >{t`Done`}</Button>,
+        >{t`Hecho`}</Button>,
       ]}
       onClose={onClose}
     >

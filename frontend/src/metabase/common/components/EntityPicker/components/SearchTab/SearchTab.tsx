@@ -46,7 +46,7 @@ export const SearchTab = <
         <Flex align="center" justify="space-between" p="xl">
           <Flex align="center">
             <Text mr={12} fw="bold">
-              {t`Search:`}
+              {t`Buscar:`}
             </Text>
 
             <SegmentedControl

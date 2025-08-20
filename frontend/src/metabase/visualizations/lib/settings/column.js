@@ -335,7 +335,7 @@ export const NUMBER_COLUMN_SETTINGS = {
   },
   decimals: {
     get title() {
-      return t`Number of decimal places`;
+      return t`Número de decimales`;
     },
     widget: "number",
     props: {
@@ -501,9 +501,9 @@ export const tableColumnSettings = {
   //   { fieldRef: ["field", 2, {"source-field": 1}], enabled: true }
   "table.columns": {
     get section() {
-      return t`Columns`;
+      return t`Columnas`;
     },
-    // title: t`Columns`,
+    // title: t`Columnas`,
     widget: ChartSettingTableColumns,
     getHidden: (series, vizSettings) => vizSettings["table.pivot"],
     getValue: ([{ data }], vizSettings) => {

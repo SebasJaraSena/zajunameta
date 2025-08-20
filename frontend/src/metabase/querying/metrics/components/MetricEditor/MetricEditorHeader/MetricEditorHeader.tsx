@@ -34,20 +34,20 @@ export function MetricEditorHeader({
       className={S.root}
       title={question.displayName() ?? t`New metric`}
       buttons={[
-        <Button key="cancel" small onClick={onCancel}>{t`Cancel`}</Button>,
+        <Button key="cancel" small onClick={onCancel}>{t`Cancelar`}</Button>,
         !question.isSaved() ? (
           <Button key="create" primary small onClick={handleCreate}>
-            {t`Save`}
+            {t`Guardar`}
           </Button>
         ) : (
           <ActionButton
             key="save"
             actionFn={handleSave}
             disabled={!isRunnable || !isDirty}
-            normalText={t`Save changes`}
-            activeText={t`Saving…`}
-            failedText={t`Save failed`}
-            successText={t`Saved`}
+            normalText={t`Guardar cambios`}
+            activeText={t`Guardando…`}
+            failedText={t`Error al guardar`}
+            successText={t`Guardado`}
             className={cx(
               ButtonsS.Button,
               ButtonsS.ButtonPrimary,

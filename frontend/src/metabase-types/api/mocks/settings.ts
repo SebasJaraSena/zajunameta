@@ -348,7 +348,7 @@ export const createMockSettings = (
   "show-metabot": true,
   "show-updated-permission-modal": false,
   "show-updated-permission-banner": false,
-  "site-locale": "en",
+  "site-locale": "es",
   "site-name": "Metabae",
   "site-url": "http://localhost:3000",
   "site-uuid": "1234",

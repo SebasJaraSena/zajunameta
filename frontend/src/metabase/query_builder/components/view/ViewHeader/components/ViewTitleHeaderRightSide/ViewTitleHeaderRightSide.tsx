@@ -127,10 +127,10 @@ export function ViewTitleHeaderRightSide({
   const cacheStrategyType = result?.json_query?.["cache-strategy"]?.type;
   const getRunButtonLabel = useCallback(() => {
     if (isRunning) {
-      return t`Cancel`;
+      return t`Cancelar`;
     }
     if ([undefined, "nocache"].includes(cacheStrategyType)) {
-      return `Refresh`;
+      return `Actualizar`;
     }
     return t`Clear cache and refresh`;
   }, [isRunning, cacheStrategyType]);
@@ -260,7 +260,7 @@ export function ViewTitleHeaderRightSide({
               }
             }}
           >
-            {t`Save`}
+            {t`Guardar`}
           </Button>
         </Tooltip>
       )}
@@ -270,6 +270,6 @@ export function ViewTitleHeaderRightSide({
 
 function getDisabledSaveTooltip(isEditable: boolean) {
   if (!isEditable) {
-    return t`You don't have permission to save this question.`;
+    return t`No tienes permiso para guardar esta pregunta.`;
   }
 }

@@ -179,7 +179,7 @@
                                    {:query (mt/mbql-query checkins {:limit 1})})
       :headers
       (select-keys ["Cache-Control" "Content-Disposition" "Content-Type" "Expires" "X-Accel-Buffering"])
-      (update "Content-Disposition" #(some-> % (str/replace #"query_result_.+(\.\w+)"
+      (update "Content-Disposition" #(some-> % (str/replace #"z.+(\.\w+)"
                                                             "query_result_<timestamp>$1")))))
 
 (deftest download-response-headers-test

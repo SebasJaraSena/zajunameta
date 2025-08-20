@@ -70,11 +70,11 @@ const BaseQuestionDownloadPopover = ({
     <Popover opened={isPopoverOpen} onChange={setIsPopoverOpen}>
       <Popover.Target>
         <Flex className={cx(className, { [S.FloatingButton]: floating })}>
-          <Tooltip label={t`Download results`} disabled={isPopoverOpen}>
+          <Tooltip label={t`Descarga los resultados`} disabled={isPopoverOpen}>
             <ActionIcon
               data-testid="question-results-download-button"
               onClick={() => setIsPopoverOpen(!isPopoverOpen)}
-              aria-label={t`Download results`}
+              aria-label={t`Descarga los resultados`}
               variant={variant}
             >
               <Icon name="download" />

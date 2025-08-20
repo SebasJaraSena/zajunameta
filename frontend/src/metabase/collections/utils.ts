@@ -82,7 +82,7 @@ export function isExamplesCollection(collection: Collection): boolean {
 function preparePersonalCollection(c: Collection): Collection {
   return {
     ...c,
-    name: t`Your personal collection`,
+    name: t`Tu colección personal`,//cambio de español a ingles zajuna 
     originalName: c.name,
   };
 }

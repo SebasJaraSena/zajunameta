@@ -14,7 +14,7 @@ export const MoveQuestionsIntoDashboardsInfoModal = ({
   <Modal
     opened
     onClose={onCancel}
-    title={t`Move questions into their dashboards?`}
+    title={t`¿Mover las preguntas a sus paneles de control?`}
     size="35rem"
     withCloseButton={false}
     data-testid="move-questions-into-dashboard-info-modal"
@@ -24,17 +24,17 @@ export const MoveQuestionsIntoDashboardsInfoModal = ({
         icon={<Icon name="collection" c="brand" mb="-2px" />}
         lh="1.5rem"
       >
-        {t`If a question only appears in a single dashboard in this collection, it'll be moved into that dashboard to declutter the collection.`}
+        {t`Si una pregunta solo aparece en un único panel de esta colección, se moverá a ese panel para ordenar la colección.`}
       </List.Item>
       <List.Item icon={<Icon name="group" c="brand" mb="-2px" />} lh="1.5rem">
-        {t`Permissions won’t change.`}
+        {t`Los permisos no cambiarán.`}
       </List.Item>
     </List>
 
     <Flex justify="flex-end" gap="md" pt="1rem">
-      <Button variant="subtle" onClick={onCancel}>{t`Cancel`}</Button>
+      <Button variant="subtle" onClick={onCancel}>{t`Cancelar`}</Button>
       <Button variant="filled" onClick={onConfirm}>
-        {t`Preview the changes`}
+        {t`Previsualizar los cambios`}
       </Button>
     </Flex>
   </Modal>

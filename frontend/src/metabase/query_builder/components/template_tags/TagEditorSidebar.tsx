@@ -83,13 +83,13 @@ export function TagEditorSidebar({
               [CS.disabled]: tags.length === 0,
             })}
             onClick={() => setSection("settings")}
-          >{t`Settings`}</a>
+          >{t`Configuración`}</a>
           <a
             className={cx(ButtonsS.Button, CS.flexFull, ButtonsS.ButtonSmall, {
               [ButtonsS.ButtonActive]: effectiveSection === "help",
             })}
             onClick={() => setSection("help")}
-          >{t`Help`}</a>
+          >{t`Ayuda`}</a>
         </div>
         {effectiveSection === "settings" ? (
           <SettingsPane

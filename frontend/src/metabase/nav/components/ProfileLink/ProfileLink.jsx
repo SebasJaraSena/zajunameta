@@ -73,59 +73,59 @@ function ProfileLink({
 
     return [
       {
-        title: t`Account settings`,
+        title: t`Configuración de la cuenta`,
         icon: null,
         link: Urls.accountSettings(),
         event: `Navbar;Profile Dropdown;Edit Profile`,
       },
       showAdminSettingsItem && {
-        title: t`Admin settings`,
+        title: t`Configuración de administrador`,
         icon: null,
         link: "/admin",
         event: `Navbar;Profile Dropdown;Enter Admin`,
       },
-      {
-        title: t`Keyboard shortcuts`,
-        icon: null,
-        action: () => dispatch(setOpenModal("help")),
-      },
+      // {
+      //   title: t`Keyboard shortcuts`,
+      //   icon: null,
+      //   action: () => dispatch(setOpenModal("help")),
+      // },
+      // {
+      //   separator: true,
+      // },
+      // helpLink.visible && {
+      //   title: t`Help`,
+      //   icon: null,
+      //   link: helpLink.href,
+      //   externalLink: true,
+      //   event: `Navbar;Profile Dropdown;About ${tag}`,
+      // },
+      // showOnboardingLink && {
+      //   // eslint-disable-next-line no-literal-metabase-strings -- This string only shows for non-whitelabeled instances
+      //   title: t`How to use Metabase`,
+      //   icon: null,
+      //   link: "/getting-started",
+      //   event: `Navbar;Profile Dropdown;Getting Started`,
+      // },
+      // {
+      //   title: t`Report an issue`,
+      //   icon: null,
+      //   action: () => {
+      //     trackErrorDiagnosticModalOpened("profile-menu");
+      //     openDiagnostics();
+      //   },
+      //   event: `Navbar;Profile Dropdown;Report Bug`,
+      // },
+      // {
+      //   title: t`About ${applicationName}`,
+      //   icon: null,
+      //   action: () => openModal("about"),
+      //   event: `Navbar;Profile Dropdown;About ${tag}`,
+      // },
       {
         separator: true,
       },
-      helpLink.visible && {
-        title: t`Help`,
-        icon: null,
-        link: helpLink.href,
-        externalLink: true,
-        event: `Navbar;Profile Dropdown;About ${tag}`,
-      },
-      showOnboardingLink && {
-        // eslint-disable-next-line no-literal-metabase-strings -- This string only shows for non-whitelabeled instances
-        title: t`How to use Metabase`,
-        icon: null,
-        link: "/getting-started",
-        event: `Navbar;Profile Dropdown;Getting Started`,
-      },
       {
-        title: t`Report an issue`,
-        icon: null,
-        action: () => {
-          trackErrorDiagnosticModalOpened("profile-menu");
-          openDiagnostics();
-        },
-        event: `Navbar;Profile Dropdown;Report Bug`,
-      },
-      {
-        title: t`About ${applicationName}`,
-        icon: null,
-        action: () => openModal("about"),
-        event: `Navbar;Profile Dropdown;About ${tag}`,
-      },
-      {
-        separator: true,
-      },
-      {
-        title: t`Sign out`,
+        title: t`Cerrar sesión`,
         icon: null,
         action: () => onLogout(),
         event: `Navbar;Profile Dropdown;Logout`,
@@ -143,12 +143,12 @@ function ProfileLink({
     <div>
       <Menu position="bottom-end" shadow="md" width={200}>
         <Menu.Target>
-          <Tooltip label={t`Settings`}>
+          <Tooltip label={t`Configuración`}>
             <ActionIcon
               size="lg"
               variant="subtle"
               c="text-dark"
-              aria-label={t`Settings`}
+              aria-label={t`Configuración`}
             >
               <Icon name="gear" size={16} />
             </ActionIcon>

@@ -26,7 +26,7 @@ export const databaseManagementPermissionAllowedPathGetter = (
 export const getDataColumns = (subject: PermissionSubject) => {
   const allSubjectsColumns = [
     {
-      name: t`Download results`,
+      name: t`Descarga los resultados`,
       hint: t`Downloads of native queries are only allowed if a group has download permissions for the entire database.`,
     },
     {

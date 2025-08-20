@@ -185,15 +185,15 @@ function SnippetForm({
                   icon="archive"
                   borderless
                   onClick={handleArchive}
-                >{t`Archive`}</Button>
+                >{t`Archivar`}</Button>
               )}
               <FormErrorMessage inline />
             </Flex>
             <Flex align="center" justify="center" gap="sm">
               {!!onCancel && (
-                <Button type="button" onClick={onCancel}>{t`Cancel`}</Button>
+                <Button type="button" onClick={onCancel}>{t`Cancelar`}</Button>
               )}
-              <FormSubmitButton title={t`Save`} disabled={!dirty} primary />
+              <FormSubmitButton title={t`Guardar`} disabled={!dirty} primary />
             </Flex>
           </Flex>
         </Form>

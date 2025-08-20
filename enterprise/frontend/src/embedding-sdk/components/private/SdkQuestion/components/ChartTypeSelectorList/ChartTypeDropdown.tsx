@@ -98,7 +98,7 @@ export const ChartTypeDropdown = ({ ...menuProps }: ChartTypeDropdownProps) => {
           </Menu.Item>
         ))}
 
-        <Menu.Label>{t`Other charts`}</Menu.Label>
+        <Menu.Label>{t`Otros gráficos`}</Menu.Label>
         {nonsensibleItems.map(({ iconName, label, value }, index) => (
           <Menu.Item
             key={`${value}/${index}`}

@@ -100,7 +100,7 @@ export const ModelsTable = ({
               style: { paddingInlineEnd: ".5rem" },
             }}
           >
-            {t`Name`}
+            {t`Nombre`}
           </SortableColumnHeader>
           <SortableColumnHeader
             name="collection"
@@ -113,7 +113,7 @@ export const ModelsTable = ({
               },
             }}
           >
-            <Ellipsified>{t`Collection`}</Ellipsified>
+            <Ellipsified>{t`Colección`}</Ellipsified>
           </SortableColumnHeader>
           <SortableColumnHeader
             name="description"
@@ -124,7 +124,7 @@ export const ModelsTable = ({
               },
             }}
           >
-            {t`Description`}
+            {t`Descripción`}
           </SortableColumnHeader>
           <Columns.RightEdge.Header />
         </tr>

@@ -48,7 +48,7 @@ export function seriesSetting({ readDependencies = [], def } = {}) {
     },
     display: {
       widget: "segmentedControl",
-      title: t`Display type`,
+      title: t`Tipo de visualización`,
       props: {
         options: [
           { value: "line", icon: "line" },
@@ -205,7 +205,7 @@ export function seriesSetting({ readDependencies = [], def } = {}) {
       getHidden: ([{ card }], settings, { isDashboard }) =>
         !isDashboard || card?.display === "waterfall",
       getSection: (series, settings, { isDashboard }) =>
-        isDashboard ? t`Display` : t`Style`,
+        isDashboard ? t`Visualización` : t`Style`,
       objectName: "series",
       getObjects: (series, settings) => series,
       getObjectKey: keyForSingleSeries,

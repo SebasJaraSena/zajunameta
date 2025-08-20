@@ -90,9 +90,9 @@ export const MetabotChatEmbedding = ({
     setMessage(value);
   };
 
-  const inputPlaceholder = t`Tell me to do something, or ask a question`;
+  const inputPlaceholder = t`Dime que haga algo, o haz una pregunta`;
   const placeholder = metabot.isDoingScience
-    ? t`Doing science...`
+    ? t`Haciendo ciencia...`
     : inputPlaceholder;
 
   function cancelRequest() {

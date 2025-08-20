@@ -35,8 +35,8 @@ export const DashboardInfoButton = (
 
   return (
     <ToolbarButton
-      aria-label={t`More info`}
-      tooltipLabel={t`More info`}
+      aria-label={t`Más info`}
+      tooltipLabel={t`Más info`}
       icon="info"
       isActive={isShowingDashboardInfoSidebar}
       disabled={isShowingDashboardInfoSidebar}

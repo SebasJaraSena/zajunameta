@@ -60,7 +60,7 @@ export const BrowseNavSection = ({
           className={CS.cursorPointer}
         >
           <SidebarHeading>
-            {c("A noun, shown in the sidebar as a navigation link").t`Data`}
+            {c("A noun, shown in the sidebar as a navigation link").t`Datos`}
           </SidebarHeading>
           <Icon name={opened ? "chevrondown" : "chevronright"} size={8} />
         </Group>
@@ -76,7 +76,7 @@ export const BrowseNavSection = ({
               onAddDataModalOpen();
             }}
           >
-            {t`Add`}
+            {t`Añadir`}
           </Button>
         )}
       </Flex>
@@ -96,10 +96,11 @@ export const BrowseNavSection = ({
               onClick={onItemSelect}
               aria-label={t`Browse databases`}
             >
-              {t`Databases`}
+              {t`Bases de datos`}
             </PaddedSidebarLink>
           )}
 
+        {/* cambio de idioma  */}
         {(!isEmbeddingIframe || entityTypes.includes("model")) && (
           <PaddedSidebarLink
             icon="model"
@@ -108,7 +109,7 @@ export const BrowseNavSection = ({
             onClick={onItemSelect}
             aria-label={t`Browse models`}
           >
-            {t`Models`}
+            {t`Modelos`}
           </PaddedSidebarLink>
         )}
 
@@ -120,7 +121,7 @@ export const BrowseNavSection = ({
             onClick={onItemSelect}
             aria-label={t`Browse metrics`}
           >
-            {t`Metrics`}
+            {t`Métricas`}
           </PaddedSidebarLink>
         )}
       </Collapse>

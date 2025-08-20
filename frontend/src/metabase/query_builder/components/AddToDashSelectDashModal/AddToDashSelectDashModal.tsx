@@ -27,7 +27,7 @@ const getTitle = ({ type }: Card) => {
   }
 
   if (type === "question") {
-    return t`Add this question to a dashboard`;
+    return t`Añadir esta pregunta a un cuadro de mando`;
   }
 
   throw new Error(`Unknown card.type: ${type}`);

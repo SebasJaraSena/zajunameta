@@ -65,7 +65,7 @@ interface TableState {
 }
 
 class Table extends Component<TableProps, TableState> {
-  static getUiName = () => t`Table`;
+  static getUiName = () => t`Tabla`;
   static identifier = "table";
   static iconName = "table2";
   static canSavePng = false;
@@ -91,7 +91,7 @@ class Table extends Component<TableProps, TableState> {
     ...columnSettings({ hidden: true }),
     "table.pagination": {
       get section() {
-        return t`Columns`;
+        return t`Columnas`;
       },
       get title() {
         return t`Paginate results`;
@@ -103,7 +103,7 @@ class Table extends Component<TableProps, TableState> {
     },
     "table.row_index": {
       get section() {
-        return t`Columns`;
+        return t`Columnas`;
       },
       get title() {
         return t`Show row index`;
@@ -114,7 +114,7 @@ class Table extends Component<TableProps, TableState> {
     },
     "table.pivot": {
       get section() {
-        return t`Columns`;
+        return t`Columnas`;
       },
       get title() {
         return t`Pivot table`;
@@ -142,7 +142,7 @@ class Table extends Component<TableProps, TableState> {
 
     "table.pivot_column": {
       get section() {
-        return t`Columns`;
+        return t`Columnas`;
       },
       get title() {
         return t`Pivot column`;
@@ -169,7 +169,7 @@ class Table extends Component<TableProps, TableState> {
     },
     "table.cell_column": {
       get section() {
-        return t`Columns`;
+        return t`Columnas`;
       },
       get title() {
         return t`Cell column`;
@@ -202,7 +202,7 @@ class Table extends Component<TableProps, TableState> {
     "table.column_widths": {},
     [DataGrid.COLUMN_FORMATTING_SETTING]: {
       get section() {
-        return t`Conditional Formatting`;
+        return t`Formato condicional`;
       },
       widget: ChartSettingsTableFormatting,
       default: [],

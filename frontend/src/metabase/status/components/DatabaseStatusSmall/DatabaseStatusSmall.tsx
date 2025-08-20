@@ -47,7 +47,7 @@ const getStatusLabel = (status: InitialSyncStatus): string => {
     case "incomplete":
       return t`Syncing database…`;
     case "complete":
-      return t`Done!`;
+      return t`Terminado!`;
     case "aborted":
       return t`Error syncing`;
   }

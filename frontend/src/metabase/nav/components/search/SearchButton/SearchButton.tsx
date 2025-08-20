@@ -29,7 +29,7 @@ export const SearchButton = () => {
     );
   } else {
     return (
-      <Tooltip label={`${t`Search...`} (${METAKEY}+k)`}>
+      <Tooltip label={`${t`Buscar...`} (${METAKEY}+k)`}>
         <Button
           h="36px"
           w="240px"
@@ -43,7 +43,7 @@ export const SearchButton = () => {
           }}
           aria-label="Search"
         >
-          {t`Search`}
+          {t`Buscar`}
         </Button>
       </Tooltip>
     );

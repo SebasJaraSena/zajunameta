@@ -28,8 +28,8 @@ export const AddColumnButton = memo(function AddColumnButton({
         w={23}
         h={23}
         leftSection={<Icon name="add" />}
-        title={t`Add column`}
-        aria-label={t`Add column`}
+        title={t`Añadir columna`}
+        aria-label={t`Añadir columna`}
         onClick={onClick}
       />
     </div>

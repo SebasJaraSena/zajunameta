@@ -63,7 +63,7 @@ function SidebarContent({
   onBack,
   onClose,
   onDone,
-  doneButtonText = t`Done`,
+  doneButtonText = t`Hecho`,
   footer = onDone ? (
     <ViewButton
       className={SidebarContentS.FooterButton}

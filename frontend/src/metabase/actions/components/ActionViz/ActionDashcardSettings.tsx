@@ -116,7 +116,7 @@ export function ActionDashcardSettings({
         )}
         <ModalActions>
           <Button primary onClick={onClose} disabled={isFormInvalid}>
-            {t`Done`}
+            {t`Hecho`}
           </Button>
         </ModalActions>
       </ActionSettingsRight>

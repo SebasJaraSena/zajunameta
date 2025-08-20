@@ -412,7 +412,7 @@ function renderItemIcon(item: Item) {
           </Box>
         }
       >
-        <span aria-label={t`More info`}>
+        <span aria-label={t`Más info`}>
           <PopoverDefaultIcon name="empty" size={18} />
           <PopoverHoverTarget name="info_filled" size={18} />
         </span>

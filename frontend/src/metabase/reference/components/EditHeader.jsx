@@ -45,7 +45,7 @@ const EditHeader = ({
             type="button"
             disabled={submitting}
           >
-            {t`Save`}
+            {t`Guardar`}
           </button>
         </RevisionMessageModal>
       ) : (
@@ -59,7 +59,7 @@ const EditHeader = ({
           type="submit"
           disabled={submitting}
         >
-          {t`Save`}
+          {t`Guardar`}
         </button>
       )}
     </div>

@@ -48,7 +48,7 @@ export function QuestionNotebookButton({
         setQueryBuilderMode(isShowingNotebook ? "view" : "notebook")
       }
     >
-      {isShowingNotebook ? t`Visualization` : t`Editor`}
+      {isShowingNotebook ? t`Visualización` : t`Editor`}
     </Button>
   );
 }

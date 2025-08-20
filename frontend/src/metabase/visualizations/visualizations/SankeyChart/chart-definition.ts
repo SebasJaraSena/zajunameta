@@ -27,9 +27,9 @@ export const SETTINGS_DEFINITIONS = {
   ...columnSettings({ hidden: true }),
   ...dimensionSetting("sankey.source", {
     // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-    section: t`Data`,
+    section: t`Datos`,
     // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-    title: t`Source`,
+    title: t`Fuente`,
     showColumnSetting: true,
     persistDefault: true,
     dashboard: false,
@@ -39,9 +39,9 @@ export const SETTINGS_DEFINITIONS = {
   }),
   ...dimensionSetting("sankey.target", {
     // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-    section: t`Data`,
+    section: t`Datos`,
     // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-    title: t`Target`,
+    title: t`Objetivo`,
     showColumnSetting: true,
     persistDefault: true,
     dashboard: false,
@@ -51,9 +51,9 @@ export const SETTINGS_DEFINITIONS = {
   }),
   ...metricSetting("sankey.value", {
     // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-    section: t`Data`,
+    section: t`Datos`,
     // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-    title: t`Value`,
+    title: t`Valor`,
     showColumnSetting: true,
     persistDefault: true,
     dashboard: false,
@@ -63,26 +63,26 @@ export const SETTINGS_DEFINITIONS = {
   }),
   "sankey.node_align": {
     // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-    section: t`Display`,
+    section: t`Visualización`,
     // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-    title: t`Align`,
+    title: t`Alinear`,
     widget: "select",
     default: "left",
     props: {
       options: [
         {
           // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-          name: t`Left`,
+          name: t`Izquierda`,
           value: "left",
         },
         {
           // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-          name: t`Right`,
+          name: t`Derecha`,
           value: "right",
         },
         {
           // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-          name: t`Justify`,
+          name: t`Justificar`,
           value: "justify",
         },
       ],
@@ -90,27 +90,27 @@ export const SETTINGS_DEFINITIONS = {
   },
   "sankey.show_edge_labels": {
     // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-    section: t`Display`,
+    section: t`Visualización`,
     // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-    title: t`Show edge labels`,
+    title: t`Mostrar etiquetas de borde`,
     widget: "toggle",
     default: false,
     inline: true,
   },
   "sankey.label_value_formatting": {
     // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-    section: t`Display`,
+    section: t`Visualización`,
     // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-    title: t`Auto formatting`,
+    title: t`Formato automático`,
     widget: "segmentedControl",
     props: {
       options: [
         // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-        { name: t`Auto`, value: "auto" },
+        { name: t`Automático`, value: "auto" },
         // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-        { name: t`Compact`, value: "compact" },
+        { name: t`Compacto`, value: "compact" },
         // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-        { name: t`Full`, value: "full" },
+        { name: t`Lleno`, value: "full" },
       ],
     },
     getHidden: (
@@ -123,19 +123,19 @@ export const SETTINGS_DEFINITIONS = {
   },
   "sankey.edge_color": {
     // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-    section: t`Display`,
+    section: t`Visualización`,
     // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-    title: t`Edge color`,
+    title: t`Color del borde`,
     widget: "segmentedControl",
     default: "source",
     props: {
       options: [
         // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-        { name: t`Gray`, value: "gray" },
+        { name: t`Gris`, value: "gray" },
         // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-        { name: t`Source`, value: "source" },
+        { name: t`Fuente`, value: "source" },
         // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-        { name: t`Target`, value: "target" },
+        { name: t`Objetivo`, value: "target" },
       ],
     },
   },
@@ -146,7 +146,7 @@ export const SANKEY_CHART_DEFINITION = {
   identifier: "sankey",
   iconName: "sankey",
   // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-  noun: t`sankey chart`,
+  noun: t`gráfico de sankey`,
   minSize: getMinSize("sankey"),
   defaultSize: getDefaultSize("sankey"),
   isSensible: (data: DatasetData) => {
@@ -195,14 +195,14 @@ export const SANKEY_CHART_DEFINITION = {
     }
     const sankeyColumns = getSankeyChartColumns(cols, settings);
     if (!sankeyColumns) {
-      throw new ChartSettingsError(t`Which columns do you want to use?`, {
+      throw new ChartSettingsError(t`¿Qué columnas quieres usar?`, {
         section: `Data`,
       });
     }
 
     if (sankeyColumns.source.index === sankeyColumns.target.index) {
       throw new ChartSettingsError(
-        t`Select two different columns for source and target to create a flow.`,
+        t`Seleccione dos columnas diferentes para origen y destino para crear un flujo.`,
         { section: "Data" },
       );
     }
@@ -215,7 +215,7 @@ export const SANKEY_CHART_DEFINITION = {
       )
     ) {
       throw new ChartSettingsError(
-        t`Selected columns create circular flows. Try picking different columns that flow in one direction.`,
+        t`Las columnas seleccionadas crean flujos circulares. Prueba a seleccionar columnas diferentes que fluyan en una dirección.`,
         { section: "Data" },
       );
     }
@@ -229,7 +229,7 @@ export const SANKEY_CHART_DEFINITION = {
 
     if (nodesCount > MAX_SANKEY_NODES) {
       throw new ChartSettingsError(
-        t`Sankey chart doesn't support more than ${MAX_SANKEY_NODES} unique nodes.`,
+        t`El gráfico Sankey no admite más de ${MAX_SANKEY_NODES} nodos únicos.`,
       );
     }
   },

@@ -92,7 +92,7 @@ export const BugReportModal = ({
                   miw="fit-content"
                   onClick={() => setIsDetailsVisible(!isDetailsVisible)}
                 >
-                  {isDetailsVisible ? t`Done` : t`Edit`}
+                  {isDetailsVisible ? t`Hecho` : t`Edit`}
                 </Button>
               </Flex>
               {isDetailsVisible && (

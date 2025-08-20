@@ -38,7 +38,7 @@ export const SummarizeDropdown = ({
   const aggregationItems = useSummarizeData();
 
   const label = match(aggregationItems.length)
-    .with(0, () => t`Summarize`)
+    .with(0, () => t`Resumir`)
     .with(1, () => t`1 summary`)
     .otherwise((value) => jt`${value} summaries`);
 

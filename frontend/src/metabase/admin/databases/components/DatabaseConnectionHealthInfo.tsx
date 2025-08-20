@@ -27,7 +27,7 @@ export const DatabaseConnectionHealthInfo = ({
         { isUninitialized: true },
         { isFetching: true },
         { isLoading: true },
-        () => ({ message: t`Loading...`, color: "text-light" }) as const,
+        () => ({ message: t`Cargando...`, color: "text-light" }) as const,
       )
       .with(
         { currentData: { status: "error" } },

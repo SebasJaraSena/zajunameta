@@ -54,7 +54,7 @@ export function SimpleDataPickerView({
           type="search"
           leftSection={<Icon name="search" size={16} aria-hidden />}
           mb="sm"
-          placeholder={t`Search…`}
+          placeholder={t`Buscar…`}
           onChange={(e) => setSearchText(e.target.value ?? "")}
         />
       ) : (

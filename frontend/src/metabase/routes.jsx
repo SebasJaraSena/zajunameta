@@ -161,20 +161,23 @@ export const getRoutes = (store) => {
             }}
           />
 
-          <Route
+          {/* <Route
             path="getting-started"
             title={t`Getting Started`}
             component={CanAccessOnboarding}
           >
             <IndexRoute component={Onboarding} />
+          </Route> */}
+          <Route path="getting-started">
+            <Redirect to="/" />
           </Route>
 
-          <Route path="search" title={t`Search`} component={SearchApp} />
+          <Route path="search" title={t`cxxxxx`} component={SearchApp} />
           {/* Send historical /archive route to trash - can remove in v52 */}
           <Redirect from="archive" to="trash" replace />
           <Route
             path="trash"
-            title={t`Trash`}
+            title={t`Papelera`}
             component={TrashCollectionLanding}
           />
 

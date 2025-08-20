@@ -83,7 +83,7 @@ const SidebarCacheForm_Base = ({
             shouldAllowInvalidation
             shouldShowName={false}
             onReset={onBack}
-            buttonLabels={{ save: t`Save`, discard: t`Cancel` }}
+            buttonLabels={{ save: t`Guardar`, discard: t`Cancelar` }}
             isInSidebar
           />
         </DelayedLoadingAndErrorWrapper>

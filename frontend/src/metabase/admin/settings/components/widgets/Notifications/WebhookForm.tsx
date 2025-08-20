@@ -340,7 +340,7 @@ export const WebhookForm = ({
                 pl="0"
                 leftSection={<Icon name="trash" />}
                 onClick={onDelete}
-              >{t`Delete this destination`}</Button>
+              >{t`Eliminar este destino`}</Button>
             )}
             <Group>
               <Button onClick={onCancel}>{t`Cancel`}</Button>

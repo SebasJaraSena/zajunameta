@@ -39,7 +39,7 @@ export const LoadingAndErrorWrapper = forwardRef<
     noBackground = true,
     noWrapper = false,
     showSpinner = true,
-    getLoadingMessages = () => [t`Loading...`],
+    getLoadingMessages = () => [t`Guardando...`],
     messageInterval = 6000,
     renderError: renderCustomError,
     style,

@@ -12,8 +12,8 @@ export const CollectionNewButton = () => {
   return (
     <ToolbarButton
       icon="add_folder"
-      aria-label={t`Create a new collection`}
-      tooltipLabel={t`Create a new collection`}
+      aria-label={t`Crear una nueva colección`}
+      tooltipLabel={t`Crear una nueva colección`}
       onClick={() => {
         trackNewCollectionFromHeaderInitiated();
         dispatch(setOpenModal("collection"));

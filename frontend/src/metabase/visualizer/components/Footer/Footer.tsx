@@ -51,7 +51,7 @@ export function Footer({ className }: { className?: string }) {
 
             setVizSettingsSidebarOpen((isOpen) => !isOpen);
           }}
-        >{t`Settings`}</Button>
+        >{t`Configuración`}</Button>
       )}
     </Flex>
   );

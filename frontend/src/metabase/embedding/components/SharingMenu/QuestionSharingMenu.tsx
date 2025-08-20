@@ -47,7 +47,7 @@ export function QuestionSharingMenu({ question }: { question: Question }) {
 
     return (
       <SharingButton
-        tooltip={t`You must save this question before sharing`}
+        tooltip={t`Debes guardar esta pregunta antes de compartir`}
         onClick={openSaveQuestionModal}
       />
     );

@@ -217,7 +217,7 @@ export function CombineColumns({
                   variant="subtle"
                   onClick={handleRowAdd}
                 >
-                  {t`Add column`}
+                  {t`Añadir columna`}
                 </Button>
               </Flex>
             </Stack>
@@ -226,7 +226,7 @@ export function CombineColumns({
 
             <Flex align="center" gap="md" justify="end">
               <Button type="submit" variant="filled" disabled={!isValid}>
-                {t`Done`}
+                {t`Hecho`}
               </Button>
             </Flex>
           </Stack>

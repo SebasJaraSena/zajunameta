@@ -260,7 +260,7 @@ const DatabaseFormFooter = ({
             <FormSubmitButton
               disabled={!isDirty}
               variant="filled"
-              label={isNew ? t`Save` : t`Save changes`}
+              label={isNew ? t`Guardar ` : t`Guardar cambios`}
             />
           </Flex>
         </Flex>

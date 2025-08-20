@@ -59,7 +59,7 @@ const degrees = (radians) => (radians * 180) / Math.PI;
 const segmentIsValid = (s) => !isNaN(s.min) && !isNaN(s.max);
 
 export default class Gauge extends Component {
-  static getUiName = () => t`Gauge`;
+  static getUiName = () => t`Indicador`;
   static identifier = "gauge";
   static iconName = "gauge";
 
@@ -118,7 +118,7 @@ export default class Gauge extends Component {
     },
     "gauge.segments": {
       get section() {
-        return t`Display`;
+        return t`Visualización`;
       },
       get title() {
         return t`Gauge ranges`;

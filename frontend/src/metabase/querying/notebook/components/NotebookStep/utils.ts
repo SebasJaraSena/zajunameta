@@ -36,7 +36,7 @@ type StepUIItem = {
 const STEPS: Record<NotebookStepType, StepUIItem> = {
   data: {
     get title() {
-      return t`Data`;
+      return t`Datos`;
     },
     color: () => color("brand"),
     Step: DataStep,
@@ -66,7 +66,7 @@ const STEPS: Record<NotebookStepType, StepUIItem> = {
   },
   filter: {
     get title() {
-      return t`Filter`;
+      return t`Filtro`;
     },
     icon: "filter",
     priority: 10,
@@ -76,7 +76,7 @@ const STEPS: Record<NotebookStepType, StepUIItem> = {
   },
   summarize: {
     get title() {
-      return t`Summarize`;
+      return t`Resumir`;
     },
     icon: "sum",
     priority: 5,

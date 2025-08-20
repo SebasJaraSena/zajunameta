@@ -120,7 +120,7 @@ export function MetricsTable({
               style: { paddingInlineEnd: ".5rem" },
             }}
           >
-            {t`Name`}
+            {t`Nombre`}
           </SortableColumnHeader>
           <SortableColumnHeader
             name="collection"
@@ -133,7 +133,7 @@ export function MetricsTable({
               },
             }}
           >
-            {t`Collection`}
+            {t`Colección`}
           </SortableColumnHeader>
           <SortableColumnHeader
             name="description"
@@ -146,7 +146,7 @@ export function MetricsTable({
               },
             }}
           >
-            {t`Description`}
+            {t`Descripción`}
           </SortableColumnHeader>
           <ColumnHeader
             style={{
@@ -353,7 +353,7 @@ function MenuCell({ metric }: { metric?: MetricResult }) {
     } else {
       actions.push({
         key: "add-bookmark",
-        title: c("Verb").t`Bookmark`,
+        title: c("Verb").t`Favoritos`,
         icon: "bookmark",
         async action() {
           await createBookmark({
@@ -368,7 +368,7 @@ function MenuCell({ metric }: { metric?: MetricResult }) {
     if (metric.collection) {
       actions.push({
         key: "open-collection",
-        title: t`Open collection`,
+        title: t`Abrir colección`,
         icon: "folder",
         action() {
           dispatch(push(Urls.collection(metric.collection)));
@@ -379,7 +379,7 @@ function MenuCell({ metric }: { metric?: MetricResult }) {
     if (metric.can_write) {
       actions.push({
         key: "move-to-trash",
-        title: t`Move to trash`,
+        title: t`Mover a papelera`,
         icon: "trash",
         action() {
           dispatch(

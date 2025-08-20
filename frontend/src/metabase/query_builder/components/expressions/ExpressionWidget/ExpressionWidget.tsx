@@ -111,13 +111,13 @@ export const ExpressionWidget = (props: ExpressionWidgetProps) => {
       [
         expressionMode === "expression" &&
           hasCombinations(availableColumns) && {
-            name: t`Combine columns`,
+            name: t`Combinar columnas`,
             icon: "combine",
             action: () => setIsCombiningColumns(true),
           },
         expressionMode === "expression" &&
           hasExtractions(query, availableColumns) && {
-            name: t`Extract columns`,
+            name: t`Extraer columnas`,
             icon: "arrow_split",
             action: () => setIsExtractingColumn(true),
           },
@@ -228,7 +228,7 @@ export const ExpressionWidget = (props: ExpressionWidgetProps) => {
               onClick={handleSubmit}
               size="xs"
             >
-              {initialName || initialClause ? t`Update` : t`Done`}
+              {initialName || initialClause ? t`Actualizar` : t`Hecho`}
             </Button>
           </Flex>
         </Flex>

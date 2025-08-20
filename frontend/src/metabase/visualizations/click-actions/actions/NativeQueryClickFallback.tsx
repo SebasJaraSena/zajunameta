@@ -35,7 +35,7 @@ export const NativeQueryClickFallback: LegacyDrill = ({ question }) => {
                 dispatch(setUIControls({ modal: MODAL_TYPES.SAVE }))
               }
             >
-              {t`Save`}
+              {t`Guardar`}
             </Button>
           )} this question to drill-through.`}
         </Flex>

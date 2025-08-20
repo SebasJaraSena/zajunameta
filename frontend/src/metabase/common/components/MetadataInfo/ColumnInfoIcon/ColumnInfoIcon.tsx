@@ -36,7 +36,7 @@ export function QueryColumnInfoIcon({
   return (
     <>
       <QueryColumnInfoPopover {...props}>
-        <span aria-label={t`More info`}>
+        <span aria-label={t`Más info`}>
           <PopoverDefaultIcon
             className={className}
             name={icon ?? getColumnIcon(column)}
@@ -72,7 +72,7 @@ export function TableColumnInfoIcon({
 }: TableColumnInfoIconProps) {
   return (
     <TableColumnInfoPopover {...props} field={field}>
-      <span aria-label={t`More info`}>
+      <span aria-label={t`Más info`}>
         <PopoverDefaultIcon
           className={className}
           name={icon}

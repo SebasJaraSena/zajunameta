@@ -18,7 +18,7 @@ import type {
 Object.assign(
   ComboChart,
   getCartesianChartDefinition({
-    getUiName: () => t`Combo`,
+    getUiName: () => t`Combinación`,
     identifier: "combo",
     iconName: "lineandbar",
     // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045

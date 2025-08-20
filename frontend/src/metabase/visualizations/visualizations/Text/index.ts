@@ -40,7 +40,7 @@ const TextWrapper = Object.assign(Text, {
     },
     "text.align_vertical": {
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-      section: t`Display`,
+      section: t`Visualización`,
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
       title: t`Vertical Alignment`,
       widget: "select",
@@ -58,7 +58,7 @@ const TextWrapper = Object.assign(Text, {
     },
     "text.align_horizontal": {
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-      section: t`Display`,
+      section: t`Visualización`,
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
       title: t`Horizontal Alignment`,
       widget: "select",
@@ -76,7 +76,7 @@ const TextWrapper = Object.assign(Text, {
     },
     "dashcard.background": {
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-      section: t`Display`,
+      section: t`Visualización`,
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
       title: t`Show background`,
       dashboard: true,

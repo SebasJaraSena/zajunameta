@@ -108,7 +108,7 @@ export const CleanupCollectionBulkActions = ({
         <BulkActionButton
           disabled={false}
           onClick={handleBulkArchive}
-        >{t`Move to trash`}</BulkActionButton>
+        >{t`Mover a papelera`}</BulkActionButton>
       </BulkActionBar>
     </>
   );

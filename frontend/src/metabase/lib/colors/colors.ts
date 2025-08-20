@@ -6,9 +6,9 @@
 // frontend/src/metabase/styled-components/theme/css-variables.ts
 export const colors = {
   //brand: "#509EE3",
-  brand: "#04324d",//color iconos,
+  brand: "#04324d",//color iconos zajuna,
   summarize: "#88BF4D",
-  filter: "#7172AD",
+  filter: "#04324d",//color icono hover zajuna admin
   accent0: "#509EE3",
   accent1: "#88BF4D",
   accent2: "#A989C5",
@@ -20,7 +20,7 @@ export const colors = {
   "accent-gray": "#F3F3F4", // Orion 10 (--mb-base-color-orion-10)
   "accent-gray-light": "#FAFAFB", // Orion 5 (--mb-base-color-orion-5)
   "accent-gray-dark": "#DCDFE0", // Orion 20 (--mb-base-color-orion-20)
-  "admin-navbar": "#7172AD",
+  "admin-navbar": "#04324d",//color navbar admin zajuna,
   white: "#FFFFFF",
   success: "#84BB4C",
   // --mb-base-color-lobster-50

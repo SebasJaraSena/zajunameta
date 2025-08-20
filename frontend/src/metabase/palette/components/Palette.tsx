@@ -53,7 +53,7 @@ const PaletteContainer = () => {
     <PaletteCard ref={ref}>
       <Box w="100%" p="1.5rem" pb="0">
         <PaletteInput
-          defaultPlaceholder={t`Search for anything or jump somewhere…`}
+          defaultPlaceholder={t`Busca algo o ves a alguna parte…`}
         />
       </Box>
       <PaletteResults />

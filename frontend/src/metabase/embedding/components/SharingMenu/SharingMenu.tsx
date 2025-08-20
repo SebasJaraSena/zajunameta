@@ -19,8 +19,8 @@ export function SharingMenu({
         <ToolbarButton
           icon="share"
           data-testid="sharing-menu-button"
-          tooltipLabel={tooltip ?? t`Sharing`}
-          aria-label={tooltip ?? t`Sharing`}
+          tooltipLabel={tooltip ?? t`Compartir`}
+          aria-label={tooltip ?? t`Compartir`}
           disabled={hasNoChildren}
         />
       </Menu.Target>
@@ -46,8 +46,8 @@ export const SharingButton = forwardRef(function _SharingButton(
       ref={ref}
       icon="share"
       data-testid="sharing-menu-button"
-      tooltipLabel={tooltip ?? t`Sharing`}
-      aria-label={tooltip ?? t`Sharing`}
+      tooltipLabel={tooltip ?? t`Compartir`}
+      aria-label={tooltip ?? t`Compartir`}
       onClick={onClick}
       disabled={disabled}
     />

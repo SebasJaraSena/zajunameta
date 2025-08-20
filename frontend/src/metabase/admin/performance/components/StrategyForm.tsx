@@ -75,12 +75,12 @@ export const StrategyForm = ({
   isInSidebar = false,
   buttonLabels = isInSidebar
     ? {
-        save: t`Save`,
-        discard: t`Cancel`,
+        save: t`Guardar`,
+        discard: t`Cancelar`,
       }
     : {
-        save: t`Save changes`,
-        discard: t`Discard changes`,
+        save: t`Guardar cambios`,
+        discard: t`Discartar cambios`,
       },
 }: {
   targetId: number | null;

@@ -54,7 +54,7 @@ export const SaveButton = ({ ...buttonProps }: SaveButtonProps = {}) => {
 
   return (
     <ToolbarButton
-      label={t`Save`}
+      label={t`Guardar`}
       disabled={!isSaveButtonEnabled}
       {...buttonProps}
     />

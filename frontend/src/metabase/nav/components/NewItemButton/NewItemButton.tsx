@@ -17,10 +17,10 @@ const NewItemButton = ({ collectionId }: NewItemButtonProps) => {
         <NewButton
           primary
           icon="add"
-          aria-label={t`New`}
+          aria-label={t`Nuevo`}
           onClick={() => trackAppNewButtonClicked()}
         >
-          <NewButtonText>{t`New`}</NewButtonText>
+          <NewButtonText>{t`Nuevo`}</NewButtonText>
         </NewButton>
       }
       collectionId={collectionId}

@@ -6,7 +6,7 @@ import { getDefaultDimensionLabel } from "metabase/visualizations/lib/settings/g
 export const ROW_CHART_SETTINGS = {
   "stackable.stack_type": {
     get section() {
-      return t`Display`;
+      return t`Visualización`;
     },
     get title() {
       return t`Stacking`;
@@ -40,7 +40,7 @@ export const ROW_CHART_SETTINGS = {
   ...GRAPH_GOAL_SETTINGS,
   "graph.x_axis.scale": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get group() {
       return t`Y-axis`;
@@ -57,7 +57,7 @@ export const ROW_CHART_SETTINGS = {
   },
   "graph.y_axis.scale": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get title() {
       return t`Scale`;
@@ -78,7 +78,7 @@ export const ROW_CHART_SETTINGS = {
   },
   "graph.x_axis.axis_enabled": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get group() {
       return t`Y-axis`;
@@ -108,7 +108,7 @@ export const ROW_CHART_SETTINGS = {
   },
   "graph.y_axis.axis_enabled": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get title() {
       return t`Show lines and marks`;
@@ -138,7 +138,7 @@ export const ROW_CHART_SETTINGS = {
   },
   "graph.y_axis.auto_range": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get group() {
       return t`X-axis`;
@@ -153,7 +153,7 @@ export const ROW_CHART_SETTINGS = {
   },
   "graph.y_axis.min": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get group() {
       return t`X-axis`;
@@ -169,7 +169,7 @@ export const ROW_CHART_SETTINGS = {
   },
   "graph.y_axis.max": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get group() {
       return t`X-axis`;
@@ -185,7 +185,7 @@ export const ROW_CHART_SETTINGS = {
   },
   "graph.x_axis.labels_enabled": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get group() {
       return t`Y-axis`;
@@ -200,7 +200,7 @@ export const ROW_CHART_SETTINGS = {
   },
   "graph.x_axis.title_text": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get title() {
       return t`Label`;
@@ -219,7 +219,7 @@ export const ROW_CHART_SETTINGS = {
   },
   "graph.y_axis.labels_enabled": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get title() {
       return t`Show label`;
@@ -234,7 +234,7 @@ export const ROW_CHART_SETTINGS = {
   },
   "graph.y_axis.title_text": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get title() {
       return t`Label`;
@@ -264,7 +264,7 @@ export const ROW_CHART_SETTINGS = {
   },
   "graph.show_values": {
     get section() {
-      return t`Display`;
+      return t`Visualización`;
     },
     get title() {
       return t`Show values on data points`;
@@ -277,7 +277,7 @@ export const ROW_CHART_SETTINGS = {
   },
   "graph.label_value_formatting": {
     get section() {
-      return t`Display`;
+      return t`Visualización`;
     },
     get title() {
       return t`Value labels formatting`;

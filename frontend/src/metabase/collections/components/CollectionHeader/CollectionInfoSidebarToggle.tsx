@@ -18,8 +18,8 @@ export const CollectionInfoSidebarToggle = ({
     <>
       <ToolbarButton
         icon="info"
-        aria-label={t`More info`}
-        tooltipLabel={t`More info`}
+        aria-label={t`Más info`}
+        tooltipLabel={t`Más info`}
         onClick={() => setShowSidesheet((open) => !open)}
       />
       {showSidesheet && (

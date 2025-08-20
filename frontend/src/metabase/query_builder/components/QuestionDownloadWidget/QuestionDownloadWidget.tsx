@@ -104,7 +104,7 @@ export const QuestionDownloadWidget = ({
     result.data != null && result.data.rows_truncated != null;
   const limitedDownloadSizeText =
     PLUGIN_FEATURE_LEVEL_PERMISSIONS.getDownloadWidgetMessageOverride(result) ??
-    t`The maximum download size is 1 million rows.`;
+    t`El tamaño máximo de descarga es de 1 millón de filas.`;
 
   const handleFormatChange = (newFormat: ExportFormat) => {
     setUserSelectedFormat(newFormat);
@@ -148,7 +148,7 @@ export const QuestionDownloadWidget = ({
 
   return (
     <Stack {...stackProps} w={336} p="0.75rem" gap="lg">
-      <Title order={5}>{t`Download data`}</Title>
+      <Title order={5}>{t`Descargar datos`}</Title>
       <ExportSettingsWidget
         selectedFormat={format}
         formats={formats}
@@ -201,7 +201,7 @@ export const QuestionDownloadWidget = ({
             size="sm"
             c="text-medium"
             mb="1rem"
-          >{t`Your answer has a large number of rows so it could take a while to download.`}</Text>
+          >{t`Tu respuesta tiene una gran cantidad de filas, por lo que podría tardar un tiempo en descargarse.`}</Text>
 
           {format === "xlsx" && (
             <Text size="sm" c="text-medium">
@@ -217,7 +217,7 @@ export const QuestionDownloadWidget = ({
         variant="filled"
         onClick={handleDownload}
         disabled={disabled}
-      >{t`Download`}</Button>
+      >{t`Descargar`}</Button>
     </Stack>
   );
 };

@@ -47,7 +47,7 @@ const CollectionTimeline = ({
   return (
     <CollectionTimelineAcknowledgement>
       {({ ack }) => (
-        <Tooltip label={t`Events`} position="bottom">
+        <Tooltip label={t`Eventos`} position="bottom">
           <div>
             <CollectionHeaderButton
               as={Link}

@@ -40,7 +40,7 @@ const getUniqueFunnelRows = (rows: FunnelRow[]) => {
 };
 
 Object.assign(Funnel, {
-  getUiName: () => t`Funnel`,
+  getUiName: () => t`Embudo`,
   identifier: "funnel",
   iconName: "funnel",
   noHeader: true,
@@ -68,9 +68,9 @@ Object.assign(Funnel, {
     }
     if (!settings["funnel.dimension"] || !settings["funnel.metric"]) {
       throw new ChartSettingsError(
-        t`Which fields do you want to use?`,
-        { section: t`Data` },
-        t`Choose fields`,
+        t`¿Qué campos quieres usar?`,
+        { section: t`Datos` },
+        t`Seleccionar campos`,
       );
     }
   },
@@ -81,9 +81,9 @@ Object.assign(Funnel, {
     ...columnSettings({ hidden: true }),
     ...dimensionSetting("funnel.dimension", {
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#5504
-      section: t`Data`,
+      section: t`Datos`,
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#5504
-      title: t`Column with steps`,
+      title: t`Columna con pasos`,
       dashboard: false,
       useRawSeries: true,
       showColumnSetting: true,
@@ -96,7 +96,7 @@ Object.assign(Funnel, {
     },
     "funnel.rows": {
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#5504
-      section: t`Data`,
+      section: t`Datos`,
       widget: ChartSettingOrderedSimple,
       getValue: (
         [
@@ -153,10 +153,10 @@ Object.assign(Funnel, {
     },
     ...metricSetting("funnel.metric", {
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#5504
-      section: t`Data`,
+      section: t`Datos`,
 
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#5504
-      title: t`Measure`,
+      title: t`Medida`,
 
       dashboard: false,
       useRawSeries: true,
@@ -164,10 +164,10 @@ Object.assign(Funnel, {
     }),
     "funnel.type": {
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#5504
-      title: t`Funnel type`,
+      title: t`Tipo de embudo`,
 
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#5504
-      section: t`Display`,
+      section: t`Visualización`,
 
       widget: "select",
       props: {

@@ -30,30 +30,30 @@ export const UploadInfoModal = ({
       styles={{ header: { marginBottom: "1rem" } }}
     >
       <InfoModalContainer>
-        <NewBadge>{t`New`}</NewBadge>
-        <InfoModalTitle>{t`Upload CSVs to ${applicationName}`}</InfoModalTitle>
+        <NewBadge>{t`Nuevo`}</NewBadge>
+        <InfoModalTitle>{t`Subir CSVS a ${applicationName}`}</InfoModalTitle>
         {isAdmin ? (
           <>
             <InfoModalBody>
               <p>
-                {t`Team members will be able to upload CSV files and work with them just like any other data source.`}
+                {t`Los miembros del equipo podrán subir archivos CSV y trabajar con ellos como cualquier otra fuente de datos.`}
               </p>
               <p>
-                {t`You'll be able to pick the default database where the data should be stored when enabling the feature.`}
+                {t`Podrás elegir la base de datos predeterminada donde se deben almacenar los datos al habilitar la función.`}
               </p>
             </InfoModalBody>
             <Button as={Link} to="/admin/settings/uploads" primary role="link">
-              {t`Go to setup`}
+              {t`Ir a la configuración`}
             </Button>
           </>
         ) : (
           <>
             <InfoModalBody>
               <p>
-                {t`You'll need to ask your admin to enable this feature to get started. Then, you'll be able to upload CSV files and work with them just like any other data source.`}
+                {t`Necesitarás pedirle a tu administrador que habilite esta función para comenzar. Luego, podrás subir archivos CSV y trabajar con ellos como cualquier otra fuente de datos.`}
               </p>
             </InfoModalBody>
-            <Button onClick={onClose}>{t`Got it`}</Button>
+            <Button onClick={onClose}>{t`Entendido`}</Button>
           </>
         )}
       </InfoModalContainer>

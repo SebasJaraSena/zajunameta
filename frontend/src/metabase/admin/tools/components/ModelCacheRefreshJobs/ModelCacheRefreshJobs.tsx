@@ -90,7 +90,7 @@ function JobTableItem({ job, onRefresh }: JobTableItemProps) {
       <td>{job.creator?.common_name || t`Automatic`}</td>
       <td>
         {checkCanRefreshModelCache(job) && (
-          <Tooltip label={t`Refresh`}>
+          <Tooltip label={t`Actualizar`}>
             <IconButtonContainer onClick={onRefresh}>
               <Icon name="refresh" />
             </IconButtonContainer>

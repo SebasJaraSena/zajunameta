@@ -534,7 +534,7 @@ export const Onboarding = () => {
                         className={S.inlineIcon}
                       />
                     )} ${(
-                      <b key="sharing">{t`Sharing`}</b>
+                      <b key="sharing">{t`Compartir`}</b>
                     )} icon on the top bar, then click on ${(
                       <Icon
                         key="subscription-icon"

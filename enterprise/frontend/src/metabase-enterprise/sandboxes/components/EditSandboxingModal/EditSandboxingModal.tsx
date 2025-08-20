@@ -266,7 +266,7 @@ const EditSandboxingModal = ({
         )}
 
         <div className={cx(CS.flex, CS.alignCenter, CS.justifyEnd)}>
-          <Button onClick={onCancel}>{t`Cancel`}</Button>
+          <Button onClick={onCancel}>{t`Cancelar`}</Button>
           <ActionButton
             error={error}
             className={CS.ml1}
@@ -274,7 +274,7 @@ const EditSandboxingModal = ({
             primary
             disabled={!canSave}
           >
-            {t`Save`}
+            {t`Guardar`}
           </ActionButton>
         </div>
         {error && (

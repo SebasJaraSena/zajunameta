@@ -71,7 +71,7 @@ export const DataStep = ({
           query={query}
           stageIndex={stageIndex}
           table={table}
-          title={t`Pick your starting data`}
+          title={t`Elige tus datos iniciales`}
           canChangeDatabase
           hasMetrics
           isDisabled={readOnly}

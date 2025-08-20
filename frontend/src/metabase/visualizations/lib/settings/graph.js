@@ -76,10 +76,10 @@ export const GRAPH_DATA_SETTINGS = {
   }),
   "graph.dimensions": {
     get section() {
-      return t`Data`;
+      return t`Datos`;
     },
     get title() {
-      return t`X-axis`;
+      return t`Eje X`;
     },
     widget: "fields",
     getMarginBottom: (series, vizSettings) =>
@@ -136,7 +136,7 @@ export const GRAPH_DATA_SETTINGS = {
   },
   "graph.series_order": {
     get section() {
-      return t`Data`;
+      return t`Datos`;
     },
     widget: ChartSettingSeriesOrder,
     marginBottom: "1rem",
@@ -183,10 +183,10 @@ export const GRAPH_DATA_SETTINGS = {
   },
   "graph.metrics": {
     get section() {
-      return t`Data`;
+      return t`Datos`;
     },
     get title() {
-      return t`Y-axis`;
+      return t`Eje Y`;
     },
     widget: "fields",
     isValid: (series, vizSettings) => {
@@ -238,10 +238,10 @@ export const GRAPH_DATA_SETTINGS = {
 export const GRAPH_BUBBLE_SETTINGS = {
   "scatter.bubble": {
     get section() {
-      return t`Data`;
+      return t`Datos`;
     },
     get title() {
-      return t`Bubble size`;
+      return t`Tamaño de burbuja`;
     },
     widget: "field",
     isValid: (series, vizSettings) =>
@@ -282,7 +282,7 @@ export const LINE_SETTINGS = {
 export const STACKABLE_SETTINGS = {
   "stackable.stack_type": {
     get section() {
-      return t`Display`;
+      return t`Visualización`;
     },
     get title() {
       return t`Stacking`;
@@ -349,7 +349,7 @@ export const TOOLTIP_SETTINGS = {
   },
   "graph.tooltip_columns": {
     get section() {
-      return t`Display`;
+      return t`Visualización`;
     },
     get title() {
       return t`Additional tooltip columns`;
@@ -385,7 +385,7 @@ export const TOOLTIP_SETTINGS = {
 export const GRAPH_TREND_SETTINGS = {
   "graph.show_trendline": {
     get section() {
-      return t`Display`;
+      return t`Visualización`;
     },
     get title() {
       return t`Trend line`;
@@ -409,7 +409,7 @@ export const GRAPH_TREND_SETTINGS = {
 export const GRAPH_DISPLAY_VALUES_SETTINGS = {
   "graph.show_values": {
     get section() {
-      return t`Display`;
+      return t`Visualización`;
     },
     get title() {
       return t`Show values on data points`;
@@ -422,7 +422,7 @@ export const GRAPH_DISPLAY_VALUES_SETTINGS = {
   },
   "graph.label_value_frequency": {
     get section() {
-      return t`Display`;
+      return t`Visualización`;
     },
     get title() {
       return t`Values to show`;
@@ -470,7 +470,7 @@ export const GRAPH_DISPLAY_VALUES_SETTINGS = {
   },
   "graph.show_stack_values": {
     get section() {
-      return t`Display`;
+      return t`Visualización`;
     },
     get title() {
       return t`Stack values to show`;
@@ -508,7 +508,7 @@ export const GRAPH_DISPLAY_VALUES_SETTINGS = {
         },
         {
           get name() {
-            return t`Both`;
+            return t`Ambos`;
           },
           value: "all",
         },
@@ -519,10 +519,10 @@ export const GRAPH_DISPLAY_VALUES_SETTINGS = {
   },
   "graph.label_value_formatting": {
     get section() {
-      return t`Display`;
+      return t`Visualización`;
     },
     get title() {
-      return t`Auto formatting`;
+      return t`Formato automático`;
     },
     widget: "segmentedControl",
     getHidden: (series, vizSettings) => {
@@ -651,7 +651,7 @@ export const GRAPH_AXIS_SETTINGS = {
   },
   "graph.x_axis.scale": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get group() {
       return t`X-axis`;
@@ -675,7 +675,7 @@ export const GRAPH_AXIS_SETTINGS = {
   },
   "graph.y_axis.scale": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get title() {
       return t`Scale`;
@@ -696,7 +696,7 @@ export const GRAPH_AXIS_SETTINGS = {
   },
   "graph.x_axis.axis_enabled": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get group() {
       return t`X-axis`;
@@ -744,7 +744,7 @@ export const GRAPH_AXIS_SETTINGS = {
   },
   "graph.y_axis.axis_enabled": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get title() {
       return t`Show lines and tick marks`;
@@ -774,7 +774,7 @@ export const GRAPH_AXIS_SETTINGS = {
   },
   "graph.y_axis.unpin_from_zero": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get group() {
       return t`Y-axis`;
@@ -800,7 +800,7 @@ export const GRAPH_AXIS_SETTINGS = {
   },
   "graph.y_axis.auto_range": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get group() {
       return t`Y-axis`;
@@ -815,7 +815,7 @@ export const GRAPH_AXIS_SETTINGS = {
   },
   "graph.y_axis.min": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get group() {
       return t`Y-axis`;
@@ -831,7 +831,7 @@ export const GRAPH_AXIS_SETTINGS = {
   },
   "graph.y_axis.max": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get group() {
       return t`Y-axis`;
@@ -847,7 +847,7 @@ export const GRAPH_AXIS_SETTINGS = {
   },
   "graph.y_axis.auto_split": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get group() {
       return t`Y-axis`;
@@ -863,7 +863,7 @@ export const GRAPH_AXIS_SETTINGS = {
   },
   "graph.x_axis.labels_enabled": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get group() {
       return t`X-axis`;
@@ -878,7 +878,7 @@ export const GRAPH_AXIS_SETTINGS = {
   },
   "graph.x_axis.title_text": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get title() {
       return t`Label`;
@@ -897,7 +897,7 @@ export const GRAPH_AXIS_SETTINGS = {
   },
   "graph.y_axis.labels_enabled": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get title() {
       return t`Show label`;
@@ -912,7 +912,7 @@ export const GRAPH_AXIS_SETTINGS = {
   },
   "graph.y_axis.split_number": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get group() {
       return t`Y-axis`;
@@ -928,7 +928,7 @@ export const GRAPH_AXIS_SETTINGS = {
   },
   "graph.y_axis.title_text": {
     get section() {
-      return t`Axes`;
+      return t`Ejes`;
     },
     get title() {
       return t`Label`;

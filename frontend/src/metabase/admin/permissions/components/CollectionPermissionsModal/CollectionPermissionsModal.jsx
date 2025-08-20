@@ -138,7 +138,7 @@ const CollectionPermissionsModal = ({
             ]),
         <Button key="cancel" onClick={onClose}>{t`Cancel`}</Button>,
         <Button key="save" primary disabled={!isDirty} onClick={handleSave}>
-          {t`Save`}
+          {t`Guardar`}
         </Button>,
       ]}
     >

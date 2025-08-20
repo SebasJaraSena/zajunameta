@@ -69,7 +69,7 @@
   (defn trash-collection
     "Get the (memoized) trash collection"
     []
-    (assoc (get-trash) :name (deferred-tru "Trash"))))
+    (assoc (get-trash) :name (deferred-tru "Papelera"))))
 
 (defn trash-collection-id
   "The ID representing the Trash collection."
@@ -112,7 +112,7 @@
   query without `:model/Collection`)."
   [collection]
   (cond-> collection
-    (is-trash? collection) (assoc :name (tru "Trash"))))
+    (is-trash? collection) (assoc :name (tru "Papelera"))))
 
 (t2/define-after-select :model/Collection [collection]
   (maybe-localize-trash-name collection))

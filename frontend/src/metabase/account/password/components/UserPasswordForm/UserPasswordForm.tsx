@@ -77,26 +77,26 @@ export const UserPasswordForm = ({
           <FormTextInput
             name="old_password"
             type="password"
-            label={t`Current password`}
-            placeholder={t`Shhh...`}
+            label={t`Contraseña actual`}
+            placeholder={t`Contraseña actual`}
             autoComplete="current-password"
           />
           <FormTextInput
             name="password"
             type="password"
-            label={t`Create a password`}
-            placeholder={t`Shhh...`}
+            label={t`Nueva contraseña`}
+            placeholder={t`Nueva contraseña`}
             autoComplete="new-password"
           />
           <FormTextInput
             name="password_confirm"
             type="password"
-            label={t`Confirm your password`}
-            placeholder={t`Shhh... but one more time so we get it right`}
+            label={t`Confirma tu contraseña`}
+            placeholder={t`Confirmar contraseña`}
             autoComplete="new-password"
           />
           <Group>
-            <FormSubmitButton label={t`Save`} variant="filled" />
+            <FormSubmitButton label={t`Guardar`} variant="filled" />
           </Group>
           <FormErrorMessage />
         </Stack>

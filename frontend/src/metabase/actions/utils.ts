@@ -318,15 +318,15 @@ export const getSubmitButtonLabel = (action: WritebackAction): string => {
 
   if (action.type === "implicit") {
     if (action.kind === "row/delete") {
-      return t`Delete`;
+      return t`Eliminar`;
     }
 
     if (action.kind === "row/update") {
-      return t`Update`;
+      return t`Actualizar`;
     }
 
     if (action.kind === "row/create") {
-      return t`Save`;
+      return t`Guardar`;
     }
   }
 

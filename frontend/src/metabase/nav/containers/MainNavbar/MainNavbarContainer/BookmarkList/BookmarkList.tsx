@@ -96,7 +96,7 @@ const BookmarkItem = ({
         onClick={onSelect}
         right={
           <button onClick={onRemove}>
-            <Tooltip label={t`Remove bookmark`} position="bottom">
+            <Tooltip label={t`Eliminar favorito`} position="bottom">
               <Icon name={iconName} />
             </Tooltip>
           </button>
@@ -151,7 +151,7 @@ const BookmarkList = ({
   return (
     <CollapseSection
       aria-labelledby={headerId}
-      header={<SidebarHeading id={headerId}>{t`Bookmarks`}</SidebarHeading>}
+      header={<SidebarHeading id={headerId}>{t`Favoritos`}</SidebarHeading>}
       initialState={initialState}
       iconPosition="right"
       iconSize={8}

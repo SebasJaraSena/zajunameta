@@ -58,7 +58,7 @@ export const ViewHeaderContainer = (props) => {
             }}
           >
             <Flex direction="column" gap="xs">
-              <ViewHeading>{t`Pick your starting data`}</ViewHeading>
+              <ViewHeading>{t`Elige tus datos iniciales`}</ViewHeading>
             </Flex>
           </ViewSection>
         )}

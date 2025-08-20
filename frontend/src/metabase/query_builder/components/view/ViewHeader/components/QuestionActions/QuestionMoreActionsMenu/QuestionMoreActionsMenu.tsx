@@ -103,7 +103,7 @@ export const QuestionMoreActionsMenu = ({
 
   const label = isDashboardQuestion
     ? t`Move, duplicate, and more…`
-    : t`Move, trash, and more…`;
+    : t`Mover, papelera y más…`;
 
   const menuItems = [
     (isStandaloneQuestion || isMetric) && (
@@ -113,7 +113,7 @@ export const QuestionMoreActionsMenu = ({
         onClick={() => onOpenModal(MODAL_TYPES.ADD_TO_DASHBOARD)}
         data-testid={ADD_TO_DASH_TESTID}
       >
-        {t`Add to dashboard`}
+        {t`Añadir a Cuadro de Mando`}
       </Menu.Item>
     ),
     ...PLUGIN_MODERATION.useQuestionMenuItems(question, reload),
@@ -149,7 +149,7 @@ export const QuestionMoreActionsMenu = ({
         data-testid={TURN_INTO_DATASET_TESTID}
         onClick={handleTurnToModel}
       >
-        {t`Turn into a model`}
+        {t`Convertir en un modelo`}
       </Menu.Item>
     ),
     hasCollectionPermissions && isModel && (
@@ -179,7 +179,7 @@ export const QuestionMoreActionsMenu = ({
           data-testid={MOVE_TESTID}
           onClick={() => onOpenModal(MODAL_TYPES.MOVE)}
         >
-          {c("A verb, not a noun").t`Move`}
+          {c("A verb, not a noun").t`Mover`}
         </Menu.Item>
       </Fragment>
     ),
@@ -190,7 +190,7 @@ export const QuestionMoreActionsMenu = ({
         data-testid={CLONE_TESTID}
         onClick={() => onOpenModal(MODAL_TYPES.CLONE)}
       >
-        {c("A verb, not a noun").t`Duplicate`}
+        {c("A verb, not a noun").t`Duplicar`}
       </Menu.Item>
     ),
     hasCollectionPermissions && (
@@ -201,7 +201,7 @@ export const QuestionMoreActionsMenu = ({
           data-testid={ARCHIVE_TESTID}
           onClick={() => onOpenModal(MODAL_TYPES.ARCHIVE)}
         >
-          {t`Move to trash`}
+          {t`Mover a papelera`}
         </Menu.Item>
       </Fragment>
     ),

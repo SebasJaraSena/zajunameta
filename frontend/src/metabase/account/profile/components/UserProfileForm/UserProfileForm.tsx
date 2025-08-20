@@ -65,32 +65,32 @@ const UserProfileForm = ({
             <>
               <FormInput
                 name="first_name"
-                title={t`First name`}
+                title={t`Nombre`}
                 placeholder={t`Johnny`}
                 nullable
               />
               <FormInput
-                name="last_name"
-                title={t`Last name`}
+                name="Last_name"
+                title={t`Apellido(s)`}
                 placeholder={t`Appleseed`}
                 nullable
               />
               <FormInput
                 name="email"
                 type="email"
-                title={t`Email`}
-                placeholder="nicetoseeyou@email.com"
+                title={t`Correo`}
+                placeholder="test@sena.edu.co"
               />
             </>
           )}
-          <div data-testid="user-locale-select">
+          {/* <div data-testid="user-locale-select">
             <FormSelect
               name="locale"
               title={t`Language`}
               options={localeOptions}
               description={<CommunityLocalizationNotice isAdminView={false} />}
             />
-          </div>
+          </div> */}
           <FormSubmitButton title={t`Update`} disabled={!dirty} primary />
           <FormErrorMessage />
         </Form>

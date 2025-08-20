@@ -59,7 +59,7 @@ export const LeftViewFooterButtonGroup = () => {
           className={S.Button}
           onClick={handleVizTypeClick}
         >
-          {t`Visualization`}
+          {t`Visualización`}
         </ViewButton>
         <ViewButton
           className={S.Button}

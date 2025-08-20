@@ -55,7 +55,7 @@ function CreateCollectionModal({
       size="lg"
       data-testid="new-collection-modal"
       padding="40px"
-      title={t`New collection`}
+      title={t`Nueva colección`}
       closeOnEscape={false}
     >
       <CreateCollectionForm

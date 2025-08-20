@@ -149,7 +149,7 @@ export const useCommandPalette = ({
       return [
         {
           id: "search-is-loading",
-          name: t`Loading...`,
+          name: t`Guardando...`,
           keywords: searchQuery,
           section: "search",
           disabled: true,
@@ -159,7 +159,7 @@ export const useCommandPalette = ({
       return [
         {
           id: "search-error",
-          name: t`Could not load search results`,
+          name: t`No se pudieron cargar los resultados de búsqueda`,
           section: "search",
           disabled: true,
         },
@@ -169,7 +169,7 @@ export const useCommandPalette = ({
         return [
           {
             id: `search-results-metadata`,
-            name: t`View and filter all ${searchResults?.total} results`,
+            name: t`Ver y filtrar todos los ${searchResults?.total} Resultados`,
             section: "search",
             keywords: debouncedSearchText,
             icon: "link" as IconName,
@@ -298,7 +298,7 @@ export const useCommandPalette = ({
       })
       .map(([slug, section]) => ({
         id: `admin-settings-${slug}`,
-        name: `${t`Settings`} - ${section.name}`,
+        name: `${t`Configuración`} - ${section.name}`,
         icon: "gear",
         perform: () => {},
         section: "admin",

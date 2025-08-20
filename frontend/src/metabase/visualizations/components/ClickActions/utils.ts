@@ -67,22 +67,22 @@ export const getSectionTitle = (
 ): string | null => {
   switch (sectionKey) {
     case "filter":
-      return actions[0]?.sectionTitle ?? t`Filter by this value`;
+      return actions[0]?.sectionTitle ?? t`Filtrar por este valor`;
 
     case "sum":
-      return t`Summarize`;
+      return t`Resumir`;
 
     case "auto-popover":
-      return t`Automatic insights…`;
+      return t`Perspectivas automáticas…`;
 
     case "breakout-popover":
-      return t`Break out by…`;
+      return t`Desglosar por…`;
 
     case "extract-popover":
-      return t`Select a part to extract`;
+      return t`Seleccionar una parte para extraer`;
 
     case "new-column":
-      return t`New column`;
+      return t`Nueva columna`;
   }
 
   return null;

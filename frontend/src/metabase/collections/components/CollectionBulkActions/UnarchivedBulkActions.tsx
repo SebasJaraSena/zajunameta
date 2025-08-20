@@ -74,7 +74,7 @@ export const UnarchivedBulkActions = ({
       <BulkActionButton
         disabled={!canArchive}
         onClick={handleBulkArchive}
-      >{t`Move to trash`}</BulkActionButton>
+      >{t`Mover a papelera`}</BulkActionButton>
     </>
   );
 };

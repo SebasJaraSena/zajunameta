@@ -103,13 +103,13 @@ const DataSectionBase = ({ field }: Props) => {
   };
 
   return (
-    <TitledSection title={t`Data`}>
-      <LabeledValue label={t`Field name`}>
+    <TitledSection title={t`Datos`}>
+      <LabeledValue label={t`Nombre del campo`}>
         {getFieldRawName(field)}
       </LabeledValue>
 
       <Stack gap={0}>
-        <LabeledValue label={t`Data type`}>{field.database_type}</LabeledValue>
+        <LabeledValue label={t`Tipo de dato`}>{field.database_type}</LabeledValue>
 
         {canCoerceFieldType(field) && (
           <>
@@ -126,7 +126,7 @@ const DataSectionBase = ({ field }: Props) => {
                   body: S.switchBody,
                 }}
                 flex="1"
-                label={t`Cast to a specific data type`}
+                label={t`Convertir a un tipo de dato específico`}
                 mt="md"
                 size="xs"
                 onChange={handleCastingChange}

@@ -66,9 +66,9 @@ const mergeOptions = (
   ...(canSelectCollection
     ? {
         confirmButtonText: match(selectedModel)
-          .with("dashboard", () => t`Save in this dashboard`)
-          .with("collection", () => t`Save in this collection`)
-          .otherwise(() => t`Save`),
+          .with("dashboard", () => t`Guardar en este dashboard`)
+          .with("collection", () => t`Guardar en esta colección`)
+          .otherwise(() => t`Guardar`),
       }
     : {}),
   ...options,

@@ -171,11 +171,11 @@ export const EditApiKeyModal = ({
                     onClick={() => setModal("regenerate")}
                   >{t`Regenerate API key`}</Button>
                   <Group justify="flex-end">
-                    <Button onClick={onClose}>{t`Cancel`}</Button>
+                    <Button onClick={onClose}>{t`Cancelar`}</Button>
                     <FormSubmitButton
                       disabled={!dirty}
                       variant="filled"
-                      label={t`Save`}
+                      label={t`Guardar`}
                     />
                   </Group>
                 </Group>

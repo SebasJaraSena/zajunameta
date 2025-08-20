@@ -124,7 +124,7 @@ export function CustomURLPicker({
               onClose();
             }}
             disabled={!canSelect}
-          >{t`Done`}</Button>
+          >{t`Hecho`}</Button>
         </ModalContent>
       )}
     </ModalWithTrigger>

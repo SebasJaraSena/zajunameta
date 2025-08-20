@@ -197,7 +197,7 @@ function SearchBarView({ location, onSearchActive, onSearchInactive }: Props) {
         <SearchInput
           isActive={isActive}
           value={searchText}
-          placeholder={t`Search` + "…"}
+          placeholder={t`Buscar` + "…"}
           maxLength={200}
           onChange={onTextChange}
           onKeyPress={handleInputKeyPress}

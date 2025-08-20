@@ -60,8 +60,8 @@ export const ConfirmMoveDashboardQuestionCandidatesModal = ({
         fetchError || isLoading || rows.length === 0
           ? t`Move these questions into their dashboards?`
           : ngettext(
-              msgid`Move this question into its dashboard?`,
-              `Move these ${rows.length} questions into their dashboards?`,
+              msgid`¿Mover esta pregunta a su panel de control?`,
+              `¿Mover estas ${rows.length} preguntas a sus paneles?`,
               rows.length,
             )
       }
@@ -81,13 +81,13 @@ export const ConfirmMoveDashboardQuestionCandidatesModal = ({
           <div className={S.column}>
             <Flex gap="sm" align="center">
               <Icon name="folder" c="brand" />
-              {t`Question`}
+              {t`Pregunta`}
             </Flex>
           </div>
           <div className={S.column}>
             <Flex gap="sm" align="center">
               <Icon name="dashboard" c="brand" />
-              {t`Dashboard it'll be moved to`}
+              {t`Se moverá al panel de control`}
             </Flex>
           </div>
         </div>
@@ -144,7 +144,7 @@ export const ConfirmMoveDashboardQuestionCandidatesModal = ({
           <div />
         )}
         <Flex gap="md" ml="1.5rem">
-          <Button variant="subtle" onClick={onCancel}>{t`Cancel`}</Button>
+          <Button variant="subtle" onClick={onCancel}>{t`Cancelar`}</Button>
           <Button
             loading={isMutating}
             variant="filled"
@@ -152,7 +152,7 @@ export const ConfirmMoveDashboardQuestionCandidatesModal = ({
             disabled={ctaDisabled}
             color={mutationError ? "error" : "brand"}
           >
-            {t`Move these questions`}
+            {t`Mueva estas preguntas`}
           </Button>
         </Flex>
       </Flex>

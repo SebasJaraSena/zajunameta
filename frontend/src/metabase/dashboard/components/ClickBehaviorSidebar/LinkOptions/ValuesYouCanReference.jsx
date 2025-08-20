@@ -27,9 +27,9 @@ export const ValuesYouCanReference = withUserAttributes(
       {
         items: prefixIfNeeded(columns, "column", [
           parameterNames,
-          userAttributes,
+          userAttributes,zz
         ]),
-        name: t`Columns`,
+        name: t`Columnas`,
       },
       {
         items: prefixIfNeeded(parameterNames, "filter", [

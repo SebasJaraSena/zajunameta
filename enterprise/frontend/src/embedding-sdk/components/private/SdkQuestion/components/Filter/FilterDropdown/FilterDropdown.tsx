@@ -48,7 +48,7 @@ const FilterDropdownInner = ({
   };
 
   const label = match(filters.length)
-    .with(0, () => t`Filter`)
+    .with(0, () => t`Filtro`)
     .with(1, () => t`1 filter`)
     .otherwise(
       (value) =>

@@ -49,11 +49,11 @@ const getTitle = (downloads: Download[]): string => {
   const isError = downloads.some(isErrored);
 
   if (isError) {
-    return t`Download error`;
+    return t`Error de descarga`;
   } else if (isDone) {
-    return t`Done!`;
+    return t`Terminado!`;
   } else {
-    return t`Downloading…`;
+    return t`Descargando…`;
   }
 };
 
@@ -62,9 +62,9 @@ const getDownloadDescription = (download: Download): string => {
   const isError = isErrored(download);
 
   if (isError) {
-    return download.error ?? t`Download failed`;
+    return download.error ?? t`Descarga fallida`;
   } else if (isDone) {
-    return t`Download completed`;
+    return t`Descarga completa`;
   } else {
     return "";
   }

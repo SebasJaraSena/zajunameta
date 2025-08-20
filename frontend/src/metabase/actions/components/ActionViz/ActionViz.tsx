@@ -13,7 +13,7 @@ const isForm = (object: any, computedSettings: VisualizationSettings) =>
 
 // eslint-disable-next-line import/no-default-export -- deprecated usage
 export default Object.assign(Action, {
-  getUiName: () => t`Action`,
+  getUiName: () => t`Acción`,
   identifier: "action",
   iconName: "play",
 
@@ -38,9 +38,9 @@ export default Object.assign(Action, {
     },
     actionDisplayType: {
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-      section: t`Display`,
+      section: t`Visualización`,
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-      title: t`Action Form Display`,
+      title: t`Visualización del formulario de acción`,
       widget: "radio",
       hidden: true,
       props: {
@@ -53,29 +53,29 @@ export default Object.assign(Action, {
       },
     },
     "button.label": {
-      section: t`Display`,
-      title: t`Label`,
+      section: t`Visualización`,
+      title: t`Etiqueta`,
       widget: "input",
       getHidden: isForm,
     },
     "button.variant": {
-      section: t`Display`,
-      title: t`Variant`,
+      section: t`Visualización`,
+      title: t`Variante`,
       widget: "select",
       default: "primary",
       getHidden: isForm,
       props: {
         options: [
           /* eslint-disable ttag/no-module-declaration -- see metabase#55045 */
-          { label: t`Primary`, value: "primary" },
+          { label: t`Primario`, value: "primary" },
           /* eslint-disable ttag/no-module-declaration -- see metabase#55045 */
-          { label: t`Outline`, value: "default" },
+          { label: t`Contorno`, value: "default" },
           /* eslint-disable ttag/no-module-declaration -- see metabase#55045 */
-          { label: t`Danger`, value: "danger" },
+          { label: t`Peligro`, value: "danger" },
           /* eslint-disable ttag/no-module-declaration -- see metabase#55045 */
-          { label: t`Success`, value: "success" },
+          { label: t`Éxito`, value: "success" },
           /* eslint-disable ttag/no-module-declaration -- see metabase#55045 */
-          { label: t`Borderless`, value: "borderless" },
+          { label: t`Sin borde`, value: "borderless" },
         ],
       },
     },

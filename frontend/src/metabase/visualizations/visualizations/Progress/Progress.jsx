@@ -35,7 +35,7 @@ export default class Progress extends Component {
     this.barRef = createRef();
   }
 
-  static getUiName = () => t`Progress`;
+  static getUiName = () => t`Progreso`;
   static identifier = "progress";
   static iconName = "progress";
 
@@ -71,7 +71,7 @@ export default class Progress extends Component {
     }),
     "progress.goal": {
       get section() {
-        return t`Display`;
+        return t`Visualización`;
       },
       get title() {
         return t`Goal`;
@@ -81,7 +81,7 @@ export default class Progress extends Component {
     },
     "progress.color": {
       get section() {
-        return t`Display`;
+        return t`Visualización`;
       },
       get title() {
         return t`Color`;

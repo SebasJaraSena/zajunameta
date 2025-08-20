@@ -241,7 +241,7 @@ const defaultLoginPageIllustration = {
 };
 
 const getLoadingMessage = (isSlow: boolean | undefined = false) =>
-  isSlow ? t`Waiting for results...` : t`Doing science...`;
+  isSlow ? t`Waiting for results...` : t`Haciendo ciencia...`;
 
 // selectors that customize behavior between app versions
 export const PLUGIN_SELECTORS = {

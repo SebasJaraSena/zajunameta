@@ -48,7 +48,7 @@ class DatabaseList extends Component {
 
     return (
       <div>
-        <ReferenceHeader name={t`Our data`} />
+        <ReferenceHeader name={t`Nuestros datos`} />
         <LoadingAndErrorWrapper
           loading={!loadingError && loading}
           error={loadingError}

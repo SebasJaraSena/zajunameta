@@ -77,13 +77,13 @@ const TAB = {
 const TAB_OPTIONS = [
   {
     get name() {
-      return t`Settings`;
+      return t`Configuración`;
     },
     value: TAB.SETTINGS,
   },
   {
     get name() {
-      return t`Formatting`;
+      return t`Formato`;
     },
     value: TAB.FORMATTING,
   },

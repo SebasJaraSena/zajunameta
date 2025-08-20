@@ -64,7 +64,7 @@ export function FilterHeaderButton({
             onClick={toggle}
             data-testid="question-filter-header"
           >
-            {t`Filter`}
+            {t`Filtro`}
           </Button>
         </Popover.Target>
         <Popover.Dropdown>

@@ -26,7 +26,7 @@ export const partitions: Partition[] = [
     columnFilter: isDimension,
     title: (
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-      <PivotTableSettingLabel data-testid="pivot-table-setting">{t`Columns`}</PivotTableSettingLabel>
+      <PivotTableSettingLabel data-testid="pivot-table-setting">{t`Columnas`}</PivotTableSettingLabel>
     ),
   },
   {

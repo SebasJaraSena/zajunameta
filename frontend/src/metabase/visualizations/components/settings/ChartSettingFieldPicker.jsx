@@ -132,7 +132,7 @@ export const ChartSettingFieldPicker = ({
           ) : null
         }
         placeholderNoOptions={t`No valid fields`}
-        placeholder={t`Select a field`}
+        placeholder={t`Selecciona un campo`}
         rightSectionWidth={`${rightSectionWidth}px`}
         rightSection={
           <>

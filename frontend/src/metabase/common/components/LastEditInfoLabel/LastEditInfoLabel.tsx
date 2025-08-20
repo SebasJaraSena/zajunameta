@@ -68,7 +68,7 @@ function LastEditInfoLabel({
   const timeLabel = timestamp ? getHowLongAgo(timestamp) : "";
 
   fullName ||= formatEditorName(lastEditInfo) || null;
-  const editorFullName = editorId === user.id ? t`you` : fullName;
+  const editorFullName = editorId === user.id ? t`tí` : fullName;
 
   tooltipProps ??= { children: null, label: null };
   tooltipProps.label ??= timestamp ? <DateTime value={timestamp} /> : null;
@@ -77,15 +77,15 @@ function LastEditInfoLabel({
     if (prefix) {
       // FIXME: The following two strings won't correctly translate.
       if (editorFullName) {
-        children = `${prefix} ${timeLabel} by ${editorFullName}`;
+        children = `${prefix} ${timeLabel} por ${editorFullName}`;
       } else {
         children = `${prefix} ${timeLabel}`;
       }
     } else {
       if (editorFullName) {
-        children = t`Edited ${timeLabel} by ${editorFullName}`;
+        children = t`Editado ${timeLabel} por ${editorFullName}`;
       } else {
-        children = t`Edited ${timeLabel}`;
+        children = t`Editado ${timeLabel}`;
       }
     }
   }

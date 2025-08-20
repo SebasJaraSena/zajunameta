@@ -84,7 +84,7 @@ export function nestedSettings(
 
   return {
     [id]: {
-      section: t`Display`,
+      section: t`Visualización`,
       default: {},
       getProps: (series, settings, onChange, extra) => {
         const objects = getObjects(series, settings);

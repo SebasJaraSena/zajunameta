@@ -72,8 +72,8 @@ export function Sidebar({
                   disabled={isCloseDisabled}
                   onClick={onClose}
                   variant="filled"
-                  aria-label={t`Done`}
-                >{t`Done`}</Button>
+                  aria-label={t`Hecho`}
+                >{t`Hecho`}</Button>
               </div>
             </Tooltip>
           )}

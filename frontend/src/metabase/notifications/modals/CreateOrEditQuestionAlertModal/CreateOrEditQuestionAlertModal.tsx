@@ -394,13 +394,13 @@ export const CreateOrEditQuestionAlertModal = ({
           {isLoading ? t`Sending…` : t`Send now`}
         </Button>
         <div>
-          <Button onClick={onClose} className={CS.mr2}>{t`Cancel`}</Button>
+          <Button onClick={onClose} className={CS.mr2}>{t`Cancelar`}</Button>
           <ActionButton
             primary
             disabled={!isValid}
             actionFn={onCreateOrEditAlert}
           >
-            {isEditMode && hasChanges ? t`Save changes` : t`Done`}
+            {isEditMode && hasChanges ? t`Guardar cambios` : t`Hecho`}
           </ActionButton>
         </div>
       </Flex>

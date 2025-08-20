@@ -113,7 +113,7 @@ export default function ActionCreatorView({
             </Button>
             {isEditable && (
               <Button primary disabled={!canSave} onClick={onClickSave}>
-                {isNew ? t`Save` : t`Update`}
+                {isNew ? t`Guardar` : t`Actualizar`}
               </Button>
             )}
           </ModalActions>

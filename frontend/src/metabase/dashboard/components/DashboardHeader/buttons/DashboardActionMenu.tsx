@@ -75,8 +75,8 @@ const DashboardActionMenuInner = ({
         <div>
           <ToolbarButton
             icon="ellipsis"
-            aria-label={t`Move, trash, and more…`}
-            tooltipLabel={t`Move, trash, and more…`}
+            aria-label={t`Mover, papelera y más…`}
+            tooltipLabel={t`Mover, papelera y más…`}
           />
         </div>
       </Menu.Target>
@@ -120,7 +120,7 @@ const DashboardActionMenuInner = ({
               leftSection={<Icon name="move" />}
               component={ForwardRefLink}
               to={`${location?.pathname}/move`}
-            >{c("A verb, not a noun").t`Move`}</Menu.Item>
+            >{c("A verb, not a noun").t`Mover`}</Menu.Item>
           </>
         )}
 
@@ -128,7 +128,7 @@ const DashboardActionMenuInner = ({
           leftSection={<Icon name="clone" />}
           component={ForwardRefLink}
           to={`${location?.pathname}/copy`}
-        >{c("A verb, not a noun").t`Duplicate`}</Menu.Item>
+        >{c("A verb, not a noun").t`Duplicar`}</Menu.Item>
 
         {canEdit && (
           <>
@@ -137,7 +137,7 @@ const DashboardActionMenuInner = ({
               leftSection={<Icon name="trash" />}
               component={ForwardRefLink}
               to={`${location?.pathname}/archive`}
-            >{t`Move to trash`}</Menu.Item>
+            >{t`Mover a papelera`}</Menu.Item>
           </>
         )}
       </Menu.Dropdown>

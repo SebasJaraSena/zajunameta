@@ -57,7 +57,7 @@ export function UserSuccessModal({ params }: UserSuccessModalProps) {
       onConfirm={handleClose}
       closeButtonText={null}
       confirmButtonProps={{ color: "brand" }}
-      confirmButtonText={t`Done`}
+      confirmButtonText={t`Hecho`}
       message={
         temporaryPassword ? (
           <PasswordSuccess user={user} temporaryPassword={temporaryPassword} />

@@ -19,9 +19,9 @@ export const validateChartDataSettings = (settings) => {
   const metrics = (settings["graph.metrics"] || []).filter(isNotNull);
   if (dimensions.length < 1 || metrics.length < 1) {
     throw new ChartSettingsError(
-      t`Which fields do you want to use for the X and Y axes?`,
-      { section: t`Data` },
-      t`Choose fields`,
+      t`¿Qué campos quieres usar para los ejes X y Y?`,
+      { section: t`Datos` },
+      t`Seleccionar campos`,
     );
   }
   const seriesOrder = (settings["graph.series_order"] || []).filter(
@@ -29,7 +29,7 @@ export const validateChartDataSettings = (settings) => {
   );
   if (dimensions.length > 1 && seriesOrder.length === 0) {
     throw new ChartSettingsError(t`No breakouts are enabled`, {
-      section: t`Data`,
+      section: t`Datos`,
     });
   }
 };

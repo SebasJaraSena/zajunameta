@@ -23,7 +23,7 @@ export const ChartSettingsFooter = ({
         onClick={onReset}
       >{t`Reset to defaults`}</Button>
     )}
-    <Button onClick={onCancel}>{t`Cancel`}</Button>
-    <Button primary onClick={onDone}>{t`Done`}</Button>
+    <Button onClick={onCancel}>{t`Cancelar`}</Button>
+    <Button primary onClick={onDone}>{t`Hecho`}</Button>
   </ChartSettingsFooterRoot>
 );

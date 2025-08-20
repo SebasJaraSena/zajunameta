@@ -103,8 +103,8 @@ export const CollectionMenu = ({
             component={ForwardRefLink}
             to={`${url}/move-questions-dashboard`}
             onClick={ack}
-            rightSection={!hasSeen ? <Badge>{t`New`}</Badge> : null}
-          >{t`Move questions into their dashboards`}</Menu.Item>
+            rightSection={!hasSeen ? <Badge>{t`Nuevo`}</Badge> : null}
+          >{t`Mueva las preguntas a sus paneles de control`}</Menu.Item>
         )}
       </UserHasSeen>,
     );
@@ -117,7 +117,7 @@ export const CollectionMenu = ({
         leftSection={<Icon name="trash" />}
         component={ForwardRefLink}
         to={`${url}/archive`}
-      >{t`Move to trash`}</Menu.Item>,
+      >{t`Mover a papelera`}</Menu.Item>,
     );
   }
 
@@ -139,7 +139,7 @@ export const CollectionMenu = ({
         >
           <Menu.Target>
             <Tooltip
-              label={t`Move, trash, and more...`}
+              label={t`Mover, papelera y más…`}
               position="bottom"
               disabled={menuOpen}
             >

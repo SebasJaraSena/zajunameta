@@ -203,7 +203,7 @@ function TargetWithoutSource({
       sections={Object.entries(sourceOptions).map(([sourceType, items]) => ({
         name: {
           parameter: t`Dashboard filters`,
-          column: t`Columns`,
+          column: t`Columnas`,
           userAttribute: t`User attributes`,
         }[sourceType],
         items,

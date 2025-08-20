@@ -20,10 +20,10 @@ export const RuleListing = ({
 }) => (
   <Stack gap="md">
     <Stack gap="sm">
-      <Text fw="bold" fz="lg">{t`Conditional formatting`}</Text>
+      <Text fw="bold" fz="lg">{t`Formato condicional`}</Text>
       <Text lh="normal">
-        {t`You can add rules to make the cells in this table change color if
-    they meet certain conditions.`}
+        {t`Puedes añadir reglas para hacer que las celdas de esta tabla cambien\n"
+"de color si cumplen ciertas condiciones.`}
       </Text>
     </Stack>
     <Box>
@@ -33,7 +33,7 @@ export const RuleListing = ({
         onClick={onAdd}
         leftSection={<Icon name="add" />}
       >
-        {t`Add a rule`}
+        {t`Añade una regla`}
       </Button>
     </Box>
     {rules.length > 0 && (

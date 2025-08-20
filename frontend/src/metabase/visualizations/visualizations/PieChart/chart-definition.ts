@@ -83,7 +83,7 @@ export const PIE_CHART_DEFINITION: VisualizationDefinition = {
       (Array.isArray(settings["pie.dimension"]) &&
         settings["pie.dimension"].every((col) => col == null));
     if (isDimensionMissing || !settings["pie.metric"]) {
-      throw new ChartSettingsError(t`Which columns do you want to use?`, {
+      throw new ChartSettingsError(t`¿Qué columnas quieres usar?`, {
         section: `Data`,
       });
     }
@@ -92,10 +92,10 @@ export const PIE_CHART_DEFINITION: VisualizationDefinition = {
   settings: {
     ...metricSetting("pie.metric", {
       get section() {
-        return t`Data`;
+        return t`Datos`;
       },
       get title() {
-        return t`Measure`;
+        return t`Medida`;
       },
       showColumnSetting: true,
       getDefault: (rawSeries: Series) => getDefaultPieColumns(rawSeries).metric,
@@ -104,7 +104,7 @@ export const PIE_CHART_DEFINITION: VisualizationDefinition = {
     ...dimensionSetting("pie.dimension", {
       hidden: true,
       get title() {
-        return t`Dimension`;
+        return t`Dimensión`;
       },
       showColumnSetting: true,
       getDefault: (rawSeries: Series) =>
@@ -154,7 +154,7 @@ export const PIE_CHART_DEFINITION: VisualizationDefinition = {
         _series: RawSeries,
         _settings: ComputedVisualizationSettings,
         { isDashboard }: { isDashboard: boolean },
-      ) => (isDashboard ? t`Display` : t`Style`),
+      ) => (isDashboard ? t`Visualización` : t`Estilo`),
       marginBottom: "0",
       getProps: (
         _series: any,
@@ -187,7 +187,7 @@ export const PIE_CHART_DEFINITION: VisualizationDefinition = {
 
     "pie._dimensions_widget": {
       get section() {
-        return t`Data`;
+        return t`Datos`;
       },
       widget: DimensionsWidget,
       getProps: (
@@ -205,10 +205,10 @@ export const PIE_CHART_DEFINITION: VisualizationDefinition = {
     },
     "pie.show_legend": {
       get section() {
-        return t`Display`;
+        return t`Visualización`;
       },
       get title() {
-        return t`Show legend`;
+        return t`Mostrar Leyenda`;
       },
       widget: "toggle",
       getDefault: getDefaultShowLegend,
@@ -217,10 +217,10 @@ export const PIE_CHART_DEFINITION: VisualizationDefinition = {
     },
     "pie.show_total": {
       get section() {
-        return t`Display`;
+        return t`Visualización`;
       },
       get title() {
-        return t`Show total`;
+        return t`Mostrar total`;
       },
       widget: "toggle",
       getDefault: getDefaultShowTotal,
@@ -229,10 +229,10 @@ export const PIE_CHART_DEFINITION: VisualizationDefinition = {
     },
     "pie.show_labels": {
       get section() {
-        return t`Display`;
+        return t`DispVisualizaciónlay`;
       },
       get title() {
-        return t`Show labels`;
+        return t`Mostrar etiquetas`;
       },
       widget: "toggle",
       getDefault: (_rawSeries, settings) => getDefaultShowLabels(settings),
@@ -240,10 +240,10 @@ export const PIE_CHART_DEFINITION: VisualizationDefinition = {
     },
     "pie.percent_visibility": {
       get section() {
-        return t`Display`;
+        return t`Visualización`;
       },
       get title() {
-        return t`Show percentages`;
+        return t`Mostrar percentages`;
       },
       widget: "radio",
       getDefault: getDefaultPercentVisibility,
@@ -251,25 +251,25 @@ export const PIE_CHART_DEFINITION: VisualizationDefinition = {
         options: [
           {
             get name() {
-              return t`Off`;
+              return t`Apagado`;
             },
             value: "off",
           },
           {
             get name() {
-              return t`In legend`;
+              return t`En la leyenda`;
             },
             value: "legend",
           },
           {
             get name() {
-              return t`On the chart`;
+              return t`En el gráfico`;
             },
             value: "inside",
           },
           {
             get name() {
-              return t`Both`;
+              return t`Ambos`;
             },
             value: "both",
           },
@@ -278,15 +278,15 @@ export const PIE_CHART_DEFINITION: VisualizationDefinition = {
     },
     "pie.decimal_places": {
       get section() {
-        return t`Display`;
+        return t`Visualización`;
       },
       get title() {
-        return t`Number of decimal places`;
+        return t`Número de decimales`;
       },
       widget: "number",
       props: {
         get placeholder() {
-          return t`Auto`;
+          return t`Automatico`;
         },
         options: { isInteger: true, isNonNegative: true },
       },
@@ -297,10 +297,10 @@ export const PIE_CHART_DEFINITION: VisualizationDefinition = {
     },
     "pie.slice_threshold": {
       get section() {
-        return t`Display`;
+        return t`Visualización`;
       },
       get title() {
-        return t`Minimum slice percentage`;
+        return t`Porcentaje mínimo de porción`;
       },
       widget: "number",
       getDefault: getDefaultSliceThreshold,

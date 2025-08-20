@@ -78,7 +78,7 @@ function QuestionPickerInner({
         fullWidth
         autoFocus
         data-autofocus
-        placeholder={t`Search…`}
+        placeholder={t`Buscar…`}
         value={searchText}
         onResetClick={() => setSearchText("")}
         onChange={handleSearchTextChange}

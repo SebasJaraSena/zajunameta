@@ -38,7 +38,7 @@ export const DashboardSelector = ({
   if (isLoading) {
     return (
       <Flex>
-        <DashboardPickerButton disabled>{t`Loading...`}</DashboardPickerButton>
+        <DashboardPickerButton disabled>{t`Guardando...`}</DashboardPickerButton>
       </Flex>
     );
   }

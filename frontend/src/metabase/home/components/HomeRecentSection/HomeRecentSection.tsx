@@ -28,7 +28,7 @@ export const HomeRecentSection = () => {
 
   return (
     <div>
-      <HomeCaption>{t`Pick up where you left off`}</HomeCaption>
+      <HomeCaption>{t`Continúa donde lo dejaste`}</HomeCaption>
       <SectionBody>
         {recentsFilter(recentItems).map((item, index) => (
           <HomeModelCard
@@ -38,7 +38,7 @@ export const HomeRecentSection = () => {
             url={Urls.modelToUrl(item) ?? ""}
           />
         ))}
-        {hasHelpCard && <HomeHelpCard />}
+        {/* {hasHelpCard && <HomeHelpCard />} */}
       </SectionBody>
     </div>
   );

@@ -95,9 +95,9 @@ export const BrowseModels = () => {
             </Title>
             <Group gap="xs">
               {canCreateNewModel && (
-                <Tooltip label={t`Create a new model`} position="bottom">
+                <Tooltip label={t`Creando un nuevo modelo`} position="bottom">
                   <ActionIcon
-                    aria-label={t`Create a new model`}
+                    aria-label={t`Creando un nuevo modelo`}
                     size={32}
                     variant="viewHeader"
                     component={ForwardRefLink}

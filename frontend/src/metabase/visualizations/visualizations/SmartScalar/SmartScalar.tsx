@@ -393,7 +393,7 @@ function PreviousValueComparison({
 }
 
 Object.assign(SmartScalar, {
-  getUiName: () => t`Trend`,
+  getUiName: () => t`Tendencia`,
   identifier: "smartscalar",
   iconName: "smartscalar",
   canSavePng: true,
@@ -404,16 +404,16 @@ Object.assign(SmartScalar, {
   settings: {
     ...fieldSetting("scalar.field", {
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-      section: t`Data`,
+      section: t`Datos`,
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-      title: t`Primary number`,
+      title: t`Número primario`,
       fieldFilter: isSuitableScalarColumn,
     }),
     "scalar.comparisons": {
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-      section: t`Data`,
+      section: t`Datos`,
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-      title: t`Comparisons`,
+      title: t`Comparaciones`,
       widget: SmartScalarComparisonWidget,
       getValue: (series, vizSettings) => getComparisons(series, vizSettings),
       isValid: (series, vizSettings) =>
@@ -434,25 +434,25 @@ Object.assign(SmartScalar, {
     },
     "scalar.switch_positive_negative": {
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-      section: t`Display`,
+      section: t`Visualización`,
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-      title: t`Switch positive / negative colors?`,
+      title: t`¿Mostrar colores positivos/negativos?`,
       widget: "toggle",
       inline: true,
       default: VIZ_SETTINGS_DEFAULTS["scalar.switch_positive_negative"],
     },
     "scalar.compact_primary_number": {
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-      section: t`Display`,
+      section: t`Visualización`,
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-      title: t`Compact number`,
+      title: t`Número compacto`,
       widget: "toggle",
       inline: true,
       default: VIZ_SETTINGS_DEFAULTS["scalar.compact_primary_number"],
     },
     ...columnSettings({
       // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-      section: t`Display`,
+      section: t`Visualización`,
       getColumns: (
         [
           {
@@ -485,7 +485,7 @@ Object.assign(SmartScalar, {
   ]) {
     if (!insights || insights.length === 0) {
       throw new ChartSettingsError(
-        t`Group only by a time field to see how this has changed over time`,
+        t`Agrupa solo por un campo de tiempo para ver cómo ha cambiado con el tiempo`,
       );
     }
   },

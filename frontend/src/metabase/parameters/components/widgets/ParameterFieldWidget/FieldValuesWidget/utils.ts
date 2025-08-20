@@ -116,7 +116,7 @@ function getSearchableTokenFieldPlaceholder(
     names.size !== 1 ||
     (parameter != null && getSourceType(parameter) != null)
   ) {
-    placeholder = t`Search`;
+    placeholder = t`Buscar`;
   } else {
     const [name] = names;
 

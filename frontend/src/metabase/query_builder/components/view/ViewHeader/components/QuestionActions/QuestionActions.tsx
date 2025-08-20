@@ -119,8 +119,8 @@ export const QuestionActions = ({
           onClick={onInfoClick}
           color={infoButtonColor}
           data-testid="qb-header-info-button"
-          tooltipLabel={t`More info`}
-          aria-label={t`More info`}
+          tooltipLabel={t`Más info`}
+          aria-label={t`Más info`}
         />
       </Box>
       {canAppend && (

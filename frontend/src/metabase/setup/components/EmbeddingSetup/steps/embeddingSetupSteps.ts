@@ -69,7 +69,7 @@ export const STEPS = [
   {
     key: "done",
     get title() {
-      return t`Done`;
+      return t`Hecho`;
     },
     icon: "check",
     visibleInSidebar: false,

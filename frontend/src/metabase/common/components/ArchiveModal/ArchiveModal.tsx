@@ -42,13 +42,13 @@ export const ArchiveModal = ({
 
   return (
     <ModalContent
-      title={title || t`Trash this?`}
+      title={title || t`Eliminar esto?`}
       footer={[
         error ? <FormMessage key="message" formError={error} /> : null,
         <FocusTrap key="buttons">
           <Group gap="0.5rem">
             <Button key="cancel" onClick={onClose}>
-              {t`Cancel`}
+              {t`Cancelar`}
             </Button>
             <Button
               key="archive"
@@ -58,7 +58,7 @@ export const ArchiveModal = ({
               loading={isLoading}
               data-autofocus
             >
-              {t`Move to trash`}
+              {t`Mover a papelera`}
             </Button>
           </Group>
         </FocusTrap>,
