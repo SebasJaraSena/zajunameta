@@ -128,7 +128,7 @@ export const UserProvisioningRegenerateTokenModal = ({
               {t`Hecho`}
             </Button>
           ) : (
-            <Button onClick={onClose}>{t`Cancel`}</Button>
+            <Button onClick={onClose}>{t`Cancelar`}</Button>
           )}
         </Flex>
       </Stack>

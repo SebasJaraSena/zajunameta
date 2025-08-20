@@ -114,7 +114,7 @@ export const GRAPH_DATA_SETTINGS = {
             (dimension) => dimension !== undefined && dimension !== null,
           ) &&
           vizSettings["graph.metrics"].length < 2
-            ? t`Add series breakout`
+            ? t`Añadir desglose de series`
             : null,
         columns: data.cols,
         fieldSettingWidgets: [],
@@ -219,7 +219,7 @@ export const GRAPH_DATA_SETTINGS = {
 
       return {
         options,
-        addAnother: canAddAnother ? t`Add another series` : null,
+        addAnother: canAddAnother ? t`Agregar otra serie` : null,
         columns: data.cols,
         showColumnSetting: true,
         showColorPicker: !hasBreakout && card.display !== "waterfall",
@@ -285,26 +285,26 @@ export const STACKABLE_SETTINGS = {
       return t`Visualización`;
     },
     get title() {
-      return t`Stacking`;
+      return t`Apilado`;
     },
     widget: "radio",
     props: {
       options: [
         {
           get name() {
-            return t`Don't stack`;
+            return t`No Apilado`;
           },
           value: null,
         },
         {
           get name() {
-            return t`Stack`;
+            return t`Apilar`;
           },
           value: "stacked",
         },
         {
           get name() {
-            return t`Stack - 100%`;
+            return t`Apilado - 100%`;
           },
           value: "normalized",
         },
@@ -352,10 +352,10 @@ export const TOOLTIP_SETTINGS = {
       return t`Visualización`;
     },
     get title() {
-      return t`Additional tooltip columns`;
+      return t`Columnas de información sobre herramientas adicionales`;
     },
     get placeholder() {
-      return t`Enter column names`;
+      return t`Introduzca los nombres de las columnas`;
     },
     widget: "multiselect",
     useRawSeries: true,
@@ -388,7 +388,7 @@ export const GRAPH_TREND_SETTINGS = {
       return t`Visualización`;
     },
     get title() {
-      return t`Trend line`;
+      return t`Tendencia`;
     },
     widget: "toggle",
     default: false,
@@ -412,7 +412,7 @@ export const GRAPH_DISPLAY_VALUES_SETTINGS = {
       return t`Visualización`;
     },
     get title() {
-      return t`Show values on data points`;
+      return t`Mostrar valores en puntos de datos`;
     },
     widget: "toggle",
     getHidden: (series, vizSettings) => !canHaveDataLabels(series, vizSettings),
@@ -425,7 +425,7 @@ export const GRAPH_DISPLAY_VALUES_SETTINGS = {
       return t`Visualización`;
     },
     get title() {
-      return t`Values to show`;
+      return t`Valores a mostrar`;
     },
     widget: "segmentedControl",
     getHidden: (series, vizSettings) => {
@@ -453,13 +453,13 @@ export const GRAPH_DISPLAY_VALUES_SETTINGS = {
       options: [
         {
           get name() {
-            return t`Some`;
+            return t`Algunos`;
           },
           value: "fit",
         },
         {
           get name() {
-            return t`All`;
+            return t`Todos`;
           },
           value: "all",
         },
@@ -473,7 +473,7 @@ export const GRAPH_DISPLAY_VALUES_SETTINGS = {
       return t`Visualización`;
     },
     get title() {
-      return t`Stack values to show`;
+      return t`Apilar los valores a mostrar`;
     },
     widget: "segmentedControl",
     getHidden: (series, vizSettings) => {
@@ -502,7 +502,7 @@ export const GRAPH_DISPLAY_VALUES_SETTINGS = {
         },
         {
           get name() {
-            return t`Segments`;
+            return t`Segmentos`;
           },
           value: "series",
         },
@@ -532,19 +532,19 @@ export const GRAPH_DISPLAY_VALUES_SETTINGS = {
       options: [
         {
           get name() {
-            return t`Auto`;
+            return t`Automático`;
           },
           value: "auto",
         },
         {
           get name() {
-            return t`Compact`;
+            return t`Compacto`;
           },
           value: "compact",
         },
         {
           get name() {
-            return t`Full`;
+            return t`Completo`;
           },
           value: "full",
         },
@@ -654,10 +654,10 @@ export const GRAPH_AXIS_SETTINGS = {
       return t`Ejes`;
     },
     get group() {
-      return t`X-axis`;
+      return t`Eje-X`;
     },
     get title() {
-      return t`Scale`;
+      return t`Escala`;
     },
     index: 4,
     widget: "select",
@@ -678,19 +678,19 @@ export const GRAPH_AXIS_SETTINGS = {
       return t`Ejes`;
     },
     get title() {
-      return t`Scale`;
+      return t`Escala`;
     },
     index: 8,
     get group() {
-      return t`Y-axis`;
+      return t`Eje-Y`;
     },
     widget: "select",
     default: "linear",
     getProps: (series, vizSettings) => ({
       options: [
-        { name: t`Linear`, value: "linear" },
-        { name: t`Power`, value: "pow" },
-        { name: t`Log`, value: "log" },
+        { name: t`Lineal`, value: "linear" },
+        { name: t`Exponente`, value: "pow" },
+        { name: t`Logarítmico`, value: "log" },
       ],
     }),
   },
@@ -699,10 +699,10 @@ export const GRAPH_AXIS_SETTINGS = {
       return t`Ejes`;
     },
     get group() {
-      return t`X-axis`;
+      return t`Eje-X`;
     },
     get title() {
-      return t`Show lines and tick marks`;
+      return t`Mostrar líneas y marcas de graduación`;
     },
     index: 3,
     widget: "select",
@@ -710,31 +710,31 @@ export const GRAPH_AXIS_SETTINGS = {
       options: [
         {
           get name() {
-            return t`Hide`;
+            return t`Esconder`;
           },
           value: false,
         },
         {
           get name() {
-            return t`Show`;
+            return t`Mostrar`;
           },
           value: true,
         },
         {
           get name() {
-            return t`Compact`;
+            return t`Compacto`;
           },
           value: "compact",
         },
         {
           get name() {
-            return t`Rotate 45°`;
+            return t` 45°`;
           },
           value: "rotate-45",
         },
         {
           get name() {
-            return t`Rotate 90°`;
+            return t`Rotar 90°`;
           },
           value: "rotate-90",
         },
@@ -747,24 +747,24 @@ export const GRAPH_AXIS_SETTINGS = {
       return t`Ejes`;
     },
     get title() {
-      return t`Show lines and tick marks`;
+      return t`Mostrar líneas y marcas de graduación`;
     },
     index: 9,
     get group() {
-      return t`Y-axis`;
+      return t`Eje-Y`;
     },
     widget: "select",
     props: {
       options: [
         {
           get name() {
-            return t`Hide`;
+            return t`Esconder`;
           },
           value: false,
         },
         {
           get name() {
-            return t`Show`;
+            return t`Mostrar`;
           },
           value: true,
         },
@@ -777,10 +777,10 @@ export const GRAPH_AXIS_SETTINGS = {
       return t`Ejes`;
     },
     get group() {
-      return t`Y-axis`;
+      return t`Eje-Y`;
     },
     get title() {
-      return t`Unpin from zero`;
+      return t`Desanclar desde cero`;
     },
     widget: "toggle",
     index: 5,
@@ -803,11 +803,11 @@ export const GRAPH_AXIS_SETTINGS = {
       return t`Ejes`;
     },
     get group() {
-      return t`Y-axis`;
+      return t`Eje-Y`;
     },
     index: 4,
     get title() {
-      return t`Auto y-axis range`;
+      return t`Rango del Eje-Y automático`;
     },
     inline: true,
     widget: "toggle",
@@ -818,11 +818,11 @@ export const GRAPH_AXIS_SETTINGS = {
       return t`Ejes`;
     },
     get group() {
-      return t`Y-axis`;
+      return t`Eje-Y`;
     },
     index: 6,
     get title() {
-      return t`Min`;
+      return t`Mínimo`;
     },
     widget: "number",
     default: 0,
@@ -834,11 +834,11 @@ export const GRAPH_AXIS_SETTINGS = {
       return t`Ejes`;
     },
     get group() {
-      return t`Y-axis`;
+      return t`Eje-Y`;
     },
     index: 7,
     get title() {
-      return t`Max`;
+      return t`Máximo`;
     },
     widget: "number",
     default: 100,
@@ -850,11 +850,11 @@ export const GRAPH_AXIS_SETTINGS = {
       return t`Ejes`;
     },
     get group() {
-      return t`Y-axis`;
+      return t`Eje-Y`;
     },
     index: 3,
     get title() {
-      return t`Split y-axis when necessary`;
+      return t`Divide el eje y cuando sea necesario`;
     },
     widget: "toggle",
     inline: true,
@@ -866,11 +866,11 @@ export const GRAPH_AXIS_SETTINGS = {
       return t`Ejes`;
     },
     get group() {
-      return t`X-axis`;
+      return t`Eje-X`;
     },
     index: 1,
     get title() {
-      return t`Show label`;
+      return t`Mostrar etiqueta`;
     },
     inline: true,
     widget: "toggle",
@@ -881,11 +881,11 @@ export const GRAPH_AXIS_SETTINGS = {
       return t`Ejes`;
     },
     get title() {
-      return t`Label`;
+      return t`Etiqueta`;
     },
     index: 2,
     get group() {
-      return t`X-axis`;
+      return t`Eje-X`;
     },
     widget: "input",
     getHidden: (series, vizSettings) =>
@@ -900,11 +900,11 @@ export const GRAPH_AXIS_SETTINGS = {
       return t`Ejes`;
     },
     get title() {
-      return t`Show label`;
+      return t`Mostrar etiqueta`;
     },
     index: 1,
     get group() {
-      return t`Y-axis`;
+      return t`Eje-Y`;
     },
     widget: "toggle",
     inline: true,
@@ -915,10 +915,10 @@ export const GRAPH_AXIS_SETTINGS = {
       return t`Ejes`;
     },
     get group() {
-      return t`Y-axis`;
+      return t`Eje-Y`;
     },
     get title() {
-      return t`Number of tick marks`;
+      return t`Número de marcas de graduación`;
     },
     widget: "number",
     placeholder: "auto",
@@ -931,11 +931,11 @@ export const GRAPH_AXIS_SETTINGS = {
       return t`Ejes`;
     },
     get title() {
-      return t`Label`;
+      return t`Etiqueta`;
     },
     index: 2,
     get group() {
-      return t`Y-axis`;
+      return t`Eje-Y`;
     },
     widget: "input",
     getHidden: (series, vizSettings) =>

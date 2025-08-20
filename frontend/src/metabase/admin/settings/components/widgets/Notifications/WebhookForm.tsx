@@ -343,7 +343,7 @@ export const WebhookForm = ({
               >{t`Eliminar este destino`}</Button>
             )}
             <Group>
-              <Button onClick={onCancel}>{t`Cancel`}</Button>
+              <Button onClick={onCancel}>{t`Cancelar`}</Button>
               <FormSubmitButton
                 disabled={!dirty}
                 label={submitLabel}

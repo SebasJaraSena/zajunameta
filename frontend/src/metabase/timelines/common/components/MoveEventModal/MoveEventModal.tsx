@@ -58,9 +58,9 @@ const MoveEventModal = ({
         />
       </ModalBody>
       <ModalFooter>
-        <Button onClick={onCancel}>{t`Cancel`}</Button>
+        <Button onClick={onCancel}>{t`Cancelar`}</Button>
         <Button primary disabled={!isEnabled} onClick={handleSubmit}>
-          {t`Move`}
+          {t`Mover`}
         </Button>
       </ModalFooter>
     </ModalRoot>

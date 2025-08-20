@@ -29,9 +29,9 @@ export const ConfirmModal = ({
   message = t`Are you sure you want to do this?`,
   onClose,
   onConfirm = _.noop,
-  confirmButtonText = t`Yes`,
+  confirmButtonText = t`Sí`,
   confirmButtonProps = {},
-  closeButtonText = t`Cancel`,
+  closeButtonText = t`Cancelar`,
   closeButtonProps = {},
   errorMessage,
   ...props

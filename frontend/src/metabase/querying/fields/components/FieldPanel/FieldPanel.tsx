@@ -49,7 +49,7 @@ export const FieldPanel = ({
         value={searchValue}
         onChange={(e) => setSearchValue(e.target.value)}
         rightSection={<Icon name="search" />}
-        placeholder={t`Search for a column…`}
+        placeholder={t`Buscar una columna…`}
         mb="1rem"
       />
       {visibleGroupItems.map((groupItem, groupIndex) => {
@@ -69,7 +69,7 @@ export const FieldPanel = ({
                 size="xs"
                 label={
                   <Text fw={700} ml="0.375rem" lh="1rem">
-                    {groupItem.isSelected ? t`Remove all` : t`Add all`}
+                    {groupItem.isSelected ? t`Eliminar todos` : t`Add all`}
                   </Text>
                 }
                 checked={groupItem.isSelected}

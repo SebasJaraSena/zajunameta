@@ -73,7 +73,7 @@ export const DashboardLeaveConfirmationModal = withRouter(
             {content.message}
           </Text>
           <Flex justify="flex-end" gap="md">
-            <Button onClick={close}>{t`Cancel`}</Button>
+            <Button onClick={close}>{t`Cancelar`}</Button>
             <Button
               color={content.actionBtn.color}
               variant="filled"

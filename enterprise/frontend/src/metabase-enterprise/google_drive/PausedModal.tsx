@@ -39,11 +39,11 @@ function PausedModal({ onClose }: { onClose: () => void }) {
               >
                 {t`Add more storage`}
               </Button>
-              <Button onClick={onClose}>{t`Cancel`}</Button>
+              <Button onClick={onClose}>{t`Cancelar`}</Button>
             </>
           ) : (
             <Button variant="filled" onClick={onClose}>
-              {t`OK`}
+              {t`Aceptar`}
             </Button>
           )}
         </Stack>

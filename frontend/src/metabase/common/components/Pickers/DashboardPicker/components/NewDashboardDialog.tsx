@@ -78,7 +78,7 @@ export const NewDashboardDialog = ({
             <FormFooter>
               <FormErrorMessage inline />
               <Flex style={{ flexShrink: 1 }} justify="flex-end" gap="sm">
-                <Button type="button" onClick={onClose}>{t`Cancel`}</Button>
+                <Button type="button" onClick={onClose}>{t`Cancelar`}</Button>
                 <FormSubmitButton
                   type="submit"
                   label={t`Create`}

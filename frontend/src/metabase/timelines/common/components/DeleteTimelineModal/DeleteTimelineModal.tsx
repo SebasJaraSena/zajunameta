@@ -31,8 +31,8 @@ const DeleteTimelineModal = ({
     <div>
       <ModalHeader title={t`Delete ${timeline?.name}?`} onClose={onClose} />
       <ModalFooter hasPadding>
-        <Button onClick={onCancel}>{t`Cancel`}</Button>
-        <Button danger onClick={handleSubmit}>{t`Delete`}</Button>
+        <Button onClick={onCancel}>{t`Cancelar`}</Button>
+        <Button danger onClick={handleSubmit}>{t`Eliminar`}</Button>
       </ModalFooter>
     </div>
   );

@@ -148,7 +148,7 @@ const SegmentFormActions = ({
         {t`Save changes`}
       </FormSubmitButton>
       <Button as={Link} to="/admin/datamodel/segments">
-        {t`Cancel`}
+        {t`Cancelar`}
       </Button>
     </div>
   );

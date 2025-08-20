@@ -59,7 +59,7 @@ const RunButton = forwardRef(function RunButton(
 
 const getButtonLabel = (isRunning: boolean, isDirty: boolean) => {
   if (isRunning) {
-    return t`Cancel`;
+    return t`Cancelar`;
   }
 
   if (isDirty) {

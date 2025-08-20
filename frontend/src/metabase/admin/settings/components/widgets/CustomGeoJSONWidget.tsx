@@ -456,7 +456,7 @@ const EditMap = ({
         <button
           className={ButtonsS.Button}
           onClick={onCancel}
-        >{t`Cancel`}</button>
+        >{t`Cancelar`}</button>
         <button
           disabled={
             !map.name || !map.url || !map.region_name || !map.region_key

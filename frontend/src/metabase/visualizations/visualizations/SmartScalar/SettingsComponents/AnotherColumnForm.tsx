@@ -89,7 +89,7 @@ export function AnotherColumnForm({
           />
           <TextInput
             value={label}
-            label={t`Label`}
+            label={t`Etiqueta`}
             onChange={handleChangeLabel}
           />
         </Stack>

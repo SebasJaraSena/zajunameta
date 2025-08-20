@@ -162,7 +162,7 @@ export const QuestionMoveConfirmModal = ({
               <Text c="error">{errorMessage}</Text>
               <Flex justify="end" gap="1rem">
                 <Button variant="subtle" onClick={onClose}>
-                  {t`Cancel`}
+                  {t`Cancelar`}
                 </Button>
                 <Button variant="filled" onClick={onConfirm}>
                   {ngettext(

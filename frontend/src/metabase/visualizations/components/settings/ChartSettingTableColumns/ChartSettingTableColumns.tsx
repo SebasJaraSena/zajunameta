@@ -49,7 +49,7 @@ export const ChartSettingTableColumns = ({
           variant="subtle"
           onClick={() => setIsEditingQuery(!isEditingQuery)}
         >
-          {isEditingQuery ? t`Done picking columns` : t`Add or remove columns`}
+          {isEditingQuery ? t`Terminado de seleccionar columnas` : t`Añadir o eliminar columnas`}
         </Button>
       )}
       {query != null && isEditingQuery ? (

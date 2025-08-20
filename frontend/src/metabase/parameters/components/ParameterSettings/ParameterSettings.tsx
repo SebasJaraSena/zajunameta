@@ -167,13 +167,13 @@ export const ParameterSettings = ({
   return (
     <Box p="1.5rem 1rem 0.5rem">
       <Box mb="xl">
-        <SettingLabel>{t`Label`}</SettingLabel>
+        <SettingLabel>{t`Etiqueta`}</SettingLabel>
         <TextInput
           onChange={handleLabelChange}
           value={tempLabelValue}
           onBlur={handleLabelBlur}
           error={labelError}
-          aria-label={t`Label`}
+          aria-label={t`Etiqueta`}
         />
       </Box>
       {sectionId && (

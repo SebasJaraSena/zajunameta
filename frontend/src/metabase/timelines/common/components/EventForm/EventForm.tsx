@@ -164,7 +164,7 @@ const EventForm = ({
                 </FormArchiveButton>
               )}
               <Button type="button" onClick={onCancel}>
-                {t`Cancel`}
+                {t`Cancelar`}
               </Button>
               <FormSubmitButton
                 variant="filled"

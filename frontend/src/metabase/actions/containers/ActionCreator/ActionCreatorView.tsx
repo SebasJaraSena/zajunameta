@@ -109,7 +109,7 @@ export default function ActionCreatorView({
           <EditorContainer>{children}</EditorContainer>
           <ModalActions>
             <Button onClick={onCloseModal} borderless>
-              {t`Cancel`}
+              {t`Cancelar`}
             </Button>
             {isEditable && (
               <Button primary disabled={!canSave} onClick={onClickSave}>

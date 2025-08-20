@@ -363,13 +363,13 @@ RowChartVisualization.isLiveResizable = (series: any[]) => {
 RowChartVisualization.settings["graph.metrics"] = {
   ...RowChartVisualization.settings["graph.metrics"],
   get title() {
-    return t`X-axis`;
+    return t`Eje-X`;
   },
 };
 RowChartVisualization.settings["graph.dimensions"] = {
   ...RowChartVisualization.settings["graph.dimensions"],
   get title() {
-    return t`Y-axis`;
+    return t`Eje-Y`;
   },
 };
 

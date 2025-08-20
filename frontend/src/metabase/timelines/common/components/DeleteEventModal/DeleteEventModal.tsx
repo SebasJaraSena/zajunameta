@@ -33,7 +33,7 @@ const DeleteEventModal = ({
     <div>
       <ModalHeader title={t`Delete ${event?.name}?`} onClose={onClose} />
       <ModalFooter hasPadding>
-        <Button onClick={onCancel}>{t`Cancel`}</Button>
+        <Button onClick={onCancel}>{t`Cancelar`}</Button>
         <Button danger onClick={handleSubmit}>{t`Delete`}</Button>
       </ModalFooter>
     </div>

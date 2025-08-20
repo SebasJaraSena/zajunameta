@@ -195,7 +195,7 @@ export const DeleteDatabaseModal = ({
                 {errorMessage}
               </Box>
             )}
-            <Button type="button" onClick={onClose}>{t`Cancel`}</Button>
+            <Button type="button" onClick={onClose}>{t`Cancelar`}</Button>
             <Button
               color="error"
               variant="filled"

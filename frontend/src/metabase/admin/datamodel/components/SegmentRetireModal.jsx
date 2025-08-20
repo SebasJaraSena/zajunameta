@@ -54,7 +54,7 @@ export default class SegmentRetireModal extends Component {
 
           <div className={cx("Form-actions", CS.mlAuto)}>
             <a className={ButtonsS.Button} onClick={this.props.onClose}>
-              {t`Cancel`}
+              {t`Cancelar`}
             </a>
             <ActionButton
               actionFn={this.handleSubmit.bind(this)}

@@ -256,7 +256,7 @@ const DatabaseFormFooter = ({
           )}
 
           <Flex gap="sm">
-            <Button onClick={onCancel}>{t`Cancel`}</Button>
+            <Button onClick={onCancel}>{t`Cancelar`}</Button>
             <FormSubmitButton
               disabled={!isDirty}
               variant="filled"

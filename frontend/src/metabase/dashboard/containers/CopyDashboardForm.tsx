@@ -145,7 +145,7 @@ function CopyDashboardForm({
         <FormFooter>
           <FormErrorMessage inline />
           {!!onClose && (
-            <Button type="button" onClick={onClose}>{t`Cancel`}</Button>
+            <Button type="button" onClick={onClose}>{t`Cancelar`}</Button>
           )}
           <FormSubmitButton label={t`Duplicate`} />
         </FormFooter>

@@ -48,8 +48,8 @@ export const useConfirmation = () => {
     message,
     onConfirm,
     onCancel,
-    confirmButtonText = t`Confirm`,
-    cancelButtonText = t`Cancel`,
+    confirmButtonText = t`Confirmar`,
+    cancelButtonText = t`Cancelar`,
     confirmButtonProps,
     size,
   }: ConfirmationState) =>

@@ -106,7 +106,7 @@ class Table extends Component<TableProps, TableState> {
         return t`Columnas`;
       },
       get title() {
-        return t`Show row index`;
+        return t`Mostrar índice de fila`;
       },
       inline: true,
       widget: "toggle",

@@ -74,7 +74,7 @@ export default class Progress extends Component {
         return t`Visualización`;
       },
       get title() {
-        return t`Goal`;
+        return t`Objetivo`;
       },
       widget: "number",
       default: 0,

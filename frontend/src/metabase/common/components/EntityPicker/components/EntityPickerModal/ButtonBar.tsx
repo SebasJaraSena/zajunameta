@@ -52,7 +52,7 @@ export const ButtonBar = ({
       )}
       <Flex gap="md">
         <Button onClick={onCancel} type="button">
-          {cancelButtonText ?? t`Cancel`}
+          {cancelButtonText ?? t`Cancelar`}
         </Button>
         <Button
           ml={1}

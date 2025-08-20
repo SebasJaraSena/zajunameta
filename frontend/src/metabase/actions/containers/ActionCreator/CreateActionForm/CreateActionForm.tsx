@@ -72,7 +72,7 @@ function CreateActionForm({
           <FormFooter>
             <FormErrorMessage inline />
             {!!onCancel && (
-              <Button type="button" onClick={onCancel}>{t`Cancel`}</Button>
+              <Button type="button" onClick={onCancel}>{t`Cancelar`}</Button>
             )}
             <FormSubmitButton title={t`Create`} disabled={!isValid} primary />
           </FormFooter>

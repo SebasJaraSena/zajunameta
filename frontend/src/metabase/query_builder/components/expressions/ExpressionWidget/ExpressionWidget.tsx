@@ -220,7 +220,7 @@ export const ExpressionWidget = (props: ExpressionWidgetProps) => {
                 onClick={onClose}
                 variant="subtle"
                 size="xs"
-              >{t`Cancel`}</Button>
+              >{t`Cancelar`}</Button>
             )}
             <Button
               variant="filled"

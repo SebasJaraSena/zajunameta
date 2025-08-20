@@ -54,12 +54,12 @@ export default class RevisionMessageModal extends Component {
               className={cx(ButtonsS.Button, ButtonsS.ButtonPrimary)}
               onClick={onAction}
               disabled={submitting || field.error}
-            >{t`Save changes`}</button>
+            >{t`Guardar cambios`}</button>
             <button
               type="button"
               className={cx(ButtonsS.Button, CS.ml1)}
               onClick={onClose}
-            >{t`Cancel`}</button>
+            >{t`Cancelar`}</button>
           </div>
         </ModalContent>
       </ModalWithTrigger>

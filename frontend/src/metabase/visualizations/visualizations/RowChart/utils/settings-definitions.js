@@ -9,7 +9,7 @@ export const ROW_CHART_SETTINGS = {
       return t`Visualización`;
     },
     get title() {
-      return t`Stacking`;
+      return t`Apilado`;
     },
     index: 1,
     widget: "radio",
@@ -18,19 +18,19 @@ export const ROW_CHART_SETTINGS = {
       options: [
         {
           get name() {
-            return t`Don't stack`;
+            return t`No Apilado`;
           },
           value: null,
         },
         {
           get name() {
-            return t`Stack`;
+            return t`Apilar`;
           },
           value: "stacked",
         },
         {
           get name() {
-            return t`Stack - 100%`;
+            return t`Apilado - 100%`;
           },
           value: "normalized",
         },
@@ -43,10 +43,10 @@ export const ROW_CHART_SETTINGS = {
       return t`Ejes`;
     },
     get group() {
-      return t`Y-axis`;
+      return t`Eje-Y`;
     },
     get title() {
-      return t`Scale`;
+      return t`Escala`;
     },
     index: 4,
     widget: "select",
@@ -60,11 +60,11 @@ export const ROW_CHART_SETTINGS = {
       return t`Ejes`;
     },
     get title() {
-      return t`Scale`;
+      return t`Escala`;
     },
     index: 7,
     get group() {
-      return t`X-axis`;
+      return t`Eje-X`;
     },
     widget: "select",
     default: "linear",
@@ -81,10 +81,10 @@ export const ROW_CHART_SETTINGS = {
       return t`Ejes`;
     },
     get group() {
-      return t`Y-axis`;
+      return t`Eje-Y`;
     },
     get title() {
-      return t`Show lines and marks`;
+      return t`Mostrar líneas y marcas`;
     },
     index: 3,
     widget: "select",
@@ -92,13 +92,13 @@ export const ROW_CHART_SETTINGS = {
       options: [
         {
           get name() {
-            return t`Hide`;
+            return t`Esconder`;
           },
           value: false,
         },
         {
           get name() {
-            return t`Show`;
+            return t`Mostrar`;
           },
           value: true,
         },
@@ -111,24 +111,24 @@ export const ROW_CHART_SETTINGS = {
       return t`Ejes`;
     },
     get title() {
-      return t`Show lines and marks`;
+      return t`Mostrar líneas y marcas`;
     },
     index: 8,
     get group() {
-      return t`X-axis`;
+      return t`Eje-X`;
     },
     widget: "select",
     props: {
       options: [
         {
           get name() {
-            return t`Hide`;
+            return t`Esconder`;
           },
           value: false,
         },
         {
           get name() {
-            return t`Show`;
+            return t`Mostrar`;
           },
           value: true,
         },
@@ -141,7 +141,7 @@ export const ROW_CHART_SETTINGS = {
       return t`Ejes`;
     },
     get group() {
-      return t`X-axis`;
+      return t`Eje-X`;
     },
     index: 4,
     get title() {
@@ -156,7 +156,7 @@ export const ROW_CHART_SETTINGS = {
       return t`Ejes`;
     },
     get group() {
-      return t`X-axis`;
+      return t`Eje-X`;
     },
     index: 5,
     get title() {
@@ -172,7 +172,7 @@ export const ROW_CHART_SETTINGS = {
       return t`Ejes`;
     },
     get group() {
-      return t`X-axis`;
+      return t`Eje-X`;
     },
     index: 6,
     get title() {
@@ -188,11 +188,11 @@ export const ROW_CHART_SETTINGS = {
       return t`Ejes`;
     },
     get group() {
-      return t`Y-axis`;
+      return t`Eje-Y`;
     },
     index: 1,
     get title() {
-      return t`Show label`;
+      return t`Mostrar etiqueta`;
     },
     inline: true,
     widget: "toggle",
@@ -203,11 +203,11 @@ export const ROW_CHART_SETTINGS = {
       return t`Ejes`;
     },
     get title() {
-      return t`Label`;
+      return t`Etiqueta`;
     },
     index: 2,
     get group() {
-      return t`Y-axis`;
+      return t`Eje-Y`;
     },
     widget: "input",
     getHidden: (series, vizSettings) =>
@@ -222,11 +222,11 @@ export const ROW_CHART_SETTINGS = {
       return t`Ejes`;
     },
     get title() {
-      return t`Show label`;
+      return t`Mostrar etiqueta`;
     },
     index: 1,
     get group() {
-      return t`X-axis`;
+      return t`Eje-X`;
     },
     widget: "toggle",
     inline: true,
@@ -237,11 +237,11 @@ export const ROW_CHART_SETTINGS = {
       return t`Ejes`;
     },
     get title() {
-      return t`Label`;
+      return t`Etiqueta`;
     },
     index: 2,
     get group() {
-      return t`X-axis`;
+      return t`Eje-X`;
     },
     widget: "input",
     getHidden: (_series, vizSettings) =>
@@ -267,7 +267,7 @@ export const ROW_CHART_SETTINGS = {
       return t`Visualización`;
     },
     get title() {
-      return t`Show values on data points`;
+      return t`Mostrar valores en puntos de datos`;
     },
     widget: "toggle",
     inline: true,
@@ -280,7 +280,7 @@ export const ROW_CHART_SETTINGS = {
       return t`Visualización`;
     },
     get title() {
-      return t`Value labels formatting`;
+      return t`Formato de etiquetas de valor`;
     },
     widget: "segmentedControl",
     getHidden: (_series, vizSettings) =>

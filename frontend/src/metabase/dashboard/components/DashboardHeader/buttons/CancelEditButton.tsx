@@ -20,7 +20,7 @@ export const CancelEditButton = (props: { onClick: () => void }) => {
       className={cx(ButtonsS.Button, ButtonsS.ButtonSmall, CS.mr1)}
       onClick={props.onClick}
     >
-      {t`Cancel`}
+      {t`Cancelar`}
     </Button>
   );
 };

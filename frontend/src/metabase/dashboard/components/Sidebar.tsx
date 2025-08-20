@@ -61,8 +61,8 @@ export function Sidebar({
               variant="subtle"
               color="text-medium"
               onClick={onCancel}
-              aria-label={t`Cancel`}
-            >{t`Cancel`}</Button>
+              aria-label={t`Cancelar`}
+            >{t`Cancelar`}</Button>
           )}
           {onClose && (
             <Tooltip label={closeTooltip} hidden={!closeTooltip}>

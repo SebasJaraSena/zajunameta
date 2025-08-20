@@ -136,7 +136,7 @@ const CollectionPermissionsModal = ({
                 {t`See all collection permissions`}
               </Link>,
             ]),
-        <Button key="cancel" onClick={onClose}>{t`Cancel`}</Button>,
+        <Button key="cancel" onClick={onClose}>{t`Cancelar`}</Button>,
         <Button key="save" primary disabled={!isDirty} onClick={handleSave}>
           {t`Guardar`}
         </Button>,

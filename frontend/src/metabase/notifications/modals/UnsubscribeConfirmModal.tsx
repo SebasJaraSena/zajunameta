@@ -20,7 +20,7 @@ export const UnsubscribeConfirmModal = ({
   >
     <Text py="1rem">{t`You’ll stop receiving this alert from now on. Depending on your organization’s permissions you might need to ask a moderator to be re-added in the future.`}</Text>
     <Flex justify="flex-end" gap="0.75rem">
-      <Button onClick={onClose}>{t`Cancel`}</Button>
+      <Button onClick={onClose}>{t`Cancelar`}</Button>
       <Button
         variant="filled"
         color="error"

@@ -22,12 +22,12 @@ export const DeleteAlertConfirmModal = ({
   >
     <Text py="1rem">{t`This can't be undone.`}</Text>
     <Flex justify="flex-end" gap="0.75rem">
-      <Button onClick={onClose}>{t`Cancel`}</Button>
+      <Button onClick={onClose}>{t`Cancelar`}</Button>
       <Button
         variant="filled"
         color="error"
         onClick={onConfirm}
-      >{t`Delete it`}</Button>
+      >{t`Eliminar`}</Button>
     </Flex>
   </Modal>
 );

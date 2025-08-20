@@ -69,7 +69,7 @@ function AddMappingRow({
             onKeyDown={handleKeyDown}
           />
           <div>
-            <Button borderless onClick={handleCancelClick}>{t`Cancel`}</Button>
+            <Button borderless onClick={handleCancelClick}>{t`Cancelar`}</Button>
             <Button
               className={CS.ml2}
               type="submit"

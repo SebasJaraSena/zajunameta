@@ -142,7 +142,7 @@ export function getPermissionWarningModal(
         value === DataPermissionValue.CONTROLLED
           ? t`Limit access`
           : t`Revoke access`,
-      cancelButtonText: t`Cancel`,
+      cancelButtonText: t`Cancelar`,
     };
   }
 }
@@ -172,7 +172,7 @@ export function getWillRevokeNativeAccessWarningModal(
       message: t`As part of providing granular permissions for this one ${entityType}, this group's native querying permissions will also be removed from all tables and schemas in this database.`,
       confirmButtonText: c("This is a verb, for a confirmation button")
         .t`Change`,
-      cancelButtonText: t`Cancel`,
+      cancelButtonText: t`Cancelar`,
     };
   }
 }
@@ -217,7 +217,7 @@ export function getViewDataPermissionsTooRestrictiveWarningModal(
         title: t`Allow native query editing?`,
         message: t`This will also change this group's data access to “Can view” for this database.`,
         confirmButtonText: t`Allow`,
-        cancelButtonText: t`Cancel`,
+        cancelButtonText: t`Cancelar`,
       };
     }
   }
@@ -259,7 +259,7 @@ export function getViewDataPermissionsTooRestrictiveWarningModal(
         </Flex>
       ),
       confirmButtonText: t`Okay`,
-      cancelButtonText: t`Cancel`,
+      cancelButtonText: t`Cancelar`,
     };
   }
 }
@@ -312,7 +312,7 @@ export function getRevokingAccessToAllTablesWarningModal(
         title: t`Revoke access to all tables?`,
         message: t`This will also revoke this group's access to raw queries for this database.`,
         confirmButtonText: t`Revoke access`,
-        cancelButtonText: t`Cancel`,
+        cancelButtonText: t`Cancelar`,
       };
     }
   }

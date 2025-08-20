@@ -63,10 +63,10 @@ const TimelineForm = ({
               </FormArchiveButton>
             )}
             <Button type="button" onClick={onCancel}>
-              {t`Cancel`}
+              {t`Cancelar`}
             </Button>
             <FormSubmitButton
-              title={isNew ? t`Create` : t`Update`}
+              title={isNew ? t`Crear` : t`Actualizar`}
               disabled={!dirty}
               primary
             />

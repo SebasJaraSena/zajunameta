@@ -336,7 +336,7 @@ export const isXAxisScaleValid = (
   );
 };
 
-export const getDefaultGoalLabel = () => t`Goal`;
+export const getDefaultGoalLabel = () => t`Objetivo`;
 
 /**
  * Returns the default column names to be used for scatter plot viz settings.

@@ -500,7 +500,7 @@ const _DatasetEditorInner = (props) => {
             key="cancel"
             small
             onClick={handleCancelClick}
-          >{t`Cancel`}</Button>,
+          >{t`Cancelar`}</Button>,
           <Tooltip
             key="save"
             refProp="innerRef"

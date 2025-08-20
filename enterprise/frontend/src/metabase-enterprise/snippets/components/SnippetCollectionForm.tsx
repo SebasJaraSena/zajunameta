@@ -161,7 +161,7 @@ function SnippetCollectionForm({
           <FormFooter>
             <FormErrorMessage inline />
             {!!onCancel && (
-              <Button type="button" onClick={onCancel}>{t`Cancel`}</Button>
+              <Button type="button" onClick={onCancel}>{t`Cancelar`}</Button>
             )}
             <FormSubmitButton
               title={isEditing ? t`Update` : t`Create`}

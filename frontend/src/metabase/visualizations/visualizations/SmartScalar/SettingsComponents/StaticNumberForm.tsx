@@ -64,7 +64,7 @@ export function StaticNumberForm({
           <TextInput
             autoFocus
             value={label}
-            label={t`Label`}
+            label={t`Etiqueta`}
             onChange={handleChangeLabel}
             data-autofocus
           />

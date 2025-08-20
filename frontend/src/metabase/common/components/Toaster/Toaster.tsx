@@ -36,7 +36,7 @@ export const Toast = ({
   fixed,
   canClose = true,
   secondaryText,
-  secondaryAriaLabel = t`Cancel`,
+  secondaryAriaLabel = t`Cancelar`,
   onConfirm,
   onDismiss,
   onSecondary,

@@ -91,13 +91,13 @@ export const RuleEditor = ({
   return (
     <Stack gap="lg">
       <Stack gap="xs">
-        <Text fw="bold" fz="lg">{t`Which columns should be affected?`}</Text>
+        <Text fw="bold" fz="lg">{t`¿A qué columnas se aplica?`}</Text>
         <MultiSelect
           comboboxProps={{ withinPortal: false }}
           value={rule.columns}
           onChange={handleColumnChange}
           defaultDropdownOpened={rule.columns.length === 0}
-          placeholder={t`Choose a column`}
+          placeholder={t`Elige una columna`}
           data={cols.map((col) => ({
             value: col.name,
             label: col.display_name,
@@ -128,8 +128,8 @@ export const RuleEditor = ({
           <Stack gap="xs">
             <Text fw="bold" fz="lg">
               {ngettext(
-                msgid`When a cell in this column…`,
-                `When any cell in these columns…`,
+                msgid`Cuando una celda en esta columna...`,
+                `Cuando cualquier celda en estas columnas…`,
                 selectedColumns.length,
               )}
             </Text>
@@ -154,7 +154,7 @@ export const RuleEditor = ({
             </Box>
           </Stack>
           <Stack gap="xs" align="flex-start">
-            <Text fw="bold" fz="lg">{t`…turn its background this color:`}</Text>
+            <Text fw="bold" fz="lg">{t`…pinta el fondo de este color:`}</Text>
 
             <ColorSelector
               data-testid="conditional-formatting-color-selector"
@@ -166,7 +166,7 @@ export const RuleEditor = ({
           </Stack>
           {canHighlightRow && (
             <Stack gap="xs">
-              <Text fw="bold" fz="lg">{t`Highlight the whole row`}</Text>
+              <Text fw="bold" fz="lg">{t`Resalta la fila entera`}</Text>
 
               <ChartSettingToggle
                 value={rule.highlight_row}
@@ -263,11 +263,11 @@ export const RuleEditor = ({
       <Box>
         {rule.columns.length === 0 ? (
           <Button variant="filled" onClick={onRemove}>
-            {isNew ? t`Cancel` : t`Delete`}
+            {isNew ? t`Cancelar` : t`Eliminar`}
           </Button>
         ) : (
           <Button variant="filled" onClick={onDone}>
-            {isNew ? t`Add rule` : t`Update rule`}
+            {isNew ? t`Agregar regla` : t`Actualizar regla`}
           </Button>
         )}
       </Box>
@@ -304,7 +304,7 @@ const RuleEditorValueInput = ({
         }
       : {
           type: "text",
-          placeholder: t`Column value`,
+          placeholder: t`Valor de columna`,
         };
 
   return (

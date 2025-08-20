@@ -67,8 +67,8 @@ export const CreateApiKeyModal = ({ onClose }: { onClose: () => void }) => {
               >{t`We don't version the Metabase API. We rarely change API endpoints, and almost never remove them, but if you write code that relies on the API, there's a chance you might have to update your code in the future.`}</Text>
               <FormErrorMessage />
               <Group justify="flex-end">
-                <Button onClick={onClose}>{t`Cancel`}</Button>
-                <FormSubmitButton variant="filled" label={t`Create`} />
+                <Button onClick={onClose}>{t`Cancelar`}</Button>
+                <FormSubmitButton variant="filled" label={t`Crear`} />
               </Group>
             </Stack>
           </Form>

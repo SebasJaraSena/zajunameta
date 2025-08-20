@@ -26,10 +26,10 @@ export const getChartGoal = (
 export const GRAPH_GOAL_SETTINGS = {
   "graph.show_goal": {
     get section() {
-      return t`Visualización`;
+      return t`Display`;
     },
     get title() {
-      return t`Goal line`;
+      return t`Meta`;
     },
     widget: "toggle",
     default: false,
@@ -38,10 +38,10 @@ export const GRAPH_GOAL_SETTINGS = {
   },
   "graph.goal_value": {
     get section() {
-      return t`Visualización`;
+      return t`Display`;
     },
     get title() {
-      return t`Goal value`;
+      return t`Valor del Objetivo`;
     },
     widget: "number",
     default: 0,
@@ -51,10 +51,10 @@ export const GRAPH_GOAL_SETTINGS = {
   },
   "graph.goal_label": {
     get section() {
-      return t`Visualización`;
+      return t`Display`;
     },
     get title() {
-      return t`Goal label`;
+      return t`Etiqueta de Objetivo`;
     },
     widget: "input",
     getDefault: getDefaultGoalLabel,

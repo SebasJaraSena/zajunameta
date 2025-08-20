@@ -14,46 +14,46 @@ import type {
 
 const COMMON_OPERATOR_NAMES = {
   // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-  "is-null": t`is null`,
+  "is-null": t`es nulo`,
   // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-  "not-null": t`is not null`,
+  "not-null": t`no es nulo`,
 };
 
 const NUMBER_OPERATOR_NAMES = {
   // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-  "=": t`is equal to`,
+  "=": t`es igual a`,
   // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-  "!=": t`is not equal to`,
+  "!=": t`no es igual a`,
   // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-  "<": t`is less than`,
+  "<": t`es menor que`,
   // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-  ">": t`is greater than`,
+  ">": t`es mayor que`,
   // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-  "<=": t`is less than or equal to`,
+  "<=": t`es menor o igual a`,
   // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-  ">=": t`is greater than or equal to`,
+  ">=": t`es mayor o igual a`,
 };
 
 const STRING_OPERATOR_NAMES = {
   // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-  "=": t`is equal to`,
+  "=": t`es igual a`,
   // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-  "!=": t`is not equal to`,
+  "!=": t`no es igual a`,
   // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-  contains: t`contains`,
+  contains: t`contiene`,
   // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-  "does-not-contain": t`does not contain`,
+  "does-not-contain": t`no contiene`,
   // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-  "starts-with": t`starts with`,
+  "starts-with": t`empieza con`,
   // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-  "ends-with": t`ends with`,
+  "ends-with": t`termina con`,
 };
 
 const BOOLEAN_OPERATOR_NAMES = {
   // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-  "is-true": t`is true`,
+  "is-true": t`es verdadero`,
   // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-  "is-false": t`is false`,
+  "is-false": t`es falso`,
 };
 
 const not =

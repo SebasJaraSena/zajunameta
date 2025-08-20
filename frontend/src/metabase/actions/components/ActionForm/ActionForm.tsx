@@ -88,7 +88,7 @@ function ActionForm({
 
         <ActionFormButtonContainer>
           {onClose && (
-            <Button type="button" onClick={onClose}>{t`Cancel`}</Button>
+            <Button type="button" onClick={onClose}>{t`Cancelar`}</Button>
           )}
           <FormSubmitButton {...submitButtonProps} />
         </ActionFormButtonContainer>

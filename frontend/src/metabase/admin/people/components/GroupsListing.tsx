@@ -197,7 +197,7 @@ function EditingGroupRow({
       </td>
       <td />
       <Box component="td" ta="right">
-        <Button variant="subtle" onClick={onCancelClicked}>{t`Cancel`}</Button>
+        <Button variant="subtle" onClick={onCancelClicked}>{t`Cancelar`}</Button>
         <Button
           ml="1rem"
           variant={textIsValid && textHasChanged ? "filled" : "outline"}

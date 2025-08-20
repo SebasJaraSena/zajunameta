@@ -21,7 +21,7 @@ export const ChartSettingsFooter = ({
         borderless
         icon="refresh"
         onClick={onReset}
-      >{t`Reset to defaults`}</Button>
+      >{t`Restablecer a los valores por defecto`}</Button>
     )}
     <Button onClick={onCancel}>{t`Cancelar`}</Button>
     <Button primary onClick={onDone}>{t`Hecho`}</Button>

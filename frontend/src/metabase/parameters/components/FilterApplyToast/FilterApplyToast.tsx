@@ -55,10 +55,10 @@ export function FilterApplyToast({
       canClose={false}
       data-testid="filter-apply-toast"
       message={filterChangeDescription}
-      confirmText={t`Apply`}
-      secondaryText={t`Cancel`}
-      confirmAriaLabel={t`Apply`}
-      secondaryAriaLabel={t`Cancel`}
+      confirmText={t`Aplicar`}
+      secondaryText={t`Cancelar`}
+      confirmAriaLabel={t`Aplicar`}
+      secondaryAriaLabel={t`Cancelar`}
       onConfirm={handleApplyFilters}
       onSecondary={handleCancel}
       style={{

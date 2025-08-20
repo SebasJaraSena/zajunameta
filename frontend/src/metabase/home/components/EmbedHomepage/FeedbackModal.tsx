@@ -62,7 +62,7 @@ export const FeedbackModal = ({
         />
 
         <Group justify="flex-end">
-          <Button onClick={onClose}>{t`Cancel`}</Button>
+          <Button onClick={onClose}>{t`Cancelar`}</Button>
           <Button variant="filled" onClick={handleSubmit}>
             {comment.trim().length + email.trim().length > 0
               ? t`Send`

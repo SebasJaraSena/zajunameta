@@ -46,7 +46,7 @@ export const AddRow = ({
       onChange={onChange}
     />
     <Button variant="subtle" bg="transparent" onClick={onCancel} mr="sm">
-      {t`Cancel`}
+      {t`Cancelar`}
     </Button>
     <Button
       variant={isValid ? "filled" : "outline"}

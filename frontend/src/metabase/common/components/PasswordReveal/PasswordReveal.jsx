@@ -80,7 +80,7 @@ export default class PasswordReveal extends Component {
             className={cx(CS.link, CS.textBold, CS.mr2)}
             onClick={() => this.setState({ visible: !visible })}
           >
-            {visible ? t`Hide` : t`Show`}
+            {visible ? t`Esconder` : t`Mostrar`}
           </a>
 
           <PasswordCopyButton value={password} />

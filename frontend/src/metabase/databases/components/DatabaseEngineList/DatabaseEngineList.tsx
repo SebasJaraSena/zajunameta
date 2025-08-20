@@ -202,7 +202,7 @@ const ListToggle = ({
       variant="subtle"
       onClick={onClick}
     >
-      {isExpanded ? t`Hide` : t`Show more`}
+      {isExpanded ? t`Esconder` : t`Mostrar más`}
     </Button>
   );
 };

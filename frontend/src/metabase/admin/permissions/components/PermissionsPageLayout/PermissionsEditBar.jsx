@@ -29,7 +29,7 @@ export function PermissionsEditBar({ diff, isDirty, onCancel, onSave }) {
   );
 
   const cancelButton = (
-    <Button small onClick={onCancel} key="cancel">{t`Cancel`}</Button>
+    <Button small onClick={onCancel} key="cancel">{t`Cancelar`}</Button>
   );
 
   return (

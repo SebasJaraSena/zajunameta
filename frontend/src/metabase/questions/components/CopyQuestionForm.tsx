@@ -149,7 +149,7 @@ export const CopyQuestionForm = ({
           <FormFooter>
             <FormErrorMessage inline />
             {!!onCancel && (
-              <Button type="button" onClick={onCancel}>{t`Cancel`}</Button>
+              <Button type="button" onClick={onCancel}>{t`Cancelar`}</Button>
             )}
             <FormSubmitButton label={t`Duplicate`} variant="filled" />
           </FormFooter>
