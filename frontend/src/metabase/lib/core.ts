@@ -18,23 +18,23 @@ export const FIELD_SEMANTIC_TYPES: FieldSemanticType[] = [
   {
     id: TYPE.PK,
     get name() {
-      return t`Entity Key`;
+      return t`Clave Entidad`;
     },
     get section() {
-      return t`Overall Row`;
+      return t`Fila General`;
     },
     get description() {
-      return t`The primary key for this table.`;
+      return t`La clave principal para esta tabla.`;
     },
     icon: "label",
   },
   {
     id: TYPE.Name,
     get name() {
-      return t`Entity Name`;
+      return t`Nombre Entidad`;
     },
     get section() {
-      return t`Overall Row`;
+      return t`Fila General`;
     },
     get description() {
       return t`The "name" of each record. Usually a column called "name", "title", etc.`;
@@ -175,7 +175,7 @@ export const FIELD_SEMANTIC_TYPES: FieldSemanticType[] = [
   {
     id: TYPE.Currency,
     get name() {
-      return t`Currency`;
+      return t`Moneda`;
     },
     get section() {
       return t`Financial`;

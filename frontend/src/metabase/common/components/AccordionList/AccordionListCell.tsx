@@ -129,7 +129,8 @@ export const AccordionListCell = forwardRef(function AccordionListCell<
     renderItemWrapper = (content: ReactNode) => content,
     row,
     searchInputProps,
-    searchPlaceholder = t`Find...`,
+
+    searchPlaceholder = t`Buscar...`,
     searchText,
     sectionIsExpanded,
     sections,

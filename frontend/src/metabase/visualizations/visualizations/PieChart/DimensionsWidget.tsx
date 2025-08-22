@@ -69,7 +69,7 @@ function DimensionPicker({
 }
 
 // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-const BREAKOUT_TITLE = t`Breakout`;
+const BREAKOUT_TITLE = t`Desglosar`;
 // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
 const INNER_RING_TITLE = t`Inner Ring`;
 // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045

@@ -50,7 +50,7 @@ function TablePane({ table, onItemClick, onBack, onClose }: TablePaneProps) {
             {table.description ? (
               <Description>{table.description}</Description>
             ) : (
-              <EmptyDescription>{t`No description`}</EmptyDescription>
+              <EmptyDescription>{t`Sin descripción`}</EmptyDescription>
             )}
           </div>
           <div className={CS.my2}>

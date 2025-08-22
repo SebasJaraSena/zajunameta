@@ -136,7 +136,7 @@ const AddFilterButton = forwardRef(function AddFilterButton(
       aria-label={compact ? t`Add filters` : undefined}
       onClick={onClick}
     >
-      {!compact && t`Add filters to narrow your answer`}
+      {!compact && t`Añade filtros para limitar tu respuesta`}
     </Button>
   );
 });

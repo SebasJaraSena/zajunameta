@@ -96,7 +96,7 @@ type ColumnDescriptionProps = {
 
 function ColumnDescription({ description }: ColumnDescriptionProps) {
   if (!description) {
-    return <EmptyDescription>{t`No description`}</EmptyDescription>;
+    return <EmptyDescription>{t`Sin descripción`}</EmptyDescription>;
   }
   return <Description>{description}</Description>;
 }

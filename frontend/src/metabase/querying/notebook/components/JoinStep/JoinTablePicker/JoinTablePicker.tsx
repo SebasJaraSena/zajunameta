@@ -73,7 +73,7 @@ function JoinTableColumnPicker({ columnPicker }: JoinTableColumnPickerProps) {
   return (
     <Popover opened={isOpened} onChange={setIsOpened}>
       <Popover.Target>
-        <Tooltip label={t`Pick columns`}>
+        <Tooltip label={t`Selecciona columnas`}>
           <IconButtonWrapper
             className={S.ColumnPickerButton}
             style={
@@ -82,7 +82,7 @@ function JoinTableColumnPicker({ columnPicker }: JoinTableColumnPickerProps) {
               } as CSSProperties
             }
             onClick={() => setIsOpened(!isOpened)}
-            aria-label={t`Pick columns`}
+            aria-label={t`Selecciona columnas`}
             data-testid="fields-picker"
           >
             <Icon name="chevrondown" />

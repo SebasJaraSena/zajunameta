@@ -83,7 +83,7 @@
   Public because it's used directly by some drill-thrus."
   []
   {:lib/type     :option/binning
-   :display-name (i18n/tru "Auto bin")
+   :display-name (i18n/tru "Agrupación Auto")
    :default      true
    :mbql         {:strategy :default}})
 
@@ -95,9 +95,9 @@
   []
   (mapv with-binning-option-type
         [(default-auto-bin)
-         {:display-name (i18n/tru "10 bins")  :mbql {:strategy :num-bins :num-bins 10}}
-         {:display-name (i18n/tru "50 bins")  :mbql {:strategy :num-bins :num-bins 50}}
-         {:display-name (i18n/tru "100 bins") :mbql {:strategy :num-bins :num-bins 100}}]))
+         {:display-name (i18n/tru "10 agrupaciones")  :mbql {:strategy :num-bins :num-bins 10}}
+         {:display-name (i18n/tru "50 agrupaciones")  :mbql {:strategy :num-bins :num-bins 50}}
+         {:display-name (i18n/tru "100 agrupaciones") :mbql {:strategy :num-bins :num-bins 100}}]))
 
 (mu/defn coordinate-binning-strategies :- [:sequential ::lib.schema.binning/binning-option]
   "List of binning options for coordinate fields (ie. latitude and longitude). These split the data into as many
@@ -125,11 +125,11 @@
     (let [semantic-type (cond-> x
                           (and (map? x) (= :metadata/column (:lib/type x))) :semantic-type)]
       (case strategy
-        :num-bins  (i18n/trun "{0} bin" "{0} bins" num-bins)
+        :num-bins  (i18n/trun "{0} agrupación" "{0} agrupaciones" num-bins)
         :bin-width (str (fmt.num/format-number bin-width {})
                         (when (isa? semantic-type :type/Coordinate)
                           "°"))
-        :default   (i18n/tru "Auto binned")))))
+        :default   (i18n/tru "Agrupación Auto")))))
 
 (defmethod lib.metadata.calculation/display-info-method :option/binning
   [_query _stage-number binning-option]

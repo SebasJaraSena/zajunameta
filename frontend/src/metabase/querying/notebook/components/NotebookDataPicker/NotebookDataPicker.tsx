@@ -160,7 +160,7 @@ function ModernDataPicker({
   return (
     <>
       <Tooltip
-        label={t`${METAKEY}+click to open in new tab`}
+        label={t`${METAKEY}+click para abrir en una nueva pestaña`}
         hidden={!table}
         events={{ hover: true, focus: false, touch: false }}
       >

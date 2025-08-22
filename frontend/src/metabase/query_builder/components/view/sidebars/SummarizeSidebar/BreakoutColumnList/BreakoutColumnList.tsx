@@ -110,7 +110,7 @@ export function BreakoutColumnList({
       <Box mb="md">
         <Input
           fullWidth
-          placeholder={t`Find...`}
+          placeholder={t`Buscar...`}
           value={searchQuery}
           leftIcon="search"
           onResetClick={handleResetSearch}

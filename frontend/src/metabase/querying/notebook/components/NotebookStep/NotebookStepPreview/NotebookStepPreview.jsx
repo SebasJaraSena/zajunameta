@@ -44,7 +44,7 @@ export const NotebookStepPreview = ({ step, onClose }) => {
   return (
     <Box pt="md" data-testid="preview-root">
       <Flex justify="space-between" align="center" mb="sm">
-        <span className={CS.textBold}>{t`Preview`}</span>
+        <span className={CS.textBold}>{t`Vista preliminar`}</span>
         <Flex align="flex-end">
           <Icon
             name="close"

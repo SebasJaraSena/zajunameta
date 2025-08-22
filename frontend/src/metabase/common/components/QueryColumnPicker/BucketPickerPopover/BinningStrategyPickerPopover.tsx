@@ -26,7 +26,7 @@ export function BinningStrategyPickerPopover({
   const items = useMemo(
     () => [
       ...buckets.map((bucket) => getBucketListItem(query, stageIndex, bucket)),
-      { displayName: t`Don't bin`, bucket: null },
+      { displayName: t`No agrupar`, bucket: null },
     ],
     [query, stageIndex, buckets],
   );
@@ -68,5 +68,5 @@ export function BinningStrategyPickerPopover({
 }
 
 function renderTriggerContent(bucket?: Lib.BucketDisplayInfo) {
-  return bucket ? bucket.displayName : t`Unbinned`;
+  return bucket ? bucket.displayName : t`Desagrupados`;
 }

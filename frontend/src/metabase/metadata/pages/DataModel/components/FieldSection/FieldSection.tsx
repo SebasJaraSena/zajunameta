@@ -134,7 +134,7 @@ const FieldSectionBase = ({
               showLabel={showButtonLabel}
               onClick={onPreviewClick}
               onRequestWidth={setPreviewButtonWidth}
-            >{t`Preview`}</ResponsiveButton>
+            >{t`Vista preliminar`}</ResponsiveButton>
 
             <ResponsiveButton
               icon="gear_settings_filled"

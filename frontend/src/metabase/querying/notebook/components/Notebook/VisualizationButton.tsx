@@ -44,7 +44,7 @@ export const VisualizeButton = ({
       style={{ minWidth: 220 }}
       onClick={visualizeQuestion}
     >
-      {t`Visualize`}
+      {t`Visualizar`}
     </Button>
   );
 };

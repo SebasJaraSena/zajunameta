@@ -96,7 +96,7 @@ export function TableInfo({
       {description ? (
         <Description>{description}</Description>
       ) : (
-        <EmptyDescription>{t`No description`}</EmptyDescription>
+        <EmptyDescription>{t`Sin descripción`}</EmptyDescription>
       )}
       <MetadataContainer>
         <Fade visible={!hasFetchedMetadata}>

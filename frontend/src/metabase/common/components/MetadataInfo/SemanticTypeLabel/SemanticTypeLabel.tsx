@@ -22,7 +22,7 @@ export function SemanticTypeLabel({
 }: SemanticTypeLabelProps) {
   const semanticTypeIcon = getSemanticTypeIcon(semanticType) || "ellipsis";
   const semanticTypeName =
-    getSemanticTypeName(semanticType) || t`No special type`;
+    getSemanticTypeName(semanticType) || t`Sin tipo especial`;
 
   return (
     <LabelContainer className={className}>

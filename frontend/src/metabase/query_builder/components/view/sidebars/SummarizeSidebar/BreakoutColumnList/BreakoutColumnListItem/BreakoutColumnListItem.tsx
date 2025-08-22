@@ -145,7 +145,7 @@ export function BreakoutColumnListItem({
         )}
       </Flex>
       {!isSelected && (
-        <Tooltip label={t`Add grouping`}>
+        <Tooltip label={t`Añadir agrupación`}>
           <Button
             className={BreakoutColumnListItemS.AddButton}
             icon="add"

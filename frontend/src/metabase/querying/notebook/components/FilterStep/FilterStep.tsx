@@ -66,7 +66,7 @@ export function FilterStep({
     <ErrorBoundary>
       <ClauseStep
         items={filters}
-        initialAddText={t`Add filters to narrow your answer`}
+        initialAddText={t`Añade filtros para limitar tu respuesta`}
         readOnly={readOnly}
         color={color}
         isLastOpened={isLastOpened}

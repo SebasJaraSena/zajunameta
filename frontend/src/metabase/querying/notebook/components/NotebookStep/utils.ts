@@ -44,7 +44,7 @@ const STEPS: Record<NotebookStepType, StepUIItem> = {
   },
   join: {
     get title() {
-      return t`Join data`;
+      return t`Cruzar datos`;
     },
     icon: "join_left_outer",
     priority: 1,
@@ -55,7 +55,7 @@ const STEPS: Record<NotebookStepType, StepUIItem> = {
   },
   expression: {
     get title() {
-      return t`Custom column`;
+      return t`Columna personalizada`;
     },
     icon: "add_data",
     compact: true,
@@ -86,7 +86,7 @@ const STEPS: Record<NotebookStepType, StepUIItem> = {
   },
   aggregate: {
     get title() {
-      return t`Aggregate`;
+      return t`Agregar`;
     },
     icon: "sum",
     priority: 5,
@@ -96,7 +96,7 @@ const STEPS: Record<NotebookStepType, StepUIItem> = {
   },
   breakout: {
     get title() {
-      return t`Breakout`;
+      return t`Desglosar`;
     },
     icon: "segment",
     priority: 1,
@@ -106,7 +106,7 @@ const STEPS: Record<NotebookStepType, StepUIItem> = {
   },
   sort: {
     get title() {
-      return t`Sort`;
+      return t`Ordenar`;
     },
     icon: "sort",
     compact: true,
@@ -117,7 +117,7 @@ const STEPS: Record<NotebookStepType, StepUIItem> = {
   },
   limit: {
     get title() {
-      return t`Row limit`;
+      return t`Límite de filas`;
     },
     icon: "list",
     compact: true,

@@ -56,7 +56,7 @@ export function TemporalUnitPicker({
       )}
       {isExpanded && canRemove && (
         <DefaultSelectItem
-          value={t`Don't bin`}
+          value={t`No agrupar`}
           onClick={onRemove}
           role="option"
         />

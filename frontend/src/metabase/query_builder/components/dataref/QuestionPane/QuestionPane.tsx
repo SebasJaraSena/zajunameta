@@ -62,7 +62,7 @@ const QuestionPane = ({
           {question.description() ? (
             <Description>{question.description()}</Description>
           ) : (
-            <EmptyDescription>{t`No description`}</EmptyDescription>
+            <EmptyDescription>{t`Sin descripción`}</EmptyDescription>
           )}
         </Box>
         <Flex

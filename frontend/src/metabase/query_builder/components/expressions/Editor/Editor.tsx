@@ -166,7 +166,7 @@ export function Editor(props: EditorProps) {
           id={id}
           ref={ref}
           data-testid="custom-expression-query-editor"
-          placeholder={t`Type your expression, press '[' for columns…`}
+          placeholder={t`Escriba su expresión, presione '[' para las columnas…`}
           className={S.editor}
           extensions={extensions}
           readOnly={readOnly || isFormatting}
@@ -194,9 +194,9 @@ export function Editor(props: EditorProps) {
         )}
 
         <Flex className={S.toolbar} gap="sm" pt="sm" pr="sm" direction="column">
-          <ButtonTooltip label={t`Function browser`}>
+          <ButtonTooltip label={t`Navegador de funciones`}>
             <Button
-              aria-label={t`Function browser`}
+              aria-label={t`Navegador de funciones`}
               onClick={toggleFunctionBrowser}
               variant={isFunctionBrowserOpen ? "filled" : "subtle"}
               className={S.toolbarButton}

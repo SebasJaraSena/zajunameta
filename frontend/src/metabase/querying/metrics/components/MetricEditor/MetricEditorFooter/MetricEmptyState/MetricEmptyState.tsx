@@ -27,7 +27,7 @@ export function MetricEmptyState({
       </Text>
       {isRunnable && (
         <Button variant="filled" onClick={() => runQuestionQuery()}>
-          {t`Visualize`}
+          {t`Visualizar`}
         </Button>
       )}
     </Flex>

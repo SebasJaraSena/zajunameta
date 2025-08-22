@@ -24,7 +24,7 @@ export function TabularPreviewModal({
     <Modal
       data-testid="visualizer-tabular-preview-modal"
       opened={opened}
-      title={t`Preview`}
+      title={t`Vista preliminar`}
       size="xl"
       onClose={onClose}
     >

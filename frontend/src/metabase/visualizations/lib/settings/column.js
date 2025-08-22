@@ -221,7 +221,7 @@ export const DATE_COLUMN_SETTINGS = {
 export const NUMBER_COLUMN_SETTINGS = {
   number_style: {
     get title() {
-      return t`Style`;
+      return t`Estilo`;
     },
     widget: "select",
     props: {
@@ -234,19 +234,19 @@ export const NUMBER_COLUMN_SETTINGS = {
         },
         {
           get name() {
-            return t`Percent`;
+            return t`Porcentaje`;
           },
           value: "percent",
         },
         {
           get name() {
-            return t`Scientific`;
+            return t`Científico`;
           },
           value: "scientific",
         },
         {
           get name() {
-            return t`Currency`;
+            return t`Moneda`;
           },
           value: "currency",
         },
@@ -319,7 +319,7 @@ export const NUMBER_COLUMN_SETTINGS = {
   number_separators: {
     // uses 1-2 character string to represent decimal and thousands separators
     get title() {
-      return t`Separator style`;
+      return t`Estilo separador`;
     },
     widget: "select",
     props: {
@@ -348,7 +348,7 @@ export const NUMBER_COLUMN_SETTINGS = {
   },
   scale: {
     get title() {
-      return t`Multiply by a number`;
+      return t`Multiplicar por un número`;
     },
     widget: "number",
     props: {
@@ -357,7 +357,7 @@ export const NUMBER_COLUMN_SETTINGS = {
   },
   prefix: {
     get title() {
-      return t`Add a prefix`;
+      return t`Añade un prefijo`;
     },
     widget: "input",
     props: {
@@ -366,12 +366,12 @@ export const NUMBER_COLUMN_SETTINGS = {
   },
   suffix: {
     get title() {
-      return t`Add a suffix`;
+      return t`Añade un prefijo`;
     },
     widget: "input",
     props: {
       get placeholder() {
-        return t`dollars`;
+        return t`prefijo`;
       },
     },
   },

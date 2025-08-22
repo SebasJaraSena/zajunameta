@@ -145,13 +145,13 @@ export const getTitle = (
     showSaveType,
   ])
     .returnType<string>()
-    .with(["question", "singleStep", true], () => t`Save question`)
-    .with(["question", "singleStep", false], () => t`Save new question`)
-    .with(["question", "multiStep", P._], () => t`First, save your question`)
-    .with(["model", "singleStep", P._], () => t`Save model`)
-    .with(["model", "multiStep", P._], () => t`First, save your model`)
-    .with(["metric", "singleStep", P._], () => t`Save metric`)
-    .with(["metric", "multiStep", P._], () => t`First, save your metric`)
+    .with(["question", "singleStep", true], () => t`Guardar pregunta`)
+    .with(["question", "singleStep", false], () => t`Guardar nueva pregunta`)
+    .with(["question", "multiStep", P._], () => t`Primero, guarda tu pregunta`)
+    .with(["model", "singleStep", P._], () => t`Guardar modelo`)
+    .with(["model", "multiStep", P._], () => t`Primero, guarda tu modelo`)
+    .with(["metric", "singleStep", P._], () => t`Guardar métrica`)
+    .with(["metric", "multiStep", P._], () => t`Primero, guarda tu métrica`)
     .exhaustive();
 };
 

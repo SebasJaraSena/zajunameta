@@ -205,7 +205,7 @@ export function seriesSetting({ readDependencies = [], def } = {}) {
       getHidden: ([{ card }], settings, { isDashboard }) =>
         !isDashboard || card?.display === "waterfall",
       getSection: (series, settings, { isDashboard }) =>
-        isDashboard ? t`Visualización` : t`Style`,
+        isDashboard ? t`Visualización` : t`Estilo`,
       objectName: "series",
       getObjects: (series, settings) => series,
       getObjectKey: keyForSingleSeries,

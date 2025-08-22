@@ -270,7 +270,7 @@ class Table extends Component<TableProps, TableState> {
 
     if (isNumber(column)) {
       settings["show_mini_bar"] = {
-        title: t`Show a mini bar chart`,
+        title: t`Mostrar una gráfica de barras en miniatura`,
         widget: "toggle",
         inline: true,
       };
@@ -303,15 +303,15 @@ class Table extends Component<TableProps, TableState> {
 
     if (!column.semantic_type || isEmail(column)) {
       defaultValue = "email_link";
-      options.push({ name: t`Email link`, value: "email_link" });
+      options.push({ name: t`Enlace Email`, value: "email_link" });
     }
     if (!column.semantic_type || isImageURL(column) || isAvatarURL(column)) {
       defaultValue = isAvatarURL(column) ? "image" : "link";
-      options.push({ name: t`Image`, value: "image" });
+      options.push({ name: t`Imagen`, value: "image" });
     }
     if (!column.semantic_type) {
       defaultValue = "auto";
-      options.push({ name: t`Automatic`, value: "auto" });
+      options.push({ name: t`Automático`, value: "auto" });
     }
 
     if (options.length > 1) {

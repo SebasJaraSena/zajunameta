@@ -150,7 +150,7 @@ export function FormattingWidget() {
           <SettingsSection title={t`Numbers`}>
             <FormattingInput
               id="number_separators"
-              label={t`Separator style`}
+              label={t`Estilo separador`}
               value={numberSeparators}
               inputType="select"
               options={[
@@ -171,7 +171,7 @@ export function FormattingWidget() {
               }
             />
           </SettingsSection>
-          <SettingsSection title={t`Currency`}>
+          <SettingsSection title={t`Moneda`}>
             <FormattingInput
               id="currency"
               label={t`Unit of currency`}

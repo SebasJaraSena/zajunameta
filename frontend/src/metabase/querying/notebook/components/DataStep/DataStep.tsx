@@ -96,7 +96,7 @@ function DataFieldPopover({
   return (
     <Popover position="bottom-start">
       <Popover.Target>
-        <Tooltip label={t`Pick columns`}>
+        <Tooltip label={t`Selecciona columnas`}>
           <IconButtonWrapper
             className={S.DataStepIconButton}
             style={
@@ -104,7 +104,7 @@ function DataFieldPopover({
                 "--notebook-cell-container-padding": CONTAINER_PADDING,
               } as CSSProperties
             }
-            aria-label={t`Pick columns`}
+            aria-label={t`Selecciona columnas`}
             data-testid="fields-picker"
           >
             <Icon name="chevrondown" />

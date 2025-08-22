@@ -31,7 +31,7 @@ export function TemporalBucketPickerPopover({
     () => [
       ...buckets.map((bucket) => getBucketListItem(query, stageIndex, bucket)),
       {
-        displayName: t`Don't bin`,
+        displayName: t`No agrupar`,
         bucket: null,
         selected: !selectedBucket && isEditing,
       },
@@ -64,5 +64,5 @@ export function TemporalBucketPickerPopover({
 }
 
 function renderTriggerContent(bucket?: Lib.BucketDisplayInfo) {
-  return bucket ? t`by ${bucket.displayName.toLowerCase()}` : t`Unbinned`;
+  return bucket ? t`by ${bucket.displayName.toLowerCase()}` : t`Desagrupados`;
 }

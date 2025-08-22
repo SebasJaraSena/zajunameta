@@ -130,7 +130,7 @@ export function QueryColumnPicker({
 
     const expressionClausesSection = {
       key: "expression-clauses",
-      name: t`Custom Expressions`,
+      name: t`Expresiones personalizadas`,
       icon: "function" as const,
       items: clausesForMode("expression").map((clause) => ({
         type: "expression-clause" as const,
@@ -142,7 +142,7 @@ export function QueryColumnPicker({
     const expressionClauseAction = {
       key: CUSTOM_EXPRESSION_SECTION_KEY,
       type: "action" as const,
-      name: t`Custom Expression`,
+      name: t`Expresión Personalizada`,
       items: [],
       icon: expressionSectionIcon,
       alwaysSortLast: true,

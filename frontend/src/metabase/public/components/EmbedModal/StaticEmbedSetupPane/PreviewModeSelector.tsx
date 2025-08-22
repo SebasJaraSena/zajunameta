@@ -25,7 +25,7 @@ const CODE_PREVIEW_CONTROL_OPTIONS = [
   },
   {
     // eslint-disable-next-line ttag/no-module-declaration -- see metabase#55045
-    label: <ControlOptionItem label={t`Preview`} iconName="eye_filled" />,
+    label: <ControlOptionItem label={t`Vista preliminar`} iconName="eye_filled" />,
     value: "preview" as ActivePreviewPane,
   },
 ];

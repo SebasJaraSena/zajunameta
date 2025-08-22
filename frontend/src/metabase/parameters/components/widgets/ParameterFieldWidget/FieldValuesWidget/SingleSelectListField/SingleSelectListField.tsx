@@ -43,7 +43,7 @@ const SingleSelectListField = ({
   value,
   options,
   optionRenderer,
-  placeholder = t`Find...`,
+  placeholder = t`Buscar...`,
   onSearchChange,
   isDashboardFilter,
   isLoading,

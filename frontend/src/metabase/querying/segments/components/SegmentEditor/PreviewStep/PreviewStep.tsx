@@ -57,7 +57,7 @@ function PreviewQuery({ query, stageIndex }: PreviewQueryProps) {
           target="_blank"
           variant="filled"
         >
-          {t`Preview`}
+          {t`Vista preliminar`}
         </Button>
       </Flex>
     </ClauseStep>

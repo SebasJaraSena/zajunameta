@@ -42,7 +42,7 @@ export function TimeseriesBucketPicker({
           data-testid="timeseries-bucket-button"
           onClick={() => setIsOpened(!isOpened)}
         >
-          {bucketInfo ? bucketInfo.displayName : t`Unbinned`}
+          {bucketInfo ? bucketInfo.displayName : t`Desagrupados`}
         </Button>
       </Popover.Target>
       <Popover.Dropdown>

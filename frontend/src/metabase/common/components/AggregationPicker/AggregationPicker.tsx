@@ -146,7 +146,7 @@ export function AggregationPicker({
 
       sections.push({
         key: "operators",
-        name: t`Basic functions`,
+        name: t`Funciones básicas`,
         items: operatorItems,
         icon: "table2",
       });
@@ -167,7 +167,7 @@ export function AggregationPicker({
       if (isSearching) {
         sections.push({
           key: "expression-clauses",
-          name: t`Custom Expressions`,
+          name: t`Expresiones personalizadas`,
           icon: "function" as const,
           items: clausesForMode("aggregation").map(getExpressionClauseListItem),
           alwaysSortLast: true,
@@ -175,7 +175,7 @@ export function AggregationPicker({
       }
       sections.push({
         key: "custom-expression",
-        name: t`Custom Expression`,
+        name: t`Expresión Personalizada`,
         items: [],
         icon: "sum",
         type: "action",

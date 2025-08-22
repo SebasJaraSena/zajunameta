@@ -217,7 +217,7 @@ function getSections({
 
   const expressionClausesSection = {
     key: "expression-clauses",
-    name: t`Custom Expressions`,
+    name: t`Expresiones personalizadas`,
     icon: "function" as const,
     items: clausesForMode("filter").map((clause) => ({
       type: "expression-clause" as const,
@@ -229,7 +229,7 @@ function getSections({
   const expressionClauseAction = {
     key: "custom-expression",
     type: "action" as const,
-    name: t`Custom Expression`,
+    name: t`Expresión Personalizada`,
     items: [],
     icon: "filter" as const,
     alwaysSortLast: true,

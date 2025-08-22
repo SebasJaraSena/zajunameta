@@ -19,7 +19,7 @@ export const SummarizeBreakoutColumnList = ({
     gap="0"
     {...containerProps}
   >
-    <Title order={5} fw={900}>{t`Group by`}</Title>
+    <Title order={5} fw={900}>{t`Agrupar por`}</Title>
     <Space my="sm" />
     <BreakoutColumnList
       query={query}

@@ -21,8 +21,8 @@
       (update :db dissoc :router_database_id)
       (update :schema str)))
 
-(def ^:private auto-bin-str (deferred-tru "Auto bin"))
-(def ^:private dont-bin-str (deferred-tru "Don''t bin"))
+(def ^:private auto-bin-str (deferred-tru "Agrupación Auto"))
+(def ^:private dont-bin-str (deferred-tru "No agrupar"))
 
 ;;; Apparently `msgcat` is not cool with us using a string as both a singular message ID and a plural message ID, and
 ;;; since we're using stuff like `Minute` as a plural string elsewhere (see [[metabase.lib.temporal-bucket]]) we're
@@ -111,9 +111,9 @@
                                                         {strategy param}))}]
                    :type :type/Number})
                 [default-entry
-                 [(deferred-tru "10 bins") ["num-bins" 10]]
-                 [(deferred-tru "50 bins") ["num-bins" 50]]
-                 [(deferred-tru "100 bins") ["num-bins" 100]]])
+                 [(deferred-tru "10 agrupaciones") ["num-bins" 10]]
+                 [(deferred-tru "50 agrupaciones") ["num-bins" 50]]
+                 [(deferred-tru "100 agrupaciones") ["num-bins" 100]]])
            [{:name dont-bin-str
              :mbql nil
              :type :type/Number}]
